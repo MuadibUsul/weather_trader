@@ -1,0 +1,26 @@
+[
+  {
+    "market_id": "nyc_daily_tmax_2026-02-25",
+    "resolution_url": "https://www.wunderground.com/history/daily/KLGA/date/2026-02-25",
+    "buckets": [
+      {"bucket_id": "nyc_2026_02_25_0_1", "lower": -10, "upper": 1},
+      {"bucket_id": "nyc_2026_02_25_1_4", "lower": 1, "upper": 4},
+      {"bucket_id": "nyc_2026_02_25_4_7", "lower": 4, "upper": 7},
+      {"bucket_id": "nyc_2026_02_25_7_10", "lower": 7, "upper": 10},
+      {"bucket_id": "nyc_2026_02_25_10_13", "lower": 10, "upper": 13},
+      {"bucket_id": "nyc_2026_02_25_13_40", "lower": 13, "upper": 40}
+    ]
+  },
+  {
+    "market_id": "mia_daily_tmax_2026-02-25",
+    "resolution_url": "https://www.wunderground.com/history/daily/KMIA/date/2026-02-25",
+    "buckets": [
+      {"bucket_id": "mia_2026_02_25_10_18", "lower": 10, "upper": 18},
+      {"bucket_id": "mia_2026_02_25_18_22", "lower": 18, "upper": 22},
+      {"bucket_id": "mia_2026_02_25_22_26", "lower": 22, "upper": 26},
+      {"bucket_id": "mia_2026_02_25_26_30", "lower": 26, "upper": 30},
+      {"bucket_id": "mia_2026_02_25_30_34", "lower": 30, "upper": 34},
+      {"bucket_id": "mia_2026_02_25_34_50", "lower": 34, "upper": 50}
+    ]
+  }
+]
