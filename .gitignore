@@ -10,6 +10,7 @@ node_modules/
 frontend/node_modules/
 dist/
 build/
+*.tsbuildinfo
 *.log
 logs/
 weather_trader.db
