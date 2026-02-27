@@ -1,14 +1,16 @@
-﻿/**
- * 中文说明：本文件为前端模块，用于界面交互、状态管理或接口封装。
- */
-
-import { useState } from 'react'
+﻿import { useState } from 'react'
+import { localizeErrorMessage, useI18n } from '../i18n'
+import Button from './ui/Button'
+import Card from './ui/Card'
+import FormRow from './ui/FormRow'
 
 type Props = {
   onLogin: (username: string, password: string) => Promise<void>
+  onNotify: (kind: 'success' | 'error', message: string) => void
 }
 
-export default function LoginForm({ onLogin }: Props) {
+export default function LoginForm({ onLogin, onNotify }: Props) {
+  const { t } = useI18n()
   const [username, setUsername] = useState('admin')
   const [password, setPassword] = useState('admin123')
   const [loading, setLoading] = useState(false)
@@ -20,26 +22,31 @@ export default function LoginForm({ onLogin }: Props) {
     setError('')
     try {
       await onLogin(username, password)
+      onNotify('success', t('toast.login_success'))
     } catch (err) {
-      setError((err as Error).message)
+      const msg = localizeErrorMessage((err as Error).message, t)
+      setError(msg)
+      onNotify('error', msg)
     } finally {
       setLoading(false)
     }
   }
 
   return (
-    <form className="card" onSubmit={submit}>
-      <h2>Operator Login</h2>
-      <label>
-        Username
-        <input value={username} onChange={(e) => setUsername(e.target.value)} />
-      </label>
-      <label>
-        Password
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-      </label>
-      <button type="submit" disabled={loading}>{loading ? 'Signing in...' : 'Sign In'}</button>
-      {error && <p className="error">{error}</p>}
+    <form onSubmit={submit}>
+      <Card title={t('login.title')}>
+        <FormRow label={t('login.username')} required>
+          <input id="login-username" value={username} onChange={(e) => setUsername(e.target.value)} />
+        </FormRow>
+        <FormRow label={t('login.password')} required error={error || undefined}>
+          <input id="login-password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        </FormRow>
+        <div className="panel-actions">
+          <Button type="submit" disabled={loading}>
+            {loading ? t('login.signing_in') : t('login.sign_in')}
+          </Button>
+        </div>
+      </Card>
     </form>
   )
 }

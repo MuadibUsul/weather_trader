@@ -1,19 +1,17 @@
-﻿/**
- * 中文说明：本文件为前端模块，用于界面交互、状态管理或接口封装。
- */
+﻿import { useI18n } from '../i18n'
+import AlertList from './ui/AlertList'
+import Card from './ui/Card'
 
 type Props = {
   alerts: string[]
 }
 
 export default function AlertCenter({ alerts }: Props) {
+  const { t } = useI18n()
+
   return (
-    <div className="card">
-      <h3>Alert Center</h3>
-      {alerts.length === 0 && <p className="subtle">No active alerts</p>}
-      {alerts.map((a, i) => (
-        <div key={`${a}-${i}`} className="alert">{a}</div>
-      ))}
-    </div>
+    <Card title={t('alerts.title')}>
+      <AlertList alerts={alerts} emptyText={t('alerts.none')} />
+    </Card>
   )
 }

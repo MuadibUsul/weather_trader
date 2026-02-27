@@ -1,26 +1,28 @@
-﻿/**
- * 中文说明：本文件为前端模块，用于界面交互、状态管理或接口封装。
- */
-
+﻿import { useI18n } from '../i18n'
 import type { LogEvent } from '../types'
+import Card from './ui/Card'
+import Badge from './ui/Badge'
 
 type Props = {
   logs: LogEvent[]
 }
 
 export default function LogViewer({ logs }: Props) {
+  const { t, localeTag } = useI18n()
+  const rows = logs.slice(-80).reverse()
+
   return (
-    <div className="card log-viewer">
-      <h3>Logs</h3>
+    <Card title={t('logs.title')} className="log-viewer">
       <div className="log-list">
-        {logs.slice(-80).reverse().map((l, idx) => (
+        {rows.length === 0 && <p className="subtle">{t('logs.empty')}</p>}
+        {rows.map((l, idx) => (
           <div key={`${l.ts}-${idx}`} className={`log-item ${l.level.toLowerCase()}`}>
-            <span>{new Date(l.ts).toLocaleTimeString()}</span>
-            <strong>{l.level}</strong>
+            <span>{new Date(l.ts).toLocaleTimeString(localeTag)}</span>
+            <Badge tone={l.level === 'ERROR' ? 'error' : 'info'}>{l.level}</Badge>
             <span>{l.message}</span>
           </div>
         ))}
       </div>
-    </div>
+    </Card>
   )
 }

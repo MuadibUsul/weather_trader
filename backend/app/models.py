@@ -7,7 +7,7 @@ from __future__ import annotations
 import uuid
 from datetime import datetime
 
-from sqlalchemy import Boolean, DateTime, Float, ForeignKey, Integer, JSON, String, Text
+from sqlalchemy import Boolean, DateTime, Float, ForeignKey, Integer, JSON, String, Text, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from .db import Base
@@ -23,17 +23,72 @@ class User(Base):
     id: Mapped[str] = mapped_column(String(36), primary_key=True, default=_uuid)
     username: Mapped[str] = mapped_column(String(64), unique=True, nullable=False)
     hashed_password: Mapped[str] = mapped_column(String(255), nullable=False)
+    email: Mapped[str] = mapped_column(String(255), default="", nullable=False)
+    email_verified: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False)
+    trade_pin_hash: Mapped[str] = mapped_column(String(255), default="", nullable=False)
+    trade_pin_salt: Mapped[str] = mapped_column(String(128), default="", nullable=False)
+    trade_pin_updated_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    trade_pin_fail_count: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
+    trade_pin_locked_until: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    current_env: Mapped[str] = mapped_column(String(16), default="PAPER", nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow)
 
 
 class WalletBinding(Base):
     __tablename__ = "wallet_bindings"
+    __table_args__ = (UniqueConstraint("user_id", "wallet_address", name="uq_wallet_binding_user_addr"),)
 
     id: Mapped[str] = mapped_column(String(36), primary_key=True, default=_uuid)
     user_id: Mapped[str] = mapped_column(String(36), ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
     wallet_address: Mapped[str] = mapped_column(String(128), nullable=False)
+    note: Mapped[str] = mapped_column(String(128), default="", nullable=False)
     chain_id: Mapped[int] = mapped_column(Integer, default=137)
+    credential_id: Mapped[str | None] = mapped_column(String(36), nullable=True)
     is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow)
+
+
+class WalletSigner(Base):
+    __tablename__ = "wallet_signers"
+    __table_args__ = (UniqueConstraint("user_id", "wallet_address", name="uq_wallet_signer_user_addr"),)
+
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=_uuid)
+    user_id: Mapped[str] = mapped_column(String(36), ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    wallet_address: Mapped[str] = mapped_column(String(128), nullable=False)
+    private_key_ciphertext: Mapped[str] = mapped_column(Text, nullable=False)
+    signature_type: Mapped[int] = mapped_column(Integer, default=0)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow, onupdate=datetime.utcnow)
+
+
+class PaperWallet(Base):
+    __tablename__ = "paper_wallets"
+
+    id: Mapped[str] = mapped_column(String(36), primary_key=True, default=_uuid)
+    user_id: Mapped[str] = mapped_column(String(36), ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    wallet_address: Mapped[str] = mapped_column(String(128), nullable=False)
+    note: Mapped[str] = mapped_column(String(128), default="", nullable=False)
+    initial_usdc: Mapped[float] = mapped_column(Float, default=1000.0)
+    balance_usdc: Mapped[float] = mapped_column(Float, default=1000.0)
+    pnl: Mapped[float] = mapped_column(Float, default=0.0)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow)
+
+
+class PaperOrder(Base):
+    __tablename__ = "paper_orders"
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True, default=_uuid)
+    user_id: Mapped[str] = mapped_column(String(36), ForeignKey("users.id", ondelete="CASCADE"), nullable=False, index=True)
+    wallet_id: Mapped[str | None] = mapped_column(String(36), ForeignKey("paper_wallets.id", ondelete="SET NULL"), nullable=True)
+    market_id: Mapped[str] = mapped_column(String(128), nullable=False, index=True)
+    bucket_id: Mapped[str] = mapped_column(String(128), nullable=False, index=True)
+    side: Mapped[str] = mapped_column(String(8), nullable=False)
+    size: Mapped[float] = mapped_column(Float, nullable=False)
+    price: Mapped[float] = mapped_column(Float, nullable=False)
+    status: Mapped[str] = mapped_column(String(24), nullable=False, default="filled")
+    note: Mapped[str] = mapped_column(String(255), default="", nullable=False)
+    paper: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow)
 
 
@@ -43,10 +98,33 @@ class ApiKey(Base):
     id: Mapped[str] = mapped_column(String(36), primary_key=True, default=_uuid)
     user_id: Mapped[str] = mapped_column(String(36), ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
     provider: Mapped[str] = mapped_column(String(64), nullable=False)
+    name: Mapped[str] = mapped_column(String(128), default="", nullable=False)
+    key_fingerprint: Mapped[str] = mapped_column(String(64), default="", nullable=False)
+    enabled: Mapped[bool] = mapped_column(Boolean, default=True)
     key_ciphertext: Mapped[str] = mapped_column(Text, nullable=False)
     secret_ciphertext: Mapped[str] = mapped_column(Text, nullable=False)
     passphrase_ciphertext: Mapped[str] = mapped_column(Text, nullable=False)
+    state: Mapped[str] = mapped_column(String(32), default="UNKNOWN", nullable=False)
+    reason_code: Mapped[str] = mapped_column(String(64), default="", nullable=False)
+    status_message: Mapped[str] = mapped_column(Text, default="", nullable=False)
+    checked_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    latency_ms: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    consecutive_failures: Mapped[int] = mapped_column(Integer, default=0)
+    next_check_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow, onupdate=datetime.utcnow)
+    test_status: Mapped[str] = mapped_column(String(32), default="unknown", nullable=False)
+    test_message: Mapped[str] = mapped_column(Text, default="", nullable=False)
+    last_tested_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow)
+
+
+class RuntimeLock(Base):
+    __tablename__ = "runtime_locks"
+
+    name: Mapped[str] = mapped_column(String(64), primary_key=True)
+    owner_id: Mapped[str] = mapped_column(String(64), nullable=False)
+    lease_until: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow, onupdate=datetime.utcnow)
 
 
 class MarketMetadata(Base):

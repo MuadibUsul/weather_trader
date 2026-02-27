@@ -1,6 +1,7 @@
-﻿/**
- * 中文说明：本文件为前端模块，用于界面交互、状态管理或接口封装。
- */
+﻿import { useI18n } from '../i18n'
+import Card from './ui/Card'
+import CopyableText from './ui/CopyableText'
+import DataTable from './ui/DataTable'
 
 type Position = {
   market_id: string
@@ -14,36 +15,39 @@ type Props = {
 }
 
 export default function ActiveMarketsPanel({ positions }: Props) {
+  const { t } = useI18n()
+
   return (
-    <div className="card">
-      <h3>Active Markets</h3>
-      <div className="table-wrap">
-        <table>
+    <Card title={t('markets.title')}>
+      <DataTable>
+        <table className="ui-table" role="table">
           <thead>
             <tr>
-              <th>Market</th>
-              <th>Bucket</th>
-              <th>Qty</th>
-              <th>Avg Px</th>
+              <th>{t('markets.market')}</th>
+              <th>{t('markets.bucket')}</th>
+              <th className="numeric">{t('markets.qty')}</th>
+              <th className="numeric">{t('markets.avg_px')}</th>
             </tr>
           </thead>
           <tbody>
             {positions.length === 0 && (
               <tr>
-                <td colSpan={4} className="subtle">No active positions</td>
+                <td colSpan={4} className="subtle">
+                  {t('markets.none')}
+                </td>
               </tr>
             )}
             {positions.map((p) => (
               <tr key={`${p.market_id}:${p.bucket_id}`}>
-                <td>{p.market_id}</td>
-                <td>{p.bucket_id}</td>
-                <td>{p.quantity.toFixed(2)}</td>
-                <td>{p.avg_price.toFixed(3)}</td>
+                <td><CopyableText value={p.market_id} /></td>
+                <td><CopyableText value={p.bucket_id} /></td>
+                <td className="numeric">{p.quantity.toFixed(2)}</td>
+                <td className="numeric">{p.avg_price.toFixed(3)}</td>
               </tr>
             ))}
           </tbody>
         </table>
-      </div>
-    </div>
+      </DataTable>
+    </Card>
   )
 }

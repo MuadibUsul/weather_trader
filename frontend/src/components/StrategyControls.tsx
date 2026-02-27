@@ -1,6 +1,6 @@
-﻿/**
- * 中文说明：本文件为前端模块，用于界面交互、状态管理或接口封装。
- */
+﻿import { useI18n } from '../i18n'
+import Button from './ui/Button'
+import Card from './ui/Card'
 
 type Props = {
   running: boolean
@@ -12,42 +12,74 @@ type Props = {
 }
 
 export default function StrategyControls({ running, orderSize, quoteDelta, dryRun, onChange, onToggle }: Props) {
+  const { t } = useI18n()
+
   return (
-    <div className="card">
-      <h3>Strategy Controls</h3>
-      <label>
-        Order Size: {orderSize.toFixed(1)}
-        <input
-          type="range"
-          min={1}
-          max={200}
-          step={1}
-          value={orderSize}
-          onChange={(e) => onChange(Number(e.target.value), quoteDelta, dryRun)}
-        />
+    <Card title={t('strategy.title')} className="strategy-card">
+      <div className="slider-field">
+        <div className="slider-field-head">
+          <span>{t('strategy.order_size')}</span>
+          <strong>{orderSize.toFixed(1)}</strong>
+        </div>
+        <div className="slider-field-controls">
+          <input
+            className="slider-range"
+            type="range"
+            min={1}
+            max={200}
+            step={1}
+            value={orderSize}
+            onChange={(e) => onChange(Number(e.target.value), quoteDelta, dryRun)}
+          />
+          <input
+            className="slider-number"
+            type="number"
+            min={1}
+            max={200}
+            step={1}
+            value={orderSize}
+            onChange={(e) => onChange(Number(e.target.value || 1), quoteDelta, dryRun)}
+          />
+        </div>
+      </div>
+
+      <div className="slider-field">
+        <div className="slider-field-head">
+          <span>{t('strategy.quote_delta')}</span>
+          <strong>{quoteDelta.toFixed(3)}</strong>
+        </div>
+        <div className="slider-field-controls">
+          <input
+            className="slider-range"
+            type="range"
+            min={0.001}
+            max={0.1}
+            step={0.001}
+            value={quoteDelta}
+            onChange={(e) => onChange(orderSize, Number(e.target.value), dryRun)}
+          />
+          <input
+            className="slider-number"
+            type="number"
+            min={0.001}
+            max={0.1}
+            step={0.001}
+            value={quoteDelta}
+            onChange={(e) => onChange(orderSize, Number(e.target.value || 0.001), dryRun)}
+          />
+        </div>
+      </div>
+
+      <label className="inline-check">
+        <input type="checkbox" checked={dryRun} onChange={(e) => onChange(orderSize, quoteDelta, e.target.checked)} />
+        <span>{t('strategy.dry_run')}</span>
       </label>
-      <label>
-        Quote Delta: {quoteDelta.toFixed(3)}
-        <input
-          type="range"
-          min={0.001}
-          max={0.1}
-          step={0.001}
-          value={quoteDelta}
-          onChange={(e) => onChange(orderSize, Number(e.target.value), dryRun)}
-        />
-      </label>
-      <label className="row">
-        Dry Run
-        <input
-          type="checkbox"
-          checked={dryRun}
-          onChange={(e) => onChange(orderSize, quoteDelta, e.target.checked)}
-        />
-      </label>
-      <button className={running ? 'danger' : ''} onClick={() => onToggle(!running)}>
-        {running ? 'Stop Strategy' : 'Start Strategy'}
-      </button>
-    </div>
+
+      <div className="panel-actions">
+        <Button variant={running ? 'danger' : 'primary'} onClick={() => onToggle(!running)}>
+          {running ? t('strategy.stop') : t('strategy.start')}
+        </Button>
+      </div>
+    </Card>
   )
 }

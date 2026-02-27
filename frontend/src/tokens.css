@@ -1,0 +1,85 @@
+﻿:root {
+  --font-sans: "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --text-12: 12px;
+  --text-14: 14px;
+  --text-16: 16px;
+  --text-20: 20px;
+  --text-24: 24px;
+  --text-32: 32px;
+
+  --lh-tight: 1.3;
+  --lh-base: 1.5;
+
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-pill: 999px;
+
+  --color-bg: #0a1221;
+  --color-bg-atmo-a: #1a2a4d;
+  --color-bg-atmo-b: #153a2d;
+
+  --color-surface: #121d33;
+  --color-surface-elev: #15233a;
+  --color-control: #0c1629;
+  --color-border: #2a3a59;
+  --color-border-strong: #3a4d71;
+  --color-grid: #24344f;
+
+  --color-text: #f2f6ff;
+  --color-text-muted: #99a8c4;
+  --color-text-subtle: #7786a4;
+
+  --color-primary: #21c2ad;
+  --color-primary-hover: #1cb09d;
+  --color-primary-ink: #031d1a;
+
+  --color-success: #31c983;
+  --color-warn: #f1b85f;
+  --color-danger: #ef6279;
+  --color-info: #5fa9ff;
+
+  --color-real-bg: rgba(239, 98, 121, 0.12);
+  --color-real-border: rgba(239, 98, 121, 0.45);
+  --color-real-text: #ffc2cc;
+  --color-paper-bg: rgba(95, 169, 255, 0.12);
+  --color-paper-border: rgba(95, 169, 255, 0.42);
+  --color-paper-text: #c0dcff;
+
+  --shadow-1: 0 2px 8px rgba(3, 7, 15, 0.3);
+  --shadow-2: 0 8px 24px rgba(3, 7, 15, 0.42);
+
+  --focus-ring: 0 0 0 3px rgba(33, 194, 173, 0.32);
+
+  --motion-fast: 150ms;
+  --motion-base: 220ms;
+  --easing-standard: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  --layout-max: 1320px;
+
+  /* compatibility aliases */
+  --color-surface-1: var(--color-surface-elev);
+  --color-surface-2: var(--color-surface);
+  --color-surface-3: var(--color-control);
+  --color-primary-strong: var(--color-primary-hover);
+  --shadow-sm: var(--shadow-1);
+  --shadow-md: var(--shadow-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-fast: 0ms;
+    --motion-base: 0ms;
+  }
+}

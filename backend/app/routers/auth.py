@@ -36,4 +36,11 @@ async def login(payload: LoginRequest, session: AsyncSession = Depends(get_db)) 
 
 @router.get("/me")
 async def me(user: User = Depends(get_current_user)):
-    return {"id": user.id, "username": user.username}
+    return {
+        "id": user.id,
+        "username": user.username,
+        "email": user.email,
+        "email_verified": bool(user.email_verified),
+        "trade_pin_set": bool(user.trade_pin_hash and user.trade_pin_salt),
+        "current_env": user.current_env or "PAPER",
+    }

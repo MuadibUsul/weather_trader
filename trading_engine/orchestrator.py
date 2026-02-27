@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import asyncio
 import logging
-from dataclasses import dataclass, field
+from dataclasses import asdict, dataclass, field
 from datetime import UTC, datetime
 from typing import Dict, List, Optional
 
@@ -114,8 +114,8 @@ class StrategyOrchestrator:
             "started_at": self.state.started_at.isoformat() if self.state.started_at else None,
             "market_count": len(self.markets),
             "open_orders": len(self.state.open_orders),
-            "positions": [vars(p) for p in self.state.positions.values()],
-            "metrics": vars(self.state.metrics),
+            "positions": [asdict(p) for p in self.state.positions.values()],
+            "metrics": asdict(self.state.metrics),
             "risk": {
                 "total_exposure": risk_snapshot.total_exposure,
                 "max_drawdown": risk_snapshot.max_drawdown,
@@ -123,7 +123,7 @@ class StrategyOrchestrator:
                 "halt_reason": risk_snapshot.halt_reason,
             },
             "fill_count": len(fills),
-            "config": vars(self.config),
+            "config": asdict(self.config),
         }
 
     async def _main_loop(self) -> None:

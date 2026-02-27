@@ -20,6 +20,13 @@ class AppSettings(BaseSettings):
     jwt_algorithm: str = "HS256"
     access_token_minutes: int = 720
 
+    smtp_host: str = ""
+    smtp_port: int = 587
+    smtp_username: str = ""
+    smtp_password: str = ""
+    smtp_from: str = ""
+    smtp_use_tls: bool = True
+
 
 @lru_cache(maxsize=1)
 def get_settings() -> AppSettings:

@@ -51,3 +51,18 @@ def configure_logging(level: str = "INFO") -> None:
     handler.setFormatter(JsonFormatter())
     root.handlers.clear()
     root.addHandler(handler)
+
+
+def disable_uvicorn_log_colors() -> None:
+    """Disable uvicorn ANSI colors for terminals that do not support them."""
+    for logger_name in ("uvicorn", "uvicorn.error", "uvicorn.access"):
+        logger = logging.getLogger(logger_name)
+        for handler in logger.handlers:
+            formatter = handler.formatter
+            if formatter is None:
+                continue
+            if hasattr(formatter, "use_colors"):
+                try:
+                    formatter.use_colors = False
+                except Exception:
+                    pass

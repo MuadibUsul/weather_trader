@@ -15,18 +15,21 @@ from fastapi import Depends, FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import select
 
-from trading_engine.logging_utils import configure_logging
+from trading_engine.logging_utils import configure_logging, disable_uvicorn_log_colors
 
 from .auth import get_current_user, hash_password
 from .config import get_settings
 from .db import Base, engine
+from .migrations import run_startup_migrations
 from .models import User
-from .routers import apikey, auth, health, logs, metrics, orders, strategy, wallet
+from .routers import apikey, auth, credentials, health, logs, metrics, orders, security, strategy, trade, wallet
+from .services.credential_health_worker import credential_health_worker
 from .services.engine_service import engine_service
 from .services.streams import hub
 
 settings = get_settings()
 configure_logging(settings.log_level)
+disable_uvicorn_log_colors()
 
 
 @asynccontextmanager
@@ -34,6 +37,7 @@ async def lifespan(app: FastAPI):
     """服务生命周期：启动初始化 + 停机释放。"""
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
+    await run_startup_migrations(engine)
 
     # bootstrap default admin for local usage
     async with engine.begin() as conn:
@@ -49,9 +53,11 @@ async def lifespan(app: FastAPI):
             await session.commit()
 
     await engine_service.initialize()
+    await credential_health_worker.start()
     await hub.start()
     yield
     await hub.stop()
+    await credential_health_worker.stop()
     await engine_service.shutdown()
 
 
@@ -68,10 +74,13 @@ app.include_router(health.router)
 app.include_router(auth.router)
 app.include_router(wallet.router)
 app.include_router(apikey.router)
+app.include_router(credentials.router)
+app.include_router(security.router)
 app.include_router(strategy.router)
 app.include_router(metrics.router)
 app.include_router(orders.router)
 app.include_router(logs.router)
+app.include_router(trade.router)
 
 
 @app.get("/")

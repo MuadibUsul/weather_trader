@@ -4,6 +4,14 @@ CREATE TABLE IF NOT EXISTS users (
     id VARCHAR(36) PRIMARY KEY,
     username VARCHAR(64) UNIQUE NOT NULL,
     hashed_password VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL DEFAULT '',
+    email_verified BOOLEAN NOT NULL DEFAULT FALSE,
+    trade_pin_hash VARCHAR(255) NOT NULL DEFAULT '',
+    trade_pin_salt VARCHAR(128) NOT NULL DEFAULT '',
+    trade_pin_updated_at TIMESTAMPTZ NULL,
+    trade_pin_fail_count INTEGER NOT NULL DEFAULT 0,
+    trade_pin_locked_until TIMESTAMPTZ NULL,
+    current_env VARCHAR(16) NOT NULL DEFAULT 'PAPER',
     created_at TIMESTAMPTZ DEFAULT NOW()
 );
 
@@ -23,6 +31,33 @@ CREATE TABLE IF NOT EXISTS api_keys (
     key_ciphertext TEXT NOT NULL,
     secret_ciphertext TEXT NOT NULL,
     passphrase_ciphertext TEXT NOT NULL,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS paper_wallets (
+    id VARCHAR(36) PRIMARY KEY,
+    user_id VARCHAR(36) NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    wallet_address VARCHAR(128) NOT NULL,
+    note VARCHAR(128) NOT NULL DEFAULT '',
+    initial_usdc DOUBLE PRECISION NOT NULL DEFAULT 1000,
+    balance_usdc DOUBLE PRECISION NOT NULL DEFAULT 1000,
+    pnl DOUBLE PRECISION NOT NULL DEFAULT 0,
+    is_active BOOLEAN NOT NULL DEFAULT FALSE,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS paper_orders (
+    id VARCHAR(64) PRIMARY KEY,
+    user_id VARCHAR(36) NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    wallet_id VARCHAR(36) NULL REFERENCES paper_wallets(id) ON DELETE SET NULL,
+    market_id VARCHAR(128) NOT NULL,
+    bucket_id VARCHAR(128) NOT NULL,
+    side VARCHAR(8) NOT NULL,
+    size DOUBLE PRECISION NOT NULL,
+    price DOUBLE PRECISION NOT NULL,
+    status VARCHAR(24) NOT NULL DEFAULT 'filled',
+    note VARCHAR(255) NOT NULL DEFAULT '',
+    paper BOOLEAN NOT NULL DEFAULT TRUE,
     created_at TIMESTAMPTZ DEFAULT NOW()
 );
 
@@ -114,3 +149,5 @@ CREATE INDEX IF NOT EXISTS idx_orders_market ON orders (market_id);
 CREATE INDEX IF NOT EXISTS idx_trades_market ON trades (market_id);
 CREATE INDEX IF NOT EXISTS idx_weather_market ON weather_cache (market_id);
 CREATE INDEX IF NOT EXISTS idx_perf_ts ON performance_history (ts);
+CREATE INDEX IF NOT EXISTS idx_paper_orders_user ON paper_orders (user_id);
+CREATE INDEX IF NOT EXISTS idx_paper_orders_market ON paper_orders (market_id);
