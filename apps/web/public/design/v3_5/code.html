@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class="dark" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>用户设置与安全 - Weather Trader Pro V3</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec5b",
+                        "primary-dark": "#0ea641",
+                        "secondary": "#238636",
+                        "background-dark": "#0D1117",
+                        "surface-dark": "#161B22",
+                        "border-dark": "#30363d",
+                        "text-main": "#c9d1d9",
+                        "text-muted": "#8b949e",
+                        "accent-error": "#da3633",
+                        "accent-warning": "#d29922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "Noto Sans", "sans-serif"],
+                        "mono": ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"],
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0D1117;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #30363d;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #58a6ff;
+        }
+        .neon-text {
+            text-shadow: 0 0 5px rgba(19, 236, 91, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-text-main font-display antialiased min-h-screen flex flex-col">
+<header class="h-16 border-b border-border-dark bg-surface-dark px-6 flex items-center justify-between shrink-0 z-10">
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2 text-white">
+<span class="material-symbols-outlined text-primary neon-text">thunderstorm</span>
+<h1 class="text-lg font-bold tracking-tight">Weather Trader <span class="text-text-muted font-normal text-xs ml-1">PRO V3</span></h1>
+</div>
+<div class="h-6 w-px bg-border-dark mx-2"></div>
+<div class="flex items-center gap-3 bg-[#1c2128] px-3 py-1.5 rounded-full border border-border-dark">
+<div class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</div>
+<span class="text-xs font-bold text-primary tracking-wider">REAL EXECUTION</span>
+</div>
+</div>
+<div class="hidden md:flex items-center gap-6">
+<div class="flex items-center gap-2 text-xs font-mono text-text-muted">
+<span class="material-symbols-outlined text-[16px] text-primary">router</span>
+<span>Polymarket Gateway:</span>
+<span class="text-primary font-bold">112ms</span>
+</div>
+<div class="h-4 w-px bg-border-dark"></div>
+<div class="flex items-center gap-2 text-xs font-mono text-text-muted">
+<span class="material-symbols-outlined text-[16px] text-accent-warning">cloud_queue</span>
+<span>Oracle Delay:</span>
+<span class="text-accent-warning font-bold">~2s</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-2 px-3 py-1.5 bg-primary/10 border border-primary/20 rounded-lg">
+<span class="material-symbols-outlined text-primary text-[18px]">lock</span>
+<span class="text-xs font-bold text-primary">Trade PIN: 已就绪</span>
+</div>
+<button class="relative p-2 text-text-muted hover:text-white transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-1.5 right-1.5 h-2 w-2 rounded-full bg-accent-error border border-surface-dark"></span>
+</button>
+<div class="h-8 w-8 rounded-full bg-gradient-to-br from-primary to-blue-500 p-[1px]">
+<div class="h-full w-full rounded-full bg-surface-dark flex items-center justify-center">
+<span class="text-xs font-bold text-white">WT</span>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1 p-4 grid grid-cols-12 gap-4 overflow-hidden h-[calc(100vh-64px)]">
+<aside class="col-span-12 md:col-span-3 lg:col-span-2 flex flex-col gap-4 overflow-y-auto pr-1 h-full">
+<nav class="flex flex-col gap-1 p-2 bg-surface-dark rounded-xl border border-border-dark flex-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#21262d] text-text-muted transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">dashboard</span>
+<span class="text-sm">控制台</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#21262d] text-text-muted transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">candlestick_chart</span>
+<span class="text-sm">市场全览</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#21262d] text-text-muted transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">history</span>
+<span class="text-sm">历史订单</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#21262d] text-text-muted transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+<span class="text-sm">策略配置</span>
+</a>
+<div class="h-px bg-border-dark my-2 mx-3"></div>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 text-primary font-medium" href="#">
+<span class="material-symbols-outlined text-[20px]">person</span>
+<span class="text-sm">个人设置</span>
+</a>
+<div class="mt-auto pt-4">
+<button class="flex w-full items-center gap-3 px-3 py-2 rounded-lg hover:bg-accent-error/10 text-text-muted hover:text-accent-error transition-colors">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+<span class="text-sm">退出登录</span>
+</button>
+</div>
+</nav>
+</aside>
+<section class="col-span-12 md:col-span-9 lg:col-span-10 h-full overflow-y-auto pb-6">
+<div class="max-w-5xl mx-auto space-y-6">
+<div class="flex items-end justify-between border-b border-border-dark pb-4 mb-6">
+<div>
+<h2 class="text-2xl font-bold text-white tracking-tight">用户设置与安全</h2>
+<p class="text-sm text-text-muted mt-1">管理您的个人资料、安全凭证及系统偏好。</p>
+</div>
+<div class="flex gap-2">
+<button class="px-3 py-1.5 rounded-lg border border-border-dark hover:bg-surface-dark text-xs text-text-muted hover:text-white transition">导出数据</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<div class="lg:col-span-1 space-y-6">
+<div class="bg-surface-dark rounded-xl border border-border-dark p-5">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-sm font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+                                个人资料
+                            </h3>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary/20 text-primary border border-primary/30">已认证</span>
+</div>
+<div class="flex flex-col items-center py-4">
+<div class="h-20 w-20 rounded-full bg-gradient-to-br from-primary to-blue-500 p-[2px] mb-3">
+<div class="h-full w-full rounded-full bg-[#0d1117] flex items-center justify-center">
+<span class="text-2xl font-bold text-white">WT</span>
+</div>
+</div>
+<h4 class="text-lg font-bold text-white">WeatherTrader_User</h4>
+<p class="text-xs text-text-muted">Pro Plan Member</p>
+</div>
+<div class="space-y-4 mt-2">
+<div class="space-y-1">
+<label class="text-xs text-text-muted font-medium">绑定邮箱</label>
+<div class="flex items-center justify-between bg-black/30 px-3 py-2 rounded border border-border-dark">
+<span class="text-sm text-text-main">trader***@example.com</span>
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+</div>
+</div>
+<div class="space-y-1">
+<label class="text-xs text-text-muted font-medium">关联钱包地址</label>
+<div class="flex items-center justify-between bg-black/30 px-3 py-2 rounded border border-border-dark">
+<span class="text-sm font-mono text-text-main truncate w-32">0x71C...aBcd</span>
+<button class="text-text-muted hover:text-white"><span class="material-symbols-outlined text-[16px]">content_copy</span></button>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-dark rounded-xl border border-border-dark p-5">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-sm font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-text-muted text-[20px]">tune</span>
+                                首选项
+                            </h3>
+</div>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="text-sm text-text-main">界面语言</span>
+<select class="bg-[#0d1117] border border-border-dark text-white text-xs rounded px-2 py-1 outline-none focus:border-primary">
+<option value="zh-CN">简体中文</option>
+<option value="en-US">English</option>
+</select>
+</div>
+<div class="h-px bg-border-dark"></div>
+<div class="space-y-3">
+<label class="text-xs text-text-muted font-bold uppercase">通知设置</label>
+<div class="flex items-center justify-between">
+<span class="text-sm text-text-main">邮件通知 (成交/爆仓)</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-border-dark peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-sm text-text-main">系统弹窗提醒</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-border-dark peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<div class="h-px bg-border-dark"></div>
+<div class="space-y-2">
+<label class="text-xs text-text-muted font-bold uppercase">主题微调</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="h-8 rounded bg-[#0d1117] border-2 border-primary"></button>
+<button class="h-8 rounded bg-[#161b22] border border-border-dark hover:border-text-muted"></button>
+<button class="h-8 rounded bg-[#010409] border border-border-dark hover:border-text-muted"></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-2 space-y-6">
+<div class="bg-surface-dark rounded-xl border border-border-dark p-5">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-sm font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">security</span>
+                                安全管理
+                            </h3>
+<div class="flex items-center gap-2 px-2 py-1 rounded bg-secondary/10 border border-secondary/20">
+<span class="h-2 w-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="text-xs text-secondary font-medium">账户安全评分: 高</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-black/20 rounded-lg p-4 border border-border-dark">
+<h4 class="text-sm font-bold text-white mb-3">Trade PIN 设置</h4>
+<p class="text-xs text-text-muted mb-4">Trade PIN 用于关键交易操作前的二次验证。请勿泄露。</p>
+<div class="space-y-3">
+<div>
+<label class="text-xs text-text-muted">当前 PIN 状态</label>
+<div class="text-sm text-primary font-mono mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> 已设置
+                                        </div>
+</div>
+<div>
+<label class="text-xs text-text-muted">重置 PIN</label>
+<div class="flex gap-2 mt-1">
+<input class="flex-1 bg-[#0d1117] border border-border-dark text-white text-sm rounded px-3 py-2 outline-none focus:border-primary font-mono tracking-widest" maxlength="6" placeholder="输入新 PIN" type="password"/>
+<button class="px-4 py-2 bg-border-dark hover:bg-white hover:text-surface-dark text-white text-xs font-bold rounded transition-colors">更新</button>
+</div>
+<div class="flex gap-1 mt-2">
+<div class="h-1 flex-1 rounded-full bg-primary"></div>
+<div class="h-1 flex-1 rounded-full bg-primary"></div>
+<div class="h-1 flex-1 rounded-full bg-primary"></div>
+<div class="h-1 flex-1 rounded-full bg-border-dark"></div>
+<span class="text-[10px] text-primary ml-1">强度: 中</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-black/20 rounded-lg p-4 border border-border-dark flex flex-col justify-between">
+<div>
+<h4 class="text-sm font-bold text-white mb-2">多因素认证 (MFA)</h4>
+<p class="text-xs text-text-muted mb-4">推荐使用 Google Authenticator 或 Authy 进行登录保护。</p>
+<div class="flex items-center justify-between mb-4">
+<span class="text-sm text-white font-medium">MFA 状态</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-border-dark peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+<div class="bg-accent-warning/10 border border-accent-warning/20 p-3 rounded">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-accent-warning text-[16px] mt-0.5">warning</span>
+<p class="text-[10px] text-accent-warning leading-tight">关闭 MFA 将降低账户安全性，并可能导致提现延迟24小时。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-dark rounded-xl border border-border-dark p-5 flex-1">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-sm font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-text-muted text-[20px]">history_edu</span>
+                                审计日志
+                            </h3>
+<button class="text-xs text-primary hover:underline">查看全部</button>
+</div>
+<div class="overflow-hidden border border-border-dark rounded-lg">
+<table class="w-full text-left border-collapse">
+<thead class="bg-[#1c2128] text-xs text-text-muted font-medium uppercase tracking-wider">
+<tr>
+<th class="px-4 py-3 border-b border-border-dark">时间戳</th>
+<th class="px-4 py-3 border-b border-border-dark">活动类型</th>
+<th class="px-4 py-3 border-b border-border-dark">IP 地址</th>
+<th class="px-4 py-3 border-b border-border-dark">状态</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-dark text-sm bg-black/20">
+<tr class="hover:bg-white/5 transition-colors">
+<td class="px-4 py-3 text-text-muted font-mono text-xs">2024-05-20 10:42:05</td>
+<td class="px-4 py-3 text-white">API Key 修改</td>
+<td class="px-4 py-3 text-text-muted font-mono text-xs">192.168.1.1</td>
+<td class="px-4 py-3"><span class="text-primary text-xs font-bold">成功</span></td>
+</tr>
+<tr class="hover:bg-white/5 transition-colors">
+<td class="px-4 py-3 text-text-muted font-mono text-xs">2024-05-20 09:15:00</td>
+<td class="px-4 py-3 text-white">WEB 登录</td>
+<td class="px-4 py-3 text-text-muted font-mono text-xs">192.168.1.1</td>
+<td class="px-4 py-3"><span class="text-primary text-xs font-bold">成功</span></td>
+</tr>
+<tr class="hover:bg-white/5 transition-colors">
+<td class="px-4 py-3 text-text-muted font-mono text-xs">2024-05-19 22:30:11</td>
+<td class="px-4 py-3 text-white">提现 (USDC)</td>
+<td class="px-4 py-3 text-text-muted font-mono text-xs">192.168.1.1</td>
+<td class="px-4 py-3"><span class="text-primary text-xs font-bold">成功</span></td>
+</tr>
+<tr class="hover:bg-white/5 transition-colors">
+<td class="px-4 py-3 text-text-muted font-mono text-xs">2024-05-19 14:20:00</td>
+<td class="px-4 py-3 text-white">PIN 验证失败</td>
+<td class="px-4 py-3 text-text-muted font-mono text-xs">203.0.113.42</td>
+<td class="px-4 py-3"><span class="text-accent-error text-xs font-bold">失败</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+</body></html>

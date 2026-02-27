@@ -1,0 +1,16 @@
+{
+  "name": "@weather-trader/shared",
+  "version": "3.0.0",
+  "private": false,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "echo \"no shared tests\""
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}

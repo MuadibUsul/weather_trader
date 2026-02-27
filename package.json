@@ -1,0 +1,23 @@
+{
+  "name": "weather-trader-pro-v3",
+  "private": true,
+  "version": "3.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -k \"npm run dev:web\" \"npm run dev:api\"",
+    "dev:web": "npm run dev -w @weather-trader/web",
+    "dev:api": "npm run dev -w @weather-trader/api",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "typecheck": "npm run typecheck --workspaces"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "typescript": "^5.6.3"
+  }
+}
+

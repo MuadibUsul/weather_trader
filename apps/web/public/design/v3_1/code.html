@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Weather Trader Pro V3</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec5b",
+                        "primary-dark": "#0ea641",
+                        "secondary": "#238636",
+                        "background-dark": "#0D1117",
+                        "surface-dark": "#161B22",
+                        "border-dark": "#30363d",
+                        "text-main": "#c9d1d9",
+                        "text-muted": "#8b949e",
+                        "accent-error": "#da3633",
+                        "accent-warning": "#d29922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "Noto Sans", "sans-serif"],
+                        "mono": ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"],
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for terminal and tables */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0D1117;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #30363d;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #58a6ff;
+        }
+        .neon-text {
+            text-shadow: 0 0 5px rgba(19, 236, 91, 0.5);
+        }
+        .animate-pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-text-main font-display antialiased min-h-screen flex flex-col">
+<!-- Top Status Bar -->
+<header class="h-16 border-b border-border-dark bg-surface-dark px-6 flex items-center justify-between shrink-0 z-10">
+<!-- Left: Logo & Environment -->
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2 text-white">
+<span class="material-symbols-outlined text-primary neon-text">thunderstorm</span>
+<h1 class="text-lg font-bold tracking-tight">Weather Trader <span class="text-text-muted font-normal text-xs ml-1">PRO V3</span></h1>
+</div>
+<div class="h-6 w-px bg-border-dark mx-2"></div>
+<div class="flex items-center gap-3 bg-[#1c2128] px-3 py-1.5 rounded-full border border-border-dark">
+<div class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</div>
+<span class="text-xs font-bold text-primary tracking-wider">REAL EXECUTION</span>
+</div>
+</div>
+<!-- Middle: Latency -->
+<div class="hidden md:flex items-center gap-6">
+<div class="flex items-center gap-2 text-xs font-mono text-text-muted">
+<span class="material-symbols-outlined text-[16px] text-primary">router</span>
+<span>Polymarket Gateway:</span>
+<span class="text-primary font-bold">112ms</span>
+</div>
+<div class="h-4 w-px bg-border-dark"></div>
+<div class="flex items-center gap-2 text-xs font-mono text-text-muted">
+<span class="material-symbols-outlined text-[16px] text-accent-warning">cloud_queue</span>
+<span>Oracle Delay:</span>
+<span class="text-accent-warning font-bold">~2s</span>
+</div>
+</div>
+<!-- Right: User & Status -->
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-2 px-3 py-1.5 bg-primary/10 border border-primary/20 rounded-lg">
+<span class="material-symbols-outlined text-primary text-[18px]">lock</span>
+<span class="text-xs font-bold text-primary">Trade PIN: 已就绪</span>
+</div>
+<button class="relative p-2 text-text-muted hover:text-white transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-1.5 right-1.5 h-2 w-2 rounded-full bg-accent-error border border-surface-dark"></span>
+</button>
+<div class="h-8 w-8 rounded-full bg-gradient-to-br from-primary to-blue-500 p-[1px]">
+<div class="h-full w-full rounded-full bg-surface-dark flex items-center justify-center">
+<span class="text-xs font-bold text-white">WT</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Grid -->
+<main class="flex-1 p-4 grid grid-cols-12 gap-4 overflow-hidden h-[calc(100vh-64px)]">
+<!-- Left Column: Navigation & Assets (2 cols) -->
+<aside class="col-span-12 md:col-span-3 lg:col-span-2 flex flex-col gap-4 overflow-y-auto pr-1">
+<!-- Nav Menu -->
+<nav class="flex flex-col gap-1 p-2 bg-surface-dark rounded-xl border border-border-dark">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 text-primary font-medium" href="#">
+<span class="material-symbols-outlined text-[20px]">dashboard</span>
+<span class="text-sm">控制台</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#21262d] text-text-muted transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">candlestick_chart</span>
+<span class="text-sm">市场全览</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#21262d] text-text-muted transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">history</span>
+<span class="text-sm">历史订单</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#21262d] text-text-muted transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+<span class="text-sm">策略配置</span>
+</a>
+</nav>
+<!-- Card A: Active Wallet -->
+<div class="bg-surface-dark rounded-xl border border-border-dark p-4 flex flex-col gap-3 shadow-lg">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-text-muted text-[20px]">account_balance_wallet</span>
+<span class="text-xs font-bold text-text-muted uppercase tracking-wider">活跃钱包</span>
+</div>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary/20 text-primary border border-primary/30">已绑定</span>
+</div>
+<div>
+<div class="text-2xl font-bold text-white font-mono tracking-tight">$5,432.10</div>
+<div class="text-xs text-text-muted font-mono mt-1">USDC Balance</div>
+</div>
+<div class="flex items-center gap-2 pt-2 border-t border-border-dark">
+<div class="h-2 w-2 rounded-full bg-primary"></div>
+<span class="text-xs font-mono text-text-muted truncate">0x71C...aBcd</span>
+<button class="ml-auto text-text-muted hover:text-white"><span class="material-symbols-outlined text-[14px]">content_copy</span></button>
+</div>
+</div>
+<!-- Card B: API Credentials -->
+<div class="bg-surface-dark rounded-xl border border-border-dark p-4 flex flex-col gap-3 shadow-lg">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-text-muted text-[20px]">key</span>
+<span class="text-xs font-bold text-text-muted uppercase tracking-wider">API 凭据</span>
+</div>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-secondary/20 text-secondary border border-secondary/30">OK</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-sm font-medium text-white">Production_V3_Key</span>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-[12px] text-primary animate-pulse">favorite</span>
+<span class="text-xs text-text-muted">最后心跳: <span class="text-white">刚刚</span></span>
+</div>
+</div>
+</div>
+<!-- Mini Log for connection stability -->
+<div class="bg-black/50 rounded-xl border border-border-dark p-3 flex-1 min-h-[150px]">
+<div class="text-[10px] font-mono text-text-muted mb-2 border-b border-border-dark pb-1">系统消息</div>
+<div class="flex flex-col gap-1 text-[10px] font-mono opacity-80">
+<div class="text-primary">&gt; System initialized.</div>
+<div class="text-text-muted">&gt; Connecting to relayer...</div>
+<div class="text-primary">&gt; Connected (wss://v3.wt.io).</div>
+<div class="text-text-muted">&gt; Syncing orderbook... Done.</div>
+</div>
+</div>
+</aside>
+<!-- Middle Column: Market & Real-time Flow (7 cols) -->
+<section class="col-span-12 md:col-span-6 lg:col-span-7 flex flex-col gap-4 h-full overflow-hidden">
+<!-- Market Dashboard (Top Half) -->
+<div class="flex-1 bg-surface-dark rounded-xl border border-border-dark flex flex-col overflow-hidden">
+<div class="p-4 border-b border-border-dark flex items-center justify-between bg-[#1c2128]">
+<h2 class="text-sm font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">water_drop</span>
+                        温度桶合约 (NYC)
+                    </h2>
+<div class="flex gap-2">
+<button class="p-1.5 rounded hover:bg-border-dark text-text-muted"><span class="material-symbols-outlined text-[18px]">refresh</span></button>
+<button class="p-1.5 rounded hover:bg-border-dark text-text-muted"><span class="material-symbols-outlined text-[18px]">filter_list</span></button>
+</div>
+</div>
+<div class="overflow-auto flex-1">
+<table class="w-full text-left border-collapse">
+<thead class="bg-surface-dark sticky top-0 z-10 text-xs text-text-muted font-medium uppercase tracking-wider">
+<tr>
+<th class="px-4 py-3 font-medium border-b border-border-dark">合约名称</th>
+<th class="px-4 py-3 font-medium border-b border-border-dark text-right">当前赔率</th>
+<th class="px-4 py-3 font-medium border-b border-border-dark text-right">24H 变化</th>
+<th class="px-4 py-3 font-medium border-b border-border-dark text-right">概率趋势</th>
+<th class="px-4 py-3 font-medium border-b border-border-dark text-right">操作</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-dark text-sm">
+<!-- Row 1 -->
+<tr class="hover:bg-white/5 transition-colors group">
+<td class="px-4 py-3">
+<div class="flex flex-col">
+<span class="text-white font-medium">NYC &gt; 85°F</span>
+<span class="text-xs text-text-muted">Exp: 24 Aug 2024</span>
+</div>
+</td>
+<td class="px-4 py-3 text-right font-mono text-primary font-bold">0.65</td>
+<td class="px-4 py-3 text-right font-mono text-primary">+12%</td>
+<td class="px-4 py-3 text-right">
+<div class="flex justify-end items-center h-full">
+<!-- Simulated Sparkline using CSS gradient -->
+<div class="w-16 h-6 bg-gradient-to-r from-transparent via-primary/20 to-primary/50 relative overflow-hidden rounded-sm border-b border-primary"></div>
+</div>
+</td>
+<td class="px-4 py-3 text-right">
+<button class="px-3 py-1 rounded bg-primary/10 hover:bg-primary text-primary hover:text-surface-dark text-xs font-bold transition-all">TRADE</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-white/5 transition-colors group">
+<td class="px-4 py-3">
+<div class="flex flex-col">
+<span class="text-white font-medium">NYC 75-85°F</span>
+<span class="text-xs text-text-muted">Exp: 24 Aug 2024</span>
+</div>
+</td>
+<td class="px-4 py-3 text-right font-mono text-white">0.32</td>
+<td class="px-4 py-3 text-right font-mono text-accent-error">-5%</td>
+<td class="px-4 py-3 text-right">
+<div class="flex justify-end items-center h-full">
+<div class="w-16 h-6 bg-gradient-to-r from-transparent via-accent-error/20 to-accent-error/50 relative overflow-hidden rounded-sm border-b border-accent-error"></div>
+</div>
+</td>
+<td class="px-4 py-3 text-right">
+<button class="px-3 py-1 rounded bg-border-dark hover:bg-white text-white hover:text-surface-dark text-xs font-bold transition-all">TRADE</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-white/5 transition-colors group">
+<td class="px-4 py-3">
+<div class="flex flex-col">
+<span class="text-text-muted font-medium">NYC &lt; 75°F</span>
+<span class="text-xs text-text-muted">Exp: 24 Aug 2024</span>
+</div>
+</td>
+<td class="px-4 py-3 text-right font-mono text-text-muted">0.03</td>
+<td class="px-4 py-3 text-right font-mono text-text-muted">0%</td>
+<td class="px-4 py-3 text-right">
+<div class="flex justify-end items-center h-full">
+<div class="w-16 h-6 bg-gradient-to-r from-transparent via-text-muted/10 to-text-muted/20 relative overflow-hidden rounded-sm border-b border-text-muted"></div>
+</div>
+</td>
+<td class="px-4 py-3 text-right">
+<button class="px-3 py-1 rounded bg-border-dark hover:bg-white text-white hover:text-surface-dark text-xs font-bold transition-all">TRADE</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Bottom Area: Recent Orders & Terminal (Bottom Half) -->
+<div class="h-1/3 grid grid-cols-2 gap-4">
+<!-- Recent Orders Table -->
+<div class="bg-surface-dark rounded-xl border border-border-dark flex flex-col overflow-hidden">
+<div class="px-4 py-2 border-b border-border-dark bg-[#1c2128]">
+<h3 class="text-xs font-bold text-white uppercase tracking-wider">最近订单</h3>
+</div>
+<div class="overflow-auto flex-1">
+<table class="w-full text-left border-collapse">
+<tbody class="text-xs font-mono">
+<tr class="border-b border-border-dark/50">
+<td class="p-2 text-primary">BUY</td>
+<td class="p-2">NYC &gt; 85°F</td>
+<td class="p-2 text-right">500 qty</td>
+<td class="p-2 text-right">@0.64</td>
+<td class="p-2 text-right text-text-muted">10:42:05</td>
+</tr>
+<tr class="border-b border-border-dark/50">
+<td class="p-2 text-accent-error">SELL</td>
+<td class="p-2">NYC 75-85°F</td>
+<td class="p-2 text-right">200 qty</td>
+<td class="p-2 text-right">@0.33</td>
+<td class="p-2 text-right text-text-muted">10:38:12</td>
+</tr>
+<tr class="border-b border-border-dark/50 opacity-50">
+<td class="p-2 text-primary">BUY</td>
+<td class="p-2">LND &gt; 20°C</td>
+<td class="p-2 text-right">1000 qty</td>
+<td class="p-2 text-right">@0.41</td>
+<td class="p-2 text-right text-text-muted">09:15:00</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Terminal Log -->
+<div class="bg-black rounded-xl border border-border-dark flex flex-col overflow-hidden p-3 font-mono text-xs">
+<div class="flex justify-between items-center mb-2">
+<span class="text-text-muted uppercase font-bold text-[10px]">Terminal Log</span>
+<div class="flex gap-1.5">
+<div class="w-2 h-2 rounded-full bg-border-dark"></div>
+<div class="w-2 h-2 rounded-full bg-border-dark"></div>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto space-y-1 text-text-main/80">
+<div class="flex gap-2">
+<span class="text-text-muted">[10:42:05]</span>
+<span>Order #8829 filled. Execution time: 12ms.</span>
+</div>
+<div class="flex gap-2">
+<span class="text-text-muted">[10:42:04]</span>
+<span class="text-secondary">Risk check passed (Limit: 5000/10000).</span>
+</div>
+<div class="flex gap-2">
+<span class="text-text-muted">[10:42:04]</span>
+<span>Submitting BUY order for NYC_GT_85...</span>
+</div>
+<div class="flex gap-2">
+<span class="text-text-muted">[10:41:55]</span>
+<span class="text-accent-warning">Warning: Volatility spike detected in NYC bucket.</span>
+</div>
+<div class="flex gap-2">
+<span class="text-text-muted">[10:40:00]</span>
+<span>Oracle update received. Block 1928374.</span>
+</div>
+<div class="flex gap-2">
+<span class="text-text-muted">&gt;</span>
+<span class="animate-pulse">_</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Right Column: Execution & Risk (3 cols) -->
+<aside class="col-span-12 md:col-span-3 lg:col-span-3 flex flex-col gap-4">
+<!-- Quick Trade Panel -->
+<div class="bg-surface-dark rounded-xl border border-border-dark flex flex-col shadow-lg overflow-hidden h-fit">
+<div class="p-4 border-b border-border-dark bg-[#1c2128]">
+<h2 class="text-sm font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-white text-[20px]">flash_on</span>
+                        快速交易
+                    </h2>
+</div>
+<div class="p-4 flex flex-col gap-4">
+<!-- Buy/Sell Tabs -->
+<div class="grid grid-cols-2 bg-black rounded-lg p-1 border border-border-dark">
+<button class="py-1.5 text-sm font-bold rounded bg-primary text-surface-dark shadow-sm">买入 (Long)</button>
+<button class="py-1.5 text-sm font-bold rounded text-text-muted hover:text-white transition-colors">卖出 (Short)</button>
+</div>
+<!-- Asset Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="text-xs text-text-muted font-medium">标的资产</label>
+<div class="relative">
+<select class="w-full bg-[#0d1117] border border-border-dark text-white text-sm rounded-lg px-3 py-2.5 appearance-none focus:border-primary focus:ring-1 focus:ring-primary outline-none">
+<option>NYC &gt; 85°F (Aug 24)</option>
+<option>NYC 75-85°F (Aug 24)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-2.5 pointer-events-none text-text-muted text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Price & Amount -->
+<div class="grid grid-cols-2 gap-3">
+<div class="flex flex-col gap-1.5">
+<label class="text-xs text-text-muted font-medium">限价 (Odds)</label>
+<div class="relative">
+<input class="w-full bg-[#0d1117] border border-border-dark text-white text-sm rounded-lg px-3 py-2.5 focus:border-primary focus:ring-1 focus:ring-primary outline-none font-mono" type="number" value="0.65"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="text-xs text-text-muted font-medium">数量 (USDC)</label>
+<div class="relative">
+<input class="w-full bg-[#0d1117] border border-border-dark text-white text-sm rounded-lg px-3 py-2.5 focus:border-primary focus:ring-1 focus:ring-primary outline-none font-mono" placeholder="0.00" type="number"/>
+</div>
+</div>
+</div>
+<!-- Order Type & TIF -->
+<div class="flex gap-2">
+<span class="px-2 py-1 rounded bg-border-dark text-[10px] text-text-muted font-mono">LIMIT</span>
+<span class="px-2 py-1 rounded bg-border-dark text-[10px] text-text-muted font-mono">GTC</span>
+</div>
+<div class="h-px bg-border-dark my-1"></div>
+<!-- Pre-check Status -->
+<div class="flex items-center justify-between text-xs">
+<span class="text-text-muted">风控前置检查</span>
+<span class="text-primary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                            通过
+                        </span>
+</div>
+<!-- Submit Button -->
+<button class="w-full bg-primary hover:bg-primary-dark text-surface-dark font-bold py-3 rounded-lg transition-all flex items-center justify-center gap-2 group">
+<span>REAL: 确认下单</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Risk Dashboard -->
+<div class="bg-surface-dark rounded-xl border border-border-dark flex flex-col shadow-lg flex-1">
+<div class="p-4 border-b border-border-dark bg-[#1c2128]">
+<h2 class="text-sm font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-white text-[20px]">shield</span>
+                        风控仪表盘
+                    </h2>
+</div>
+<div class="p-4 grid grid-cols-2 gap-4 items-center justify-items-center flex-1">
+<!-- Circle Chart 1 -->
+<div class="flex flex-col items-center gap-2 relative">
+<!-- SVG Circle Progress -->
+<div class="relative h-24 w-24">
+<svg class="h-full w-full -rotate-90" viewbox="0 0 36 36">
+<path class="text-border-dark" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="45, 100" stroke-width="3"></path>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center flex-col">
+<span class="text-sm font-bold text-white">45%</span>
+</div>
+</div>
+<span class="text-[10px] text-text-muted uppercase tracking-wide text-center">当日限额占用</span>
+</div>
+<!-- Circle Chart 2 -->
+<div class="flex flex-col items-center gap-2 relative">
+<!-- SVG Circle Progress -->
+<div class="relative h-24 w-24">
+<svg class="h-full w-full -rotate-90" viewbox="0 0 36 36">
+<path class="text-border-dark" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-accent-warning" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="12, 100" stroke-width="3"></path>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center flex-col">
+<span class="text-sm font-bold text-white">12%</span>
+</div>
+</div>
+<span class="text-[10px] text-text-muted uppercase tracking-wide text-center">最大回撤</span>
+</div>
+</div>
+<div class="px-4 pb-4">
+<div class="bg-black/40 rounded p-2 text-[10px] text-text-muted font-mono border border-border-dark">
+                        Max Position: 10,000 USDC<br/>
+                        Stop Loss: AUTO-ON
+                     </div>
+</div>
+</div>
+</aside>
+</main>
+</body></html>

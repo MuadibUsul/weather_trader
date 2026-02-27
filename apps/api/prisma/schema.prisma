@@ -1,0 +1,53 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Market {
+  id         String   @id @default(cuid())
+  symbol     String   @unique
+  title      String
+  location   String
+  odds       Float
+  change24h  Float
+  oi         Float
+  live       Boolean  @default(false)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model Order {
+  id          String   @id @default(cuid())
+  orderRef    String   @unique
+  marketId    String
+  side        String
+  quantity    Float
+  price       Float
+  amount      Float
+  fee         Float
+  pnl         Float?
+  environment String
+  status      String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  market Market @relation(fields: [marketId], references: [id], onDelete: Cascade)
+}
+
+model StrategyConfig {
+  id                    String   @id @default(cuid())
+  model                 String
+  triggerThreshold      Float
+  updateFrequencySec    Int
+  maxDailyLoss          Float
+  maxPositionSize       Float
+  maxOpenPositions      Int
+  slippageBps           Int
+  autoTradeEnabled      Boolean  @default(false)
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+}

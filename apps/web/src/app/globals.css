@@ -1,0 +1,47 @@
+@import "../styles/tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--wt-color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--wt-color-border);
+  border-radius: var(--wt-radius-sm);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #58a6ff;
+}
+
+.neon-text {
+  text-shadow: 0 0 5px rgb(19 236 91 / 0.5);
+}
+
+.blur-sm-custom {
+  filter: blur(4px);
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--wt-color-bg);
+  color: var(--wt-color-text-main);
+}
+

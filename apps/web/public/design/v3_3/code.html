@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html class="dark" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Weather Trader Pro V3 - 历史订单</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec5b",
+                        "primary-dark": "#0ea641",
+                        "secondary": "#238636",
+                        "background-dark": "#0D1117",
+                        "surface-dark": "#161B22",
+                        "border-dark": "#30363d",
+                        "text-main": "#c9d1d9",
+                        "text-muted": "#8b949e",
+                        "accent-error": "#da3633",
+                        "accent-warning": "#d29922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "Noto Sans", "sans-serif"],
+                        "mono": ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"],
+                    },
+                },
+            },
+        }
+    </script>
+<style>::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0D1117;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #30363d;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #58a6ff;
+        }
+        .neon-text {
+            text-shadow: 0 0 5px rgba(19, 236, 91, 0.5);
+        }.custom-checkbox:checked {
+            background-color: #13ec5b;
+            border-color: #13ec5b;
+        }details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-text-main font-display antialiased min-h-screen flex flex-col">
+<header class="h-16 border-b border-border-dark bg-surface-dark px-6 flex items-center justify-between shrink-0 z-10">
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2 text-white">
+<span class="material-symbols-outlined text-primary neon-text">thunderstorm</span>
+<h1 class="text-lg font-bold tracking-tight">Weather Trader <span class="text-text-muted font-normal text-xs ml-1">PRO V3</span></h1>
+</div>
+<div class="h-6 w-px bg-border-dark mx-2"></div>
+<div class="flex items-center gap-3 bg-[#1c2128] px-3 py-1.5 rounded-full border border-border-dark">
+<div class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</div>
+<span class="text-xs font-bold text-primary tracking-wider">REAL EXECUTION</span>
+</div>
+</div>
+<div class="hidden md:flex items-center gap-6">
+<div class="flex items-center gap-2 text-xs font-mono text-text-muted">
+<span class="material-symbols-outlined text-[16px] text-primary">router</span>
+<span>Polymarket Gateway:</span>
+<span class="text-primary font-bold">112ms</span>
+</div>
+<div class="h-4 w-px bg-border-dark"></div>
+<div class="flex items-center gap-2 text-xs font-mono text-text-muted">
+<span class="material-symbols-outlined text-[16px] text-accent-warning">cloud_queue</span>
+<span>Oracle Delay:</span>
+<span class="text-accent-warning font-bold">~2s</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-2 px-3 py-1.5 bg-primary/10 border border-primary/20 rounded-lg">
+<span class="material-symbols-outlined text-primary text-[18px]">lock</span>
+<span class="text-xs font-bold text-primary">Trade PIN: 已就绪</span>
+</div>
+<button class="relative p-2 text-text-muted hover:text-white transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-1.5 right-1.5 h-2 w-2 rounded-full bg-accent-error border border-surface-dark"></span>
+</button>
+<div class="h-8 w-8 rounded-full bg-gradient-to-br from-primary to-blue-500 p-[1px]">
+<div class="h-full w-full rounded-full bg-surface-dark flex items-center justify-center">
+<span class="text-xs font-bold text-white">WT</span>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1 p-4 grid grid-cols-12 gap-4 overflow-hidden h-[calc(100vh-64px)]">
+<aside class="col-span-12 md:col-span-3 lg:col-span-2 flex flex-col gap-4 overflow-y-auto pr-1">
+<nav class="flex flex-col gap-1 p-2 bg-surface-dark rounded-xl border border-border-dark">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#21262d] text-text-muted transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">dashboard</span>
+<span class="text-sm">控制台</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#21262d] text-text-muted transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">candlestick_chart</span>
+<span class="text-sm">市场全览</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 text-primary font-medium" href="#">
+<span class="material-symbols-outlined text-[20px]">history</span>
+<span class="text-sm">历史订单</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#21262d] text-text-muted transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+<span class="text-sm">策略配置</span>
+</a>
+</nav>
+<div class="bg-surface-dark rounded-xl border border-border-dark p-4 flex flex-col gap-3 shadow-lg">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-text-muted text-[20px]">account_balance_wallet</span>
+<span class="text-xs font-bold text-text-muted uppercase tracking-wider">活跃钱包</span>
+</div>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary/20 text-primary border border-primary/30">已绑定</span>
+</div>
+<div>
+<div class="text-2xl font-bold text-white font-mono tracking-tight">$5,432.10</div>
+<div class="text-xs text-text-muted font-mono mt-1">USDC Balance</div>
+</div>
+<div class="flex items-center gap-2 pt-2 border-t border-border-dark">
+<div class="h-2 w-2 rounded-full bg-primary"></div>
+<span class="text-xs font-mono text-text-muted truncate">0x71C...aBcd</span>
+<button class="ml-auto text-text-muted hover:text-white"><span class="material-symbols-outlined text-[14px]">content_copy</span></button>
+</div>
+</div>
+<div class="bg-surface-dark rounded-xl border border-border-dark p-4 flex flex-col gap-3 shadow-lg">
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-text-muted text-[20px]">key</span>
+<span class="text-xs font-bold text-text-muted uppercase tracking-wider">API 凭据</span>
+</div>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-secondary/20 text-secondary border border-secondary/30">OK</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="text-sm font-medium text-white">Production_V3_Key</span>
+<div class="flex items-center gap-1.5 mt-1">
+<span class="material-symbols-outlined text-[12px] text-primary animate-pulse">favorite</span>
+<span class="text-xs text-text-muted">最后心跳: <span class="text-white">刚刚</span></span>
+</div>
+</div>
+</div>
+</aside>
+<section class="col-span-12 md:col-span-9 lg:col-span-10 flex flex-col h-full overflow-hidden bg-surface-dark rounded-xl border border-border-dark shadow-xl">
+<div class="p-4 border-b border-border-dark bg-[#1c2128] flex flex-wrap items-center justify-between gap-4">
+<div class="flex flex-wrap items-center gap-4">
+<div class="flex items-center border border-border-dark rounded-lg overflow-hidden bg-background-dark/50">
+<button class="px-3 py-1.5 text-xs font-medium text-white bg-border-dark/50">全部</button>
+<button class="px-3 py-1.5 text-xs font-medium text-text-muted hover:text-white hover:bg-white/5 transition-colors border-l border-border-dark">REAL</button>
+<button class="px-3 py-1.5 text-xs font-medium text-text-muted hover:text-white hover:bg-white/5 transition-colors border-l border-border-dark">PAPER</button>
+</div>
+<div class="relative">
+<select class="pl-8 pr-4 py-1.5 bg-background-dark/50 border border-border-dark rounded-lg text-xs text-white appearance-none focus:ring-1 focus:ring-primary focus:border-primary outline-none cursor-pointer">
+<option>状态: 全部</option>
+<option>已成交 (Filled)</option>
+<option>已撤单 (Cancelled)</option>
+<option>待成交 (Open)</option>
+</select>
+<span class="material-symbols-outlined absolute left-2 top-1.5 text-text-muted text-[16px]">filter_alt</span>
+</div>
+<div class="flex items-center gap-2 text-xs text-text-muted bg-background-dark/50 border border-border-dark rounded-lg px-3 py-1.5">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span>2024-08-01</span>
+<span>-</span>
+<span>2024-08-24</span>
+</div>
+</div>
+<button class="flex items-center gap-2 px-3 py-1.5 bg-primary/10 hover:bg-primary/20 border border-primary/20 text-primary rounded-lg text-xs font-bold transition-all">
+<span class="material-symbols-outlined text-[16px]">download</span>
+                    导出 CSV
+                </button>
+</div>
+<div class="flex-1 overflow-auto">
+<details class="table-row-group group cursor-pointer">
+<summary class="table-row hover:bg-white/5 transition-colors">
+</summary></details><details class="table-row-group group cursor-pointer">
+<summary class="table-row hover:bg-white/5 transition-colors">
+</summary></details><details class="table-row-group group cursor-pointer">
+<summary class="table-row hover:bg-white/5 transition-colors opacity-60">
+</summary></details><details class="table-row-group group cursor-pointer">
+<summary class="table-row hover:bg-white/5 transition-colors">
+</summary></details><table class="w-full text-left border-collapse">
+<thead class="bg-[#1c2128] sticky top-0 z-20 text-xs text-text-muted font-medium uppercase tracking-wider shadow-sm">
+<tr>
+<th class="px-6 py-3 border-b border-border-dark font-medium">订单 ID</th>
+<th class="px-6 py-3 border-b border-border-dark font-medium">环境</th>
+<th class="px-6 py-3 border-b border-border-dark font-medium">合约名称</th>
+<th class="px-6 py-3 border-b border-border-dark font-medium text-center">方向</th>
+<th class="px-6 py-3 border-b border-border-dark font-medium text-right">数量</th>
+<th class="px-6 py-3 border-b border-border-dark font-medium text-right">均价</th>
+<th class="px-6 py-3 border-b border-border-dark font-medium text-right">交易额</th>
+<th class="px-6 py-3 border-b border-border-dark font-medium text-right">手续费</th>
+<th class="px-6 py-3 border-b border-border-dark font-medium text-right">PnL</th>
+<th class="px-6 py-3 border-b border-border-dark font-medium text-right">下单时间</th>
+<th class="px-6 py-3 border-b border-border-dark font-medium"></th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-dark text-sm font-mono">
+<tr class="hover:bg-white/5 transition-colors cursor-pointer group bg-white/5">
+<td class="px-6 py-4 text-white">#8829</td>
+<td class="px-6 py-4">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary/20 text-primary border border-primary/30">REAL</span>
+</td>
+<td class="px-6 py-4 text-white">NYC &gt; 85°F (Aug 24)</td>
+<td class="px-6 py-4 text-center">
+<span class="text-primary font-bold">买入</span>
+</td>
+<td class="px-6 py-4 text-right text-white">500</td>
+<td class="px-6 py-4 text-right text-white">0.64</td>
+<td class="px-6 py-4 text-right text-text-muted">$320.00</td>
+<td class="px-6 py-4 text-right text-text-muted">$0.32</td>
+<td class="px-6 py-4 text-right text-primary">+ $45.00</td>
+<td class="px-6 py-4 text-right text-text-muted">10:42:05</td>
+<td class="px-6 py-4 text-right">
+<span class="material-symbols-outlined text-text-muted group-hover:text-white transition-colors rotate-180">expand_more</span>
+</td>
+</tr>
+<tr class="bg-[#0f1216]">
+<td class="p-0" colspan="11">
+<div class="p-6 border-l-2 border-primary ml-6 my-2 relative">
+<h4 class="text-xs font-bold text-text-muted uppercase mb-4 tracking-wider flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+                                        生命周期日志
+                                    </h4>
+<div class="space-y-4">
+<div class="flex items-start gap-4 text-xs">
+<div class="min-w-[80px] text-text-muted font-mono">10:42:05.120</div>
+<div class="w-6 flex justify-center pt-0.5">
+<div class="h-2 w-2 rounded-full bg-primary ring-4 ring-primary/20"></div>
+</div>
+<div class="flex-1">
+<span class="text-white font-bold">订单完全成交</span>
+<div class="text-text-muted mt-1">Filled 500 @ 0.64 via Polymarket CLOB. Transaction Hash: 0x8a...9f2b</div>
+</div>
+</div>
+<div class="flex items-start gap-4 text-xs">
+<div class="min-w-[80px] text-text-muted font-mono">10:42:04.890</div>
+<div class="w-6 flex justify-center pt-0.5 relative">
+<div class="absolute top-2 bottom-[-16px] w-px bg-border-dark"></div>
+<div class="h-2 w-2 rounded-full bg-secondary"></div>
+</div>
+<div class="flex-1">
+<span class="text-text-main">链上确认</span>
+<div class="text-text-muted mt-1">Block 1928374 confirmed. Gas fee: 0.0004 ETH.</div>
+</div>
+</div>
+<div class="flex items-start gap-4 text-xs">
+<div class="min-w-[80px] text-text-muted font-mono">10:42:04.050</div>
+<div class="w-6 flex justify-center pt-0.5 relative">
+<div class="absolute top-2 bottom-[-16px] w-px bg-border-dark"></div>
+<div class="h-2 w-2 rounded-full bg-border-dark"></div>
+</div>
+<div class="flex-1">
+<span class="text-text-main">风控检查通过</span>
+<div class="text-text-muted mt-1">Margin utilized: 12%. Max drawdown check: PASS.</div>
+</div>
+</div>
+<div class="flex items-start gap-4 text-xs">
+<div class="min-w-[80px] text-text-muted font-mono">10:42:04.010</div>
+<div class="w-6 flex justify-center pt-0.5 relative">
+<div class="absolute top-2 bottom-[-16px] w-px bg-border-dark"></div>
+<div class="h-2 w-2 rounded-full bg-border-dark"></div>
+</div>
+<div class="flex-1">
+<span class="text-text-main">策略生成信号</span>
+<div class="text-text-muted mt-1">Strategy "Heatwave_Alpha" triggered BUY signal.</div>
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+<tr><td class="px-6 py-4 text-white">#8828</td>
+<td class="px-6 py-4">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-secondary/20 text-text-muted border border-secondary/30">PAPER</span>
+</td>
+<td class="px-6 py-4 text-white">NYC 75-85°F (Aug 24)</td>
+<td class="px-6 py-4 text-center">
+<span class="text-accent-error font-bold">卖出</span>
+</td>
+<td class="px-6 py-4 text-right text-white">200</td>
+<td class="px-6 py-4 text-right text-white">0.33</td>
+<td class="px-6 py-4 text-right text-text-muted">$66.00</td>
+<td class="px-6 py-4 text-right text-text-muted">$0.00</td>
+<td class="px-6 py-4 text-right text-accent-error">- $12.50</td>
+<td class="px-6 py-4 text-right text-text-muted">10:38:12</td>
+<td class="px-6 py-4 text-right">
+<span class="material-symbols-outlined text-text-muted group-hover:text-white transition-colors">expand_more</span>
+</td>
+
+</tr><tr class="bg-[#0f1216]">
+<td class="p-6" colspan="11">
+<div class="text-xs text-text-muted font-mono text-center">点击查看详情...</div>
+</td>
+</tr>
+
+<tr><td class="px-6 py-4 text-white">#8827</td>
+<td class="px-6 py-4">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary/20 text-primary border border-primary/30">REAL</span>
+</td>
+<td class="px-6 py-4 text-white">LND &gt; 20°C (Aug 25)</td>
+<td class="px-6 py-4 text-center">
+<span class="text-primary font-bold">买入</span>
+</td>
+<td class="px-6 py-4 text-right text-white">1000</td>
+<td class="px-6 py-4 text-right text-white">0.41</td>
+<td class="px-6 py-4 text-right text-text-muted">$410.00</td>
+<td class="px-6 py-4 text-right text-text-muted">$0.41</td>
+<td class="px-6 py-4 text-right text-text-muted">--</td>
+<td class="px-6 py-4 text-right text-text-muted">09:15:00</td>
+<td class="px-6 py-4 text-right">
+<span class="material-symbols-outlined text-text-muted group-hover:text-white transition-colors">expand_more</span>
+</td>
+
+
+<td class="px-6 py-4 text-white">#8826</td>
+<td class="px-6 py-4">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary/20 text-primary border border-primary/30">REAL</span>
+</td>
+<td class="px-6 py-4 text-white">NYC &lt; 75°F (Aug 24)</td>
+<td class="px-6 py-4 text-center">
+<span class="text-primary font-bold">买入</span>
+</td>
+<td class="px-6 py-4 text-right text-white">50</td>
+<td class="px-6 py-4 text-right text-white">0.03</td>
+<td class="px-6 py-4 text-right text-text-muted">$1.50</td>
+<td class="px-6 py-4 text-right text-text-muted">$0.00</td>
+<td class="px-6 py-4 text-right text-text-muted">--</td>
+<td class="px-6 py-4 text-right text-text-muted">08:55:20</td>
+<td class="px-6 py-4 text-right">
+<span class="px-2 py-0.5 rounded text-[10px] bg-border-dark text-text-muted">已撤单</span>
+</td>
+
+
+<td class="px-6 py-4 text-white">#8825</td>
+<td class="px-6 py-4">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-secondary/20 text-text-muted border border-secondary/30">PAPER</span>
+</td>
+<td class="px-6 py-4 text-white">TK &gt; 30°C (Aug 24)</td>
+<td class="px-6 py-4 text-center">
+<span class="text-accent-error font-bold">卖出</span>
+</td>
+<td class="px-6 py-4 text-right text-white">1500</td>
+<td class="px-6 py-4 text-right text-white">0.88</td>
+<td class="px-6 py-4 text-right text-text-muted">$1,320.00</td>
+<td class="px-6 py-4 text-right text-text-muted">$0.00</td>
+<td class="px-6 py-4 text-right text-primary">+ $105.20</td>
+<td class="px-6 py-4 text-right text-text-muted">08:42:11</td>
+<td class="px-6 py-4 text-right">
+<span class="material-symbols-outlined text-text-muted group-hover:text-white transition-colors">expand_more</span>
+</td>
+
+
+</tr></tbody>
+</table>
+</div>
+<div class="p-4 border-t border-border-dark bg-[#1c2128] flex items-center justify-between text-xs text-text-muted">
+<span>显示 1-5 of 128 订单</span>
+<div class="flex gap-2">
+<button class="px-3 py-1 rounded bg-border-dark hover:bg-white/10 disabled:opacity-50" disabled="">上一页</button>
+<button class="px-3 py-1 rounded bg-border-dark hover:bg-white/10 text-white">1</button>
+<button class="px-3 py-1 rounded bg-surface-dark hover:bg-white/10">2</button>
+<button class="px-3 py-1 rounded bg-surface-dark hover:bg-white/10">3</button>
+<span class="px-2 py-1">...</span>
+<button class="px-3 py-1 rounded bg-border-dark hover:bg-white/10">下一页</button>
+</div>
+</div>
+</section>
+</main>
+
+</body></html>

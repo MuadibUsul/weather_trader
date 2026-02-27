@@ -1,0 +1,81 @@
+:root {
+  /* colors from HTML: design/v3_1..v3_6 tailwind.config */
+  --wt-color-primary: #13ec5b;
+  --wt-color-primary-dark: #0ea641;
+  --wt-color-secondary: #238636;
+  --wt-color-bg: #0d1117;
+  --wt-color-surface: #161b22;
+  --wt-color-surface-2: #1c2128;
+  --wt-color-surface-3: #21262d;
+  --wt-color-border: #30363d;
+  --wt-color-text-main: #c9d1d9;
+  --wt-color-text-muted: #8b949e;
+  --wt-color-success: #238636;
+  --wt-color-danger: #da3633;
+  --wt-color-warning: #d29922;
+  --wt-color-info: #1f6feb;
+  --wt-color-gray-950: #010409;
+  --wt-color-gray-900: #0d1117;
+  --wt-color-gray-850: #0f1216;
+  --wt-color-gray-800: #161b22;
+  --wt-color-gray-750: #1c2128;
+  --wt-color-gray-700: #21262d;
+  --wt-color-gray-600: #30363d;
+  --wt-color-gray-300: #8b949e;
+  --wt-color-gray-200: #c9d1d9;
+  --wt-color-gray-100: #f0f6fc;
+  --wt-color-heat-hot: #da3633;
+  --wt-color-heat-warm: #d29922;
+  --wt-color-heat-cool: #238636;
+  --wt-color-heat-cold: #1f6feb;
+
+  /* typography from HTML fontFamily */
+  --wt-font-display: Inter, "Noto Sans", sans-serif;
+  --wt-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --wt-font-table: Inter, "Noto Sans", sans-serif;
+
+  /* radius from HTML classes: rounded, rounded-lg, rounded-xl, rounded-2xl */
+  --wt-radius-xs: 2px;
+  --wt-radius-sm: 4px;
+  --wt-radius-md: 6px;
+  --wt-radius-lg: 8px;
+  --wt-radius-xl: 12px;
+  --wt-radius-2xl: 16px;
+  --wt-radius-full: 9999px;
+
+  /* shadow from HTML classes and custom shadow-[...] */
+  --wt-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.25);
+  --wt-shadow-md: 0 4px 8px rgb(0 0 0 / 0.32);
+  --wt-shadow-lg: 0 8px 16px rgb(0 0 0 / 0.4);
+  --wt-shadow-xl: 0 16px 28px rgb(0 0 0 / 0.45);
+  --wt-shadow-neon: 0 0 10px rgb(19 236 91 / 0.2);
+
+  /* spacing 8px system (HTML: p-1/p-1.5/p-2/p-3/p-4/p-5/p-6 etc) */
+  --wt-space-0: 0px;
+  --wt-space-0-5: 4px;
+  --wt-space-1: 8px;
+  --wt-space-1-5: 12px;
+  --wt-space-2: 16px;
+  --wt-space-2-5: 20px;
+  --wt-space-3: 24px;
+  --wt-space-4: 32px;
+  --wt-space-5: 40px;
+  --wt-space-6: 48px;
+  --wt-space-7: 56px;
+  --wt-space-8: 64px;
+
+  /* component dimensions from HTML / PNG alignment */
+  --wt-topbar-h: 64px;
+  --wt-sidebar-w: 256px;
+  --wt-drawer-w: 320px;
+  --wt-modal-w: 448px;
+  --wt-pin-cell-w: 40px;
+  --wt-pin-cell-h: 48px;
+}
+
+html,
+body {
+  background: var(--wt-color-bg);
+  color: var(--wt-color-text-main);
+  font-family: var(--wt-font-display);
+}
