@@ -26,18 +26,18 @@ export class EventsGateway implements OnGatewayInit, OnGatewayConnection {
   }
 
   emitPriceUpdate(payload: unknown) {
-    this.server.emit("price_update", payload);
+    this.server?.emit("price_update", payload);
   }
 
   emitOrderUpdate(payload: unknown) {
-    this.server.emit("order_update", payload);
+    this.server?.emit("order_update", payload);
   }
 
   emitRiskAlert(payload: unknown) {
-    this.server.emit("risk_alert", payload);
+    this.server?.emit("risk_alert", payload);
   }
 
   emitSystemLog(payload: unknown) {
-    this.server.emit("system_log", payload);
+    this.server?.emit("system_log", payload);
   }
 }

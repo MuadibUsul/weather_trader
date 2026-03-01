@@ -1,6 +1,11 @@
 import { IsBoolean, IsIn, IsInt, IsNumber, Max, Min } from "class-validator";
+import { IsOptional, IsString } from "class-validator";
 
 export class UpdateStrategyDto {
+  @IsOptional()
+  @IsString()
+  strategyId?: string;
+
   @IsIn(["mean_reversion", "trend_following"])
   model!: "mean_reversion" | "trend_following";
 

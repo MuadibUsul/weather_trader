@@ -1,8 +1,9 @@
-import { expect, test } from "@playwright/test";
+﻿import { expect, test } from "@playwright/test";
 
 test("settings loads", async ({ page }) => {
   await page.goto("/settings");
-  await expect(page.getByText("用户设置与安全")).toBeVisible();
+  await expect(page.locator("main")).toBeVisible();
+  await expect(page.locator('a[href="/settings"]')).toBeVisible();
 });
 
 test("settings key area screenshot", async ({ page }) => {

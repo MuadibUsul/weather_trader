@@ -1,11 +1,17 @@
-import { Market } from "@/lib/api";
+﻿import type { Market } from "@/lib/api";
 import { MarketCard } from "./MarketCard";
 
-export function MarketGrid({ markets }: { markets: Market[] }) {
+export function MarketGrid({
+  markets,
+  onPick,
+}: {
+  markets: Market[];
+  onPick?: (marketId: string) => void;
+}) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-20">
+    <div className="grid grid-cols-1 gap-3 pb-4 md:grid-cols-2 lg:grid-cols-3">
       {markets.map((market) => (
-        <MarketCard key={market.id} market={market} />
+        <MarketCard key={market.id} market={market} onPick={onPick} />
       ))}
     </div>
   );

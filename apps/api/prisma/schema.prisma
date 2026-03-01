@@ -7,6 +7,68 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum Env {
+  PAPER
+  REAL
+}
+
+enum StrategyStatus {
+  dev
+  paper_testing
+  eligible
+  real_requested
+  real_approved
+  real_small
+  real_scaled
+  frozen
+}
+
+enum OrderType {
+  limit
+  market
+}
+
+enum OrderSide {
+  long
+  short
+}
+
+enum OrderStatus {
+  accepted
+  partial_filled
+  filled
+  canceled
+  rejected
+}
+
+enum RiskScope {
+  portfolio
+  strategy
+  market
+}
+
+enum RiskEventType {
+  limit_hit
+  drawdown
+  api_error
+  slippage_spike
+  manual_stop
+  env_switch
+}
+
+enum RiskSeverity {
+  low
+  medium
+  high
+  critical
+}
+
+enum ApprovalStatus {
+  requested
+  approved
+  rejected
+}
+
 model Market {
   id         String   @id @default(cuid())
   symbol     String   @unique
@@ -18,24 +80,39 @@ model Market {
   live       Boolean  @default(false)
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
+  orders     Order[]
 }
 
 model Order {
   id          String   @id @default(cuid())
   orderRef    String   @unique
   marketId    String
+  strategyId  String?
+  runId       String?
+  walletId    String?
   side        String
+  sideV2      OrderSide?
+  type        OrderType?
   quantity    Float
+  size        Float?
   price       Float
   amount      Float
   fee         Float
   pnl         Float?
+  env         Env      @default(PAPER)
   environment String
   status      String
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 
   market Market @relation(fields: [marketId], references: [id], onDelete: Cascade)
+  strategy Strategy? @relation(fields: [strategyId], references: [id], onDelete: SetNull)
+  run      StrategyRun? @relation(fields: [runId], references: [id], onDelete: SetNull)
+  fills    Fill[]
+
+  @@index([env, createdAt])
+  @@index([strategyId, env, createdAt])
+  @@index([runId])
 }
 
 model StrategyConfig {
@@ -50,4 +127,239 @@ model StrategyConfig {
   autoTradeEnabled      Boolean  @default(false)
   createdAt             DateTime @default(now())
   updatedAt             DateTime @updatedAt
+}
+
+model Strategy {
+  id          String         @id @default(cuid())
+  name        String
+  version     Int            @default(1)
+  status      StrategyStatus @default(dev)
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+  runs        StrategyRun[]
+  signals     Signal[]
+  orders      Order[]
+  pnl         PnlSnapshot[]
+  riskEvents  RiskEvent[]
+  approvals   StrategyApproval[]
+  allocations AllocationSnapshot[]
+}
+
+model StrategyRun {
+  id         String   @id @default(cuid())
+  strategyId String
+  env        Env
+  startAt    DateTime @default(now())
+  endAt      DateTime?
+  configJson Json
+  gitCommit  String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  strategy   Strategy @relation(fields: [strategyId], references: [id], onDelete: Cascade)
+  signals    Signal[]
+  orders     Order[]
+
+  @@index([strategyId, env, startAt])
+  @@index([env, startAt])
+}
+
+model Signal {
+  id              String   @id @default(cuid())
+  strategyId      String
+  runId           String
+  env             Env
+  marketId        String
+  side            OrderSide
+  modelProb       Float
+  marketProb      Float
+  expectedEdge    Float
+  confidence      Float
+  recommendedSize Float
+  createdAt       DateTime @default(now())
+  strategy        Strategy @relation(fields: [strategyId], references: [id], onDelete: Cascade)
+  run             StrategyRun @relation(fields: [runId], references: [id], onDelete: Cascade)
+
+  @@index([env, createdAt])
+  @@index([strategyId, env, createdAt])
+  @@index([runId, createdAt])
+}
+
+model Fill {
+  id       String   @id @default(cuid())
+  orderId  String
+  env      Env
+  price    Float
+  size     Float
+  fee      Float
+  filledAt DateTime @default(now())
+  order    Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  @@index([env, filledAt])
+  @@index([orderId])
+}
+
+model PnlSnapshot {
+  id            String   @id @default(cuid())
+  env           Env
+  strategyId    String?
+  timestamp     DateTime
+  realizedPnl   Float
+  unrealizedPnl Float
+  fees          Float
+  equity        Float
+  strategy      Strategy? @relation(fields: [strategyId], references: [id], onDelete: SetNull)
+
+  @@index([env, timestamp])
+  @@index([strategyId, env, timestamp])
+}
+
+model RiskEvent {
+  id         String        @id @default(cuid())
+  env        Env
+  scope      RiskScope
+  strategyId String?
+  marketId   String?
+  type       RiskEventType
+  severity   RiskSeverity
+  payloadJson Json
+  createdAt  DateTime      @default(now())
+  strategy   Strategy? @relation(fields: [strategyId], references: [id], onDelete: SetNull)
+
+  @@index([env, createdAt])
+  @@index([strategyId, env, createdAt])
+  @@index([type, severity, createdAt])
+}
+
+model ExposureSnapshot {
+  id                    String   @id @default(cuid())
+  env                   Env
+  timestamp             DateTime
+  byCityJson            Json
+  byDateJson            Json
+  correlationBucketJson Json
+
+  @@index([env, timestamp])
+}
+
+model StrategyApproval {
+  id         String         @id @default(cuid())
+  strategyId String
+  requestedBy String
+  approvedBy String?
+  status     ApprovalStatus
+  payloadJson Json
+  createdAt  DateTime       @default(now())
+  strategy   Strategy @relation(fields: [strategyId], references: [id], onDelete: Cascade)
+
+  @@index([strategyId, createdAt])
+  @@index([status, createdAt])
+}
+
+model AllocationSnapshot {
+  id            String   @id @default(cuid())
+  timestamp     DateTime
+  env           Env
+  strategyId    String
+  allocationPct Float
+  reasonJson    Json
+  strategy      Strategy @relation(fields: [strategyId], references: [id], onDelete: Cascade)
+
+  @@index([env, timestamp])
+  @@index([strategyId, env, timestamp])
+}
+
+model ExecOrder {
+  id           String   @id
+  env          Env
+  marketId     String
+  side         String
+  quantity     Float
+  price        Float
+  amount       Float
+  fee          Float
+  pnl          Float
+  status       String
+  walletId     String?
+  strategyId   String?
+  runId        String?
+  contractName String?
+  createdAt    DateTime
+  updatedAt    DateTime @updatedAt
+  events       ExecOrderEvent[]
+  fills        ExecFill[]
+
+  @@index([env, createdAt])
+  @@index([status, env, createdAt])
+}
+
+model ExecOrderEvent {
+  id         String   @id
+  orderId    String
+  env        Env
+  type       String
+  stateAfter String?
+  reason     String?
+  at         DateTime
+  detail     String?
+  fillJson   Json?
+  payloadJson Json?
+  order      ExecOrder @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  @@index([orderId, at])
+  @@index([env, at])
+}
+
+model ExecFill {
+  id        String   @id
+  orderId   String
+  env       Env
+  marketId  String
+  outcomeId String
+  side      String
+  price     Float
+  quantity  Float
+  notional  Float
+  fee       Float
+  ts        DateTime
+  rawJson   Json?
+  order     ExecOrder @relation(fields: [orderId], references: [id], onDelete: Cascade)
+
+  @@index([orderId, ts])
+  @@index([env, ts])
+}
+
+model ExecSettlement {
+  id                   String   @id @default(cuid())
+  env                  Env
+  marketId             String
+  ts                   DateTime
+  reason               String
+  winningOutcomeId     String?
+  observedTemperatureC Float?
+  source               String?
+  cashDelta            Float
+  settledPnlDelta      Float
+  rawJson              Json?
+
+  @@index([env, ts])
+  @@index([marketId, ts])
+}
+
+model ExecLedgerSnapshot {
+  id          String   @id @default(cuid())
+  env         Env
+  ts          DateTime @default(now())
+  cash        Float
+  reservedCash Float
+  realizedPnl Float
+  settledPnl  Float
+  positionsJson Json
+
+  @@index([env, ts])
+}
+
+model ExecEngineState {
+  env         Env      @id
+  snapshotJson Json
+  updatedAt   DateTime @updatedAt
 }

@@ -1,0 +1,23 @@
+
+> weather-trader-pro-v3@3.0.0 dev:web
+> npm run dev -w @weather-trader/web
+
+
+> @weather-trader/web@3.0.0 dev
+> next dev
+
+  ▲ Next.js 14.2.21
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.2s
+ ○ Compiling /wallet ...
+ ✓ Compiled /wallet in 1531ms (1333 modules)
+ GET /wallet 200 in 1695ms
+ ○ Compiling /settings ...
+ ✓ Compiled /settings in 674ms (1351 modules)
+ ✓ Compiled /strategy in 361ms (1377 modules)
+ ✓ Compiled /orders in 246ms (1389 modules)
+ ✓ Compiled /markets in 162ms (1405 modules)
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 934ms (2570 modules)

@@ -1,17 +1,41 @@
-import { TerminalLog } from "@/components/common/TerminalLog";
+﻿"use client";
 
-const lines = [
-  { time: "10:42:05", text: "Order #8829 filled. Execution time: 12ms." },
-  { time: "10:42:04", text: "Risk check passed (Limit: 5000/10000).", tone: "success" as const },
-  { time: "10:42:04", text: "Submitting BUY order for NYC_GT_85..." },
-  {
-    time: "10:41:55",
-    text: "Warning: Volatility spike detected in NYC bucket.",
-    tone: "warning" as const,
-  },
-  { time: "10:40:00", text: "Oracle update received. Block 1928374." },
-];
+import { useMemo } from "react";
+import { useQuery } from "@tanstack/react-query";
+import { TerminalLog } from "@/components/common/TerminalLog";
+import { getAuditLogs } from "@/lib/api";
+
+function shortTs(iso: string) {
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) {
+    return "--:--:--";
+  }
+  return `${String(date.getHours()).padStart(2, "0")}:${String(date.getMinutes()).padStart(2, "0")}:${String(date.getSeconds()).padStart(2, "0")}`;
+}
 
 export function TerminalLogPanel() {
+  const { data, isLoading } = useQuery({
+    queryKey: ["audit", 20],
+    queryFn: () => getAuditLogs(20),
+    refetchInterval: 5000,
+    retry: 1,
+  });
+
+  const lines = useMemo(() => {
+    if (isLoading) {
+      return [{ time: "--:--:--", text: "Loading system logs..." }];
+    }
+
+    if (!data?.length) {
+      return [{ time: shortTs(new Date().toISOString()), text: "System initialized." }];
+    }
+
+    return data.slice(0, 12).map((item) => ({
+      time: shortTs(item.ts),
+      text: `${item.action}: ${item.detail}`,
+      tone: item.status === "FAILED" ? ("warning" as const) : item.action.includes("UPDATE") ? ("success" as const) : ("normal" as const),
+    }));
+  }, [data, isLoading]);
+
   return <TerminalLog lines={lines} className="h-full" />;
 }

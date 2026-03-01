@@ -1,69 +1,49 @@
 import { Injectable } from "@nestjs/common";
+import type { Environment, OrderLifecycleEventDto, OrderPreviewDto, OrderQuoteDto } from "@weather-trader/shared";
+import { ExecutionApplicationService, type OrderView, type WalletSnapshotView } from "../execution/execution-application.service";
 import { CreateOrderDto } from "./dto/create-order.dto";
-import { EventsGateway } from "../../gateway/events.gateway";
-
-export type OrderView = {
-  id: string;
-  marketId: string;
-  side: "buy" | "sell";
-  quantity: number;
-  price: number;
-  amount: number;
-  fee: number;
-  pnl: number;
-  environment: "REAL" | "PAPER";
-  status: "filled" | "open" | "cancelled";
-  createdAt: string;
-};
+import { ListOrdersQueryDto } from "./dto/list-orders-query.dto";
+import { PreviewOrderDto } from "./dto/preview-order.dto";
 
 @Injectable()
 export class OrdersService {
-  private seq = 8829;
-  private readonly orders: OrderView[] = [
-    {
-      id: "#8829",
-      marketId: "NYC_GT_85",
-      side: "buy",
-      quantity: 500,
-      price: 0.64,
-      amount: 320,
-      fee: 0.32,
-      pnl: 45,
-      environment: "REAL",
-      status: "filled",
-      createdAt: new Date().toISOString(),
-    },
-  ];
+  constructor(private readonly execution: ExecutionApplicationService) {}
 
-  constructor(private readonly events: EventsGateway) {}
-
-  list() {
-    return this.orders;
+  list(query: ListOrdersQueryDto = {}): OrderView[] {
+    return this.execution.list(query);
   }
 
-  create(input: CreateOrderDto): OrderView {
-    const feeRate = input.environment === "REAL" ? 0.001 : 0;
-    const amount = input.quantity * input.price;
-    const fee = Number((amount * feeRate).toFixed(4));
+  getWalletSnapshot(environment?: Environment): Promise<WalletSnapshotView> {
+    return this.execution.getWalletSnapshot(environment);
+  }
 
-    const order: OrderView = {
-      id: `#${this.seq++}`,
-      marketId: input.marketId,
-      side: input.side,
-      quantity: input.quantity,
-      price: input.price,
-      amount,
-      fee,
-      pnl: 0,
-      environment: (input.environment ?? "REAL") as "REAL" | "PAPER",
-      status: "filled",
-      createdAt: new Date().toISOString(),
-    };
+  getExecutionHealth() {
+    return this.execution.getExecutionHealth();
+  }
 
-    this.orders.unshift(order);
-    this.events.emitOrderUpdate(order);
-    this.events.emitSystemLog({ level: "info", message: `Order ${order.id} created` });
+  listOpen(environment?: Environment, limit?: number): OrderView[] {
+    return this.execution.listOpen(environment, limit);
+  }
 
-    return order;
+  listEvents(orderId: string, limit?: number): OrderLifecycleEventDto[] {
+    return this.execution.listEvents(orderId, limit);
+  }
+
+  cancel(orderId: string, reason?: string): Promise<OrderView> {
+    return this.execution.cancel(orderId, reason);
+  }
+
+  quote(params: { marketId: string; environment?: Environment }): Promise<OrderQuoteDto> {
+    return this.execution.quote(params);
+  }
+
+  preview(input: PreviewOrderDto): Promise<OrderPreviewDto> {
+    return this.execution.preview(input);
+  }
+
+  create(input: CreateOrderDto): Promise<OrderView> {
+    return this.execution.create(input);
   }
 }
+
+export type { OrderView };

@@ -7,10 +7,13 @@
     "packages/*"
   ],
   "scripts": {
+    "postinstall": "npm run prisma:generate -w @weather-trader/api",
     "dev": "concurrently -k \"npm run dev:web\" \"npm run dev:api\"",
     "dev:web": "npm run dev -w @weather-trader/web",
     "dev:api": "npm run dev -w @weather-trader/api",
-    "build": "npm run build --workspaces",
+    "paper:report": "npm run build -w @weather-trader/core && npm run build -w @weather-trader/api && node scripts/run-weather-paper-report.cjs",
+    "paper:official": "npm run build -w @weather-trader/core && npm run build -w @weather-trader/api && node scripts/run-weather-official-paper.cjs",
+    "build": "npm run build -w @weather-trader/core && npm run build -w @weather-trader/shared && npm run build -w @weather-trader/api && npm run build -w @weather-trader/web",
     "test": "npm run test --workspaces",
     "lint": "npm run lint --workspaces",
     "typecheck": "npm run typecheck --workspaces"

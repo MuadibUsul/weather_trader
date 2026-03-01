@@ -1,0 +1,600 @@
+
+Environment variables loaded from .env
+[31m[Nest] 16292  - [39m2026/02/28 13:40:34 [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mNest can't resolve dependencies of the OrdersService (EventsGateway, SystemService, ?, ControlRiskService, ControlAllocatorService). Please make sure that the argument ControlStoreService at index [2] is available in the OrdersModule context.
+
+Potential solutions:
+- Is OrdersModule a valid NestJS module?
+- If ControlStoreService is a provider, is it part of the current OrdersModule?
+- If ControlStoreService is exported from a separate @Module, is that module imported within OrdersModule?
+  @Module({
+    imports: [ /* the Module containing ControlStoreService */ ]
+  })
+[39m
+Error: Nest can't resolve dependencies of the OrdersService (EventsGateway, SystemService, ?, ControlRiskService, ControlAllocatorService). Please make sure that the argument ControlStoreService at index [2] is available in the OrdersModule context.
+
+Potential solutions:
+- Is OrdersModule a valid NestJS module?
+- If ControlStoreService is a provider, is it part of the current OrdersModule?
+- If ControlStoreService is exported from a separate @Module, is that module imported within OrdersModule?
+  @Module({
+    imports: [ /* the Module containing ControlStoreService */ ]
+  })
+
+    at Injector.lookupComponentInParentModules (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:262:19)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at Injector.resolveComponentInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:215:33)
+    at resolveParam (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:129:38)
+    at async Promise.all (index 2)
+    at Injector.resolveConstructorParams (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:144:27)
+    at Injector.loadInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at Injector.loadProvider (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:98:9)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\instance-loader.js:56:13
+    at async Promise.all (index 3)
+[31m[Nest] 21472  - [39m2026/02/28 13:42:48 [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mNest can't resolve dependencies of the StrategyService (EventsGateway, SystemService, MarketsService, OrdersService, ?, ControlStrategyGovernanceService). Please make sure that the argument ControlStoreService at index [4] is available in the StrategyModule context.
+
+Potential solutions:
+- Is StrategyModule a valid NestJS module?
+- If ControlStoreService is a provider, is it part of the current StrategyModule?
+- If ControlStoreService is exported from a separate @Module, is that module imported within StrategyModule?
+  @Module({
+    imports: [ /* the Module containing ControlStoreService */ ]
+  })
+[39m
+Error: Nest can't resolve dependencies of the StrategyService (EventsGateway, SystemService, MarketsService, OrdersService, ?, ControlStrategyGovernanceService). Please make sure that the argument ControlStoreService at index [4] is available in the StrategyModule context.
+
+Potential solutions:
+- Is StrategyModule a valid NestJS module?
+- If ControlStoreService is a provider, is it part of the current StrategyModule?
+- If ControlStoreService is exported from a separate @Module, is that module imported within StrategyModule?
+  @Module({
+    imports: [ /* the Module containing ControlStoreService */ ]
+  })
+
+    at Injector.lookupComponentInParentModules (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:262:19)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at Injector.resolveComponentInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:215:33)
+    at resolveParam (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:129:38)
+    at async Promise.all (index 4)
+    at Injector.resolveConstructorParams (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:144:27)
+    at Injector.loadInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at Injector.loadProvider (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:98:9)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\instance-loader.js:56:13
+    at async Promise.all (index 3)
+[31m[Nest] 22376  - [39m2026/02/28 15:46:38 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 25932  - [39m2026/02/28 15:46:56 [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mthis.restoreIntegrationConfig is not a function[39m
+TypeError: this.restoreIntegrationConfig is not a function
+    at new MarketsService (D:\InfoTrader\weather_trader\apps\api\src\modules\markets\markets.service.ts:368:10)
+    at Injector.instantiateClass (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:373:19)
+    at callback (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:65:45)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at Injector.resolveConstructorParams (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:145:24)
+    at Injector.loadInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at Injector.loadProvider (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:98:9)
+    at Injector.lookupComponentInImports (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:297:17)
+    at Injector.lookupComponentInParentModules (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:260:33)
+    at Injector.resolveComponentInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:215:33)
+[31m[Nest] 22304  - [39m2026/02/28 15:47:19 [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mthis.restoreIntegrationConfig is not a function[39m
+TypeError: this.restoreIntegrationConfig is not a function
+    at new MarketsService (D:\InfoTrader\weather_trader\apps\api\src\modules\markets\markets.service.ts:368:10)
+    at Injector.instantiateClass (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:373:19)
+    at callback (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:65:45)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at Injector.resolveConstructorParams (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:145:24)
+    at Injector.loadInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at Injector.loadProvider (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:98:9)
+    at Injector.lookupComponentInImports (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:297:17)
+    at Injector.lookupComponentInParentModules (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:260:33)
+    at Injector.resolveComponentInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:215:33)
+[31m[Nest] 23308  - [39m2026/02/28 15:47:36 [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mthis.restoreIntegrationConfig is not a function[39m
+TypeError: this.restoreIntegrationConfig is not a function
+    at new MarketsService (D:\InfoTrader\weather_trader\apps\api\src\modules\markets\markets.service.ts:368:10)
+    at Injector.instantiateClass (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:373:19)
+    at callback (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:65:45)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at Injector.resolveConstructorParams (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:145:24)
+    at Injector.loadInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at Injector.loadProvider (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:98:9)
+    at Injector.lookupComponentInImports (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:297:17)
+    at Injector.lookupComponentInParentModules (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:260:33)
+    at Injector.resolveComponentInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:215:33)
+[31m[Nest] 21836  - [39m2026/02/28 15:47:49 [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mthis.restoreIntegrationConfig is not a function[39m
+TypeError: this.restoreIntegrationConfig is not a function
+    at new MarketsService (D:\InfoTrader\weather_trader\apps\api\src\modules\markets\markets.service.ts:368:10)
+    at Injector.instantiateClass (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:373:19)
+    at callback (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:65:45)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at Injector.resolveConstructorParams (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:145:24)
+    at Injector.loadInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at Injector.loadProvider (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:98:9)
+    at Injector.lookupComponentInImports (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:297:17)
+    at Injector.lookupComponentInParentModules (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:260:33)
+    at Injector.resolveComponentInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:215:33)
+[31m[Nest] 30920  - [39m2026/02/28 15:48:02 [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mthis.restoreIntegrationConfig is not a function[39m
+TypeError: this.restoreIntegrationConfig is not a function
+    at new MarketsService (D:\InfoTrader\weather_trader\apps\api\src\modules\markets\markets.service.ts:368:10)
+    at Injector.instantiateClass (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:373:19)
+    at callback (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:65:45)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at Injector.resolveConstructorParams (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:145:24)
+    at Injector.loadInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at Injector.loadProvider (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:98:9)
+    at Injector.lookupComponentInImports (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:297:17)
+    at Injector.lookupComponentInParentModules (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:260:33)
+    at Injector.resolveComponentInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:215:33)
+[31m[Nest] 32328  - [39m2026/02/28 15:48:15 [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mthis.restoreIntegrationConfig is not a function[39m
+TypeError: this.restoreIntegrationConfig is not a function
+    at new MarketsService (D:\InfoTrader\weather_trader\apps\api\src\modules\markets\markets.service.ts:368:10)
+    at Injector.instantiateClass (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:373:19)
+    at callback (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:65:45)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at Injector.resolveConstructorParams (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:145:24)
+    at Injector.loadInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at Injector.loadProvider (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:98:9)
+    at Injector.lookupComponentInImports (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:297:17)
+    at Injector.lookupComponentInParentModules (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:260:33)
+    at Injector.resolveComponentInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:215:33)
+[31m[Nest] 832  - [39m2026/02/28 15:48:53 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 13916  - [39m2026/02/28 15:49:09 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +2ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 24260  - [39m2026/02/28 15:49:32 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+Error: Cannot find module './dto/start-strategy.dto'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\api\src\modules\strategy\strategy.controller.ts
+- D:\InfoTrader\weather_trader\apps\api\src\modules\strategy\strategy.module.ts
+- D:\InfoTrader\weather_trader\apps\api\src\app.module.ts
+- D:\InfoTrader\weather_trader\apps\api\src\main.ts
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1421:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.require (node:internal/modules/cjs/loader:1504:12)
+    at require (node:internal/modules/helpers:152:16)
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\api\src\modules\strategy\strategy.controller.ts:3:1)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1761:14)
+[31m[Nest] 24444  - [39m2026/02/28 18:19:17 [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mNest can't resolve dependencies of the OrdersService (EventsGateway, SystemService, ControlStoreService, ControlRiskService, ControlAllocatorService, ?). Please make sure that the argument MarketsService at index [5] is available in the OrdersModule context.
+
+Potential solutions:
+- Is OrdersModule a valid NestJS module?
+- If MarketsService is a provider, is it part of the current OrdersModule?
+- If MarketsService is exported from a separate @Module, is that module imported within OrdersModule?
+  @Module({
+    imports: [ /* the Module containing MarketsService */ ]
+  })
+[39m
+Error: Nest can't resolve dependencies of the OrdersService (EventsGateway, SystemService, ControlStoreService, ControlRiskService, ControlAllocatorService, ?). Please make sure that the argument MarketsService at index [5] is available in the OrdersModule context.
+
+Potential solutions:
+- Is OrdersModule a valid NestJS module?
+- If MarketsService is a provider, is it part of the current OrdersModule?
+- If MarketsService is exported from a separate @Module, is that module imported within OrdersModule?
+  @Module({
+    imports: [ /* the Module containing MarketsService */ ]
+  })
+
+    at Injector.lookupComponentInParentModules (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:262:19)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at Injector.resolveComponentInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:215:33)
+    at resolveParam (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:129:38)
+    at async Promise.all (index 5)
+    at Injector.resolveConstructorParams (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:144:27)
+    at Injector.loadInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at Injector.loadProvider (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:98:9)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\instance-loader.js:56:13
+    at async Promise.all (index 3)
+[31m[Nest] 23604  - [39m2026/02/28 18:20:52 [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mNest can't resolve dependencies of the OrdersService (EventsGateway, SystemService, ControlStoreService, ControlRiskService, ControlAllocatorService, ?). Please make sure that the argument MarketsService at index [5] is available in the OrdersModule context.
+
+Potential solutions:
+- Is OrdersModule a valid NestJS module?
+- If MarketsService is a provider, is it part of the current OrdersModule?
+- If MarketsService is exported from a separate @Module, is that module imported within OrdersModule?
+  @Module({
+    imports: [ /* the Module containing MarketsService */ ]
+  })
+[39m
+Error: Nest can't resolve dependencies of the OrdersService (EventsGateway, SystemService, ControlStoreService, ControlRiskService, ControlAllocatorService, ?). Please make sure that the argument MarketsService at index [5] is available in the OrdersModule context.
+
+Potential solutions:
+- Is OrdersModule a valid NestJS module?
+- If MarketsService is a provider, is it part of the current OrdersModule?
+- If MarketsService is exported from a separate @Module, is that module imported within OrdersModule?
+  @Module({
+    imports: [ /* the Module containing MarketsService */ ]
+  })
+
+    at Injector.lookupComponentInParentModules (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:262:19)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at Injector.resolveComponentInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:215:33)
+    at resolveParam (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:129:38)
+    at async Promise.all (index 5)
+    at Injector.resolveConstructorParams (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:144:27)
+    at Injector.loadInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at Injector.loadProvider (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:98:9)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\instance-loader.js:56:13
+    at async Promise.all (index 3)
+Compilation error in D:\InfoTrader\weather_trader\apps\api\src\modules\orders\orders.service.ts
+Compilation error in D:\InfoTrader\weather_trader\apps\api\src\modules\orders\orders.service.ts
+Compilation error in D:\InfoTrader\weather_trader\apps\api\src\modules\orders\orders.service.ts
+Compilation error in D:\InfoTrader\weather_trader\apps\api\src\modules\orders\orders.service.ts
+Compilation error in D:\InfoTrader\weather_trader\apps\api\src\modules\orders\orders.service.ts
+[31m[Nest] 1372  - [39m2026/02/28 18:55:22 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +2ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 26120  - [39m2026/02/28 22:15:46 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 31236  - [39m2026/02/28 22:53:55 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 33220  - [39m2026/02/28 22:54:34 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 33256  - [39m2026/02/28 22:54:56 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+Compilation error in D:\InfoTrader\weather_trader\apps\api\src\modules\orders\orders.service.ts
+Compilation error in D:\InfoTrader\weather_trader\apps\api\src\modules\orders\orders.service.ts
+Compilation error in D:\InfoTrader\weather_trader\apps\api\src\modules\orders\orders.service.ts
+[31m[Nest] 15716  - [39m2026/02/28 23:02:29 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 14000  - [39m2026/02/28 23:09:46 [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mUnifiedTradingEngine is not defined[39m
+ReferenceError: UnifiedTradingEngine is not defined
+    at new OrdersService (D:\InfoTrader\weather_trader\apps\api\src\modules\orders\orders.service.ts:176:23)
+    at Injector.instantiateClass (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:373:19)
+    at callback (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:65:45)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at Injector.resolveConstructorParams (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:145:24)
+    at Injector.loadInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at Injector.loadProvider (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:98:9)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\instance-loader.js:56:13
+    at async Promise.all (index 3)
+    at InstanceLoader.createInstancesOfProviders (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\instance-loader.js:55:9)
+[31m[Nest] 22952  - [39m2026/02/28 23:09:51 [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mUnifiedTradingEngine is not defined[39m
+ReferenceError: UnifiedTradingEngine is not defined
+    at new OrdersService (D:\InfoTrader\weather_trader\apps\api\src\modules\orders\orders.service.ts:177:23)
+    at Injector.instantiateClass (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:373:19)
+    at callback (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:65:45)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at Injector.resolveConstructorParams (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:145:24)
+    at Injector.loadInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at Injector.loadProvider (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:98:9)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\instance-loader.js:56:13
+    at async Promise.all (index 3)
+    at InstanceLoader.createInstancesOfProviders (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\instance-loader.js:55:9)
+[31m[Nest] 18924  - [39m2026/02/28 23:09:58 [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mUnifiedTradingEngine is not defined[39m
+ReferenceError: UnifiedTradingEngine is not defined
+    at new OrdersService (D:\InfoTrader\weather_trader\apps\api\src\modules\orders\orders.service.ts:178:23)
+    at Injector.instantiateClass (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:373:19)
+    at callback (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:65:45)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at Injector.resolveConstructorParams (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:145:24)
+    at Injector.loadInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at Injector.loadProvider (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:98:9)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\instance-loader.js:56:13
+    at async Promise.all (index 3)
+    at InstanceLoader.createInstancesOfProviders (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\instance-loader.js:55:9)
+[31m[Nest] 31424  - [39m2026/02/28 23:10:07 [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mUnifiedTradingEngine is not defined[39m
+ReferenceError: UnifiedTradingEngine is not defined
+    at new OrdersService (D:\InfoTrader\weather_trader\apps\api\src\modules\orders\orders.service.ts:200:23)
+    at Injector.instantiateClass (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:373:19)
+    at callback (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:65:45)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at Injector.resolveConstructorParams (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:145:24)
+    at Injector.loadInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at Injector.loadProvider (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:98:9)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\instance-loader.js:56:13
+    at async Promise.all (index 3)
+    at InstanceLoader.createInstancesOfProviders (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\instance-loader.js:55:9)
+[31m[Nest] 14092  - [39m2026/02/28 23:11:32 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 31992  - [39m2026/02/28 23:13:20 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 31660  - [39m2026/02/28 23:13:40 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 7392  - [39m2026/02/28 23:13:47 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 11280  - [39m2026/02/28 23:15:40 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +2ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 25308  - [39m2026/02/28 23:58:04 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 26932  - [39m2026/02/28 23:58:24 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 20476  - [39m2026/03/01 00:00:48 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 28976  - [39m2026/03/01 00:40:16 [31m  ERROR[39m [38;5;3m[ExceptionHandler] [39m[31mNest can't resolve dependencies of the OrdersService (?). Please make sure that the argument ExecutionApplicationService at index [0] is available in the OrdersModule context.
+
+Potential solutions:
+- Is OrdersModule a valid NestJS module?
+- If ExecutionApplicationService is a provider, is it part of the current OrdersModule?
+- If ExecutionApplicationService is exported from a separate @Module, is that module imported within OrdersModule?
+  @Module({
+    imports: [ /* the Module containing ExecutionApplicationService */ ]
+  })
+[39m
+Error: Nest can't resolve dependencies of the OrdersService (?). Please make sure that the argument ExecutionApplicationService at index [0] is available in the OrdersModule context.
+
+Potential solutions:
+- Is OrdersModule a valid NestJS module?
+- If ExecutionApplicationService is a provider, is it part of the current OrdersModule?
+- If ExecutionApplicationService is exported from a separate @Module, is that module imported within OrdersModule?
+  @Module({
+    imports: [ /* the Module containing ExecutionApplicationService */ ]
+  })
+
+    at Injector.lookupComponentInParentModules (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:262:19)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at Injector.resolveComponentInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:215:33)
+    at resolveParam (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:129:38)
+    at async Promise.all (index 0)
+    at Injector.resolveConstructorParams (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:144:27)
+    at Injector.loadInstance (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:70:13)
+    at Injector.loadProvider (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\injector.js:98:9)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\injector\instance-loader.js:56:13
+    at async Promise.all (index 3)
+[31m[Nest] 20936  - [39m2026/03/01 00:40:22 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+Compilation error in D:\InfoTrader\weather_trader\apps\api\src\modules\strategy\strategy.service.ts
+[31m[Nest] 29780  - [39m2026/03/01 00:41:03 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 33116  - [39m2026/03/01 00:41:44 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 25192  - [39m2026/03/01 00:42:18 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 13912  - [39m2026/03/01 00:42:56 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 12980  - [39m2026/03/01 00:47:45 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 15768  - [39m2026/03/01 00:51:00 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 33116  - [39m2026/03/01 00:51:30 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 17576  - [39m2026/03/01 00:51:51 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 32664  - [39m2026/03/01 00:59:14 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+[31m[Nest] 5932  - [39m2026/03/01 01:07:39 [31m  ERROR[39m [38;5;3m[NestApplication] [39m[31mError: listen EADDRINUSE: address already in use :::3001[39m[38;5;3m +1ms[39m
+Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\platform-express\adapters\express-adapter.js:95:32)
+    at D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:183:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (D:\InfoTrader\weather_trader\node_modules\@nestjs\core\nest-application.js:173:16)
+    at processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at bootstrap (D:\InfoTrader\weather_trader\apps\api\src\main.ts:20:3)
+npm error Lifecycle script `dev` failed with error:
+npm error code 1
+npm error path D:\InfoTrader\weather_trader\apps\api
+npm error workspace @weather-trader/api@3.0.0
+npm error location D:\InfoTrader\weather_trader\apps\api
+npm error command failed
+npm error command C:\windows\system32\cmd.exe /d /s /c ts-node-dev --respawn --transpile-only src/main.ts

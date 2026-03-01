@@ -50,19 +50,19 @@
   --wt-shadow-xl: 0 16px 28px rgb(0 0 0 / 0.45);
   --wt-shadow-neon: 0 0 10px rgb(19 236 91 / 0.2);
 
-  /* spacing 8px system (HTML: p-1/p-1.5/p-2/p-3/p-4/p-5/p-6 etc) */
+  /* spacing aligned to Tailwind scale to keep component geometry stable */
   --wt-space-0: 0px;
-  --wt-space-0-5: 4px;
-  --wt-space-1: 8px;
-  --wt-space-1-5: 12px;
-  --wt-space-2: 16px;
-  --wt-space-2-5: 20px;
-  --wt-space-3: 24px;
-  --wt-space-4: 32px;
-  --wt-space-5: 40px;
-  --wt-space-6: 48px;
-  --wt-space-7: 56px;
-  --wt-space-8: 64px;
+  --wt-space-0-5: 2px;
+  --wt-space-1: 4px;
+  --wt-space-1-5: 6px;
+  --wt-space-2: 8px;
+  --wt-space-2-5: 10px;
+  --wt-space-3: 12px;
+  --wt-space-4: 16px;
+  --wt-space-5: 20px;
+  --wt-space-6: 24px;
+  --wt-space-7: 28px;
+  --wt-space-8: 32px;
 
   /* component dimensions from HTML / PNG alignment */
   --wt-topbar-h: 64px;

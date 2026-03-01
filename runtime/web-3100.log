@@ -1,0 +1,31 @@
+
+> @weather-trader/web@3.0.0 dev
+> next dev --port 3100
+
+  ▲ Next.js 14.2.21
+  - Local:        http://localhost:3100
+
+ ✓ Starting...
+ ✓ Ready in 1860ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /credentials in 6.4s (2539 modules)
+ GET /dashboard 200 in 5563ms
+ GET /credentials 200 in 5576ms
+ GET /settings 200 in 5589ms
+ GET /dashboard 200 in 6770ms
+ ○ Compiling /orders ...
+ ✓ Compiled /orders in 650ms (2538 modules)
+ ✓ Compiled /markets in 335ms (2554 modules)
+ ✓ Compiled /strategy in 316ms (2572 modules)
+ ✓ Compiled /wallet in 442ms (2574 modules)
+ ○ Compiling /credentials ...
+ ✓ Compiled /credentials in 708ms (1304 modules)
+ GET /dashboard 200 in 324ms
+ ✓ Compiled / in 471ms (2564 modules)
+ GET / 307 in 626ms
+ GET /dashboard 200 in 218ms
+ ○ Compiling /settings ...
+ ✓ Compiled /settings in 688ms (1302 modules)
+ GET /markets 200 in 160ms
+ GET /dashboard 200 in 267ms
+[?25h

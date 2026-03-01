@@ -1,167 +1,252 @@
-# API Contract
+﻿# API Contract (Backend Truth Source)
 
 Base URL: `http://localhost:3001`
 
-## REST
+## Shared Enums
 
-### GET /markets
+- Environment: `PAPER | REAL`
+- Order status (API view): `open | filled | cancelled`
+- Side: `buy | sell`
+
+## Orders
+
+### GET `/orders`
+
+Query:
+
+- `environment?: PAPER|REAL`
+- `status?: open|filled|cancelled`
+- `page?: number` (default `1`)
+- `limit?: number` (default `200`)
 
 Response `200`:
 
 ```json
 [
   {
-    "id": "NYC_GT_85",
-    "title": "NYC > 85°F",
-    "location": "New York",
-    "odds": 0.65,
-    "change24h": 12.5,
-    "oi": 452190,
-    "live": true
+    "id": "ODM6FC1GX009",
+    "strategyId": "strategy-default-001",
+    "walletId": "paper://wallet/sim-934487",
+    "contractName": "圣保罗2月28日最高气温会低于或等于19°C吗？",
+    "marketId": "0x...",
+    "side": "sell",
+    "quantity": 26949.12,
+    "price": 0.12,
+    "amount": 3233.89,
+    "fee": 3.23,
+    "pnl": 0,
+    "environment": "PAPER",
+    "status": "filled",
+    "createdAt": "2026-03-01T00:32:11.000Z"
   }
 ]
 ```
 
-### POST /orders
+### GET `/orders/open`
+
+Query:
+
+- `environment?: PAPER|REAL`
+- `limit?: number` (1..2000, default 200)
+
+Response `200`: `OrderView[]`
+
+### GET `/orders/:orderId/events`
+
+Query:
+
+- `limit?: number` (1..1000, default 100)
+
+Response `200`: `OrderLifecycleEventDto[]`
+
+### POST `/orders`
 
 Request:
 
 ```json
 {
-  "marketId": "NYC_GT_85",
+  "marketId": "0x...",
   "side": "buy",
-  "quantity": 500,
-  "price": 0.64,
-  "environment": "REAL"
+  "quantity": 1200,
+  "price": 0.13,
+  "orderType": "limit",
+  "slippageBps": 50,
+  "strategyId": "edge-baseline-main",
+  "runId": "run_xxx",
+  "walletId": "paper://wallet/sim-934487"
 }
 ```
 
-Response `201`:
+Response `201`: `OrderView`
 
-```json
-{
-  "id": "#8830",
-  "marketId": "NYC_GT_85",
-  "side": "buy",
-  "quantity": 500,
-  "price": 0.64,
-  "amount": 320,
-  "fee": 0.32,
-  "pnl": 0,
-  "environment": "REAL",
-  "status": "filled",
-  "createdAt": "2026-02-27T00:00:00.000Z"
-}
-```
-
-### GET /orders
-
-Response `200`: `Order[]`
-
-### GET /strategy
-
-Response `200`:
-
-```json
-{
-  "model": "mean_reversion",
-  "autoTradeEnabled": false,
-  "triggerThreshold": 0.65,
-  "updateFrequencySec": 5,
-  "maxDailyLoss": 1000,
-  "maxPositionSize": 5000,
-  "maxOpenPositions": 3,
-  "slippageBps": 50
-}
-```
-
-### PUT /strategy
-
-Request body与 `GET /strategy` 同结构。
-
-Response `200`: 更新后的策略配置。
-
-### POST /backtest
+### POST `/orders/:orderId/cancel`
 
 Request:
 
 ```json
 {
-  "initialCash": 10000,
-  "feeRate": 0.001,
-  "slippageBps": 10,
-  "risk": {
-    "maxDrawdownPct": 20,
-    "maxPositionPerSymbol": 10000,
-    "maxNotionalPerTrade": 100000
-  },
-  "strategy": {
-    "type": "threshold",
-    "buyBelow": 0.45,
-    "sellAbove": 0.75,
-    "quantity": 100
-  },
-  "candles": [
-    {
-      "ts": 1,
-      "symbol": "NYC_GT_85",
-      "open": 0.62,
-      "high": 0.66,
-      "low": 0.61,
-      "close": 0.65
-    }
-  ]
+  "reason": "manual_cancel"
 }
 ```
+
+Response `201`: canceled `OrderView`
+
+### GET `/orders/execution-health`
 
 Response `200`:
 
 ```json
 {
-  "trades": [],
-  "rejectedSignals": [],
-  "equityCurve": [
-    { "ts": 0, "equity": 10000 },
-    { "ts": 1, "equity": 10000 }
-  ],
-  "metrics": {
-    "initialEquity": 10000,
-    "finalEquity": 10000,
-    "totalReturnPct": 0,
-    "maxDrawdownPct": 0,
-    "tradeCount": 0,
-    "turnover": 0,
-    "totalFees": 0,
-    "sharpeLike": 0
+  "route": {
+    "configured": "gateway",
+    "resolved": "stub",
+    "ready": false
   },
-  "finalCash": 10000,
-  "finalPositions": {}
+  "persistence": {
+    "enabled": true,
+    "backend": "postgres",
+    "postgresPrimary": true,
+    "mirrorJson": false
+  }
 }
 ```
 
-## WebSocket Events
+## Strategy
 
-Gateway: `ws://localhost:3001`
+### GET `/strategy`
 
-- `price_update`: 实时行情更新
-- `order_update`: 订单状态更新
-- `risk_alert`: 风控告警
-- `system_log`: 系统日志消息
+Response `200`: strategy config.
 
-Server emit examples:
+### GET `/strategy/runtime`
 
-```json
-{ "event": "price_update", "payload": { "symbol": "NYC_GT_85", "odds": 0.66 } }
-```
+Response `200`: runtime status (`running/ticks/signals/executedOrders/rejectedOrders/sessionPnl/...`).
 
-```json
-{ "event": "order_update", "payload": { "id": "#8830", "status": "filled" } }
-```
+### PUT `/strategy`
 
-```json
-{ "event": "risk_alert", "payload": { "type": "max_drawdown", "value": 22.1 } }
-```
+Update strategy config.
 
-```json
-{ "event": "system_log", "payload": { "level": "info", "message": "Backtest completed" } }
-```
+### POST `/strategy/start`
+
+Start auto-trading session.
+
+### POST `/strategy/stop`
+
+Stop auto-trading session.
+
+## Markets
+
+### GET `/markets`
+
+Return current market list (Polymarket weather oriented).
+
+### GET `/markets/integration`
+
+Return market source integration config.
+
+### PUT `/markets/integration`
+
+Update market source integration config.
+
+## Backtest / Paper Research
+
+### POST `/backtest`
+
+Generic candle backtest endpoint.
+
+### POST `/backtest/weather-paper`
+
+Official weather paper research endpoint.
+
+Request fields (all optional with defaults):
+
+- `initialCash`
+- `feeRate`
+- `slippageBps`
+- `matchingModel`: `mid | depth`
+- `paperModel`: `deterministic_l2 | stochastic_impact | both`
+- `seed`
+- `edgeThreshold`
+- `minConfidence`
+- `orderNotional`
+- `marketLimit`
+- `fidelitySec`
+- `syntheticSpread`
+- `syntheticDepth`
+
+Response `200` includes:
+
+- primary result: `report`, `snapshot`, `forecastEval`, `auditJsonl`
+- `modelVariant`
+- `variants` (when `paperModel=both`, includes both deterministic and stochastic result blocks)
+- `sensitivityDelta` (`totalReturnDelta`, `brierDelta`)
+- `realEligibility`
+- `sourceMeta`
+- `executionConfig`
+
+## System
+
+### GET `/system/state`
+
+Return global runtime state (`environment`, `profiles`, `runtime`, `security`).
+
+### POST `/system/environment/switch`
+
+Switch global mode.
+
+### PUT `/system/profiles/:environment/wallet`
+
+Update wallet profile.
+
+### POST `/system/wallet/real/plugin/challenge`
+
+Request plugin wallet challenge.
+
+### POST `/system/wallet/real/plugin/confirm`
+
+Confirm plugin wallet binding.
+
+### POST `/system/wallet/real/private-key/bind`
+
+Bind real wallet from private key.
+
+### PUT `/system/credential`
+
+Update credential profile.
+
+### POST `/system/credential/polymarket/create-or-derive`
+
+Create/derive Polymarket API credential.
+
+### POST `/system/credential/polymarket/import`
+
+Import existing Polymarket API credential.
+
+### GET `/system/security`
+
+Return security settings.
+
+### POST `/system/security/trade-pin/code`
+
+Request trade pin reset code.
+
+### PUT `/system/security`
+
+Update security settings.
+
+### GET `/system/audit`
+
+Query audit logs.
+
+## Common Errors
+
+- `environment_mismatch_with_global_mode`
+- `wallet_not_connected`
+- `credential_unhealthy`
+- `invalid_order_params`
+- `final_order_size_zero`
+- `insufficient_balance`
+- `order_not_found`
+- `order_not_cancelable`
+- `cancel_failed`
+- `real_gateway_not_configured`
+- `external_gateway_unavailable`

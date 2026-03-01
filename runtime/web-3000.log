@@ -1,0 +1,2037 @@
+
+> @weather-trader/web@3.0.0 dev
+> next dev --port 3000
+
+  ▲ Next.js 14.2.21
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 1880ms
+ ○ Compiling /orders ...
+ ✓ Compiled /orders in 4.5s (1350 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /orders 200 in 4620ms
+ GET /_next/static/webpack/9df0e81b0a0876b8.webpack.hot-update.json 404 in 4657ms
+ GET /orders 200 in 59ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 2.7s (2526 modules)
+ GET /dashboard 200 in 3022ms
+ GET /dashboard 200 in 71ms
+ ✓ Compiled /markets in 295ms (2527 modules)
+ GET /markets 200 in 362ms
+ GET /orders 200 in 53ms
+ ✓ Compiled /strategy in 278ms (2547 modules)
+ GET /strategy 200 in 337ms
+ ✓ Compiled /settings in 279ms (2565 modules)
+ GET /settings 200 in 354ms
+ ✓ Compiled /wallet in 257ms (2572 modules)
+ GET /wallet 200 in 314ms
+ ✓ Compiled /credentials in 254ms (2579 modules)
+ GET /credentials 200 in 302ms
+ GET /dashboard 200 in 171ms
+ ✓ Compiled in 1831ms (2555 modules)
+ ✓ Compiled in 342ms (2540 modules)
+ GET /wallet 200 in 110ms
+ GET /wallet 200 in 68ms
+ ✓ Compiled in 1300ms (2555 modules)
+ ✓ Compiled /settings in 276ms (1277 modules)
+ ✓ Compiled /strategy in 166ms (1287 modules)
+ ⨯ ./src/lib/api.ts
+Error: 
+  [31mx[0m Unexpected token ```. Expected identifier or string
+   ,-[[36;1;4mD:\InfoTrader\weather_trader\apps\web\src\lib\api.ts[0m:1:1]
+ [2m1[0m | import type {
+ [2m2[0m |   AuditLogDto,`r`n  BindPrivateKeyWalletDto,`r`n  ConfirmPluginWalletBindingDto,`r`n  CredentialProfileDto,
+   : [31;1m              ^[0m
+ [2m3[0m |   Environment,
+ [2m4[0m |   EnvironmentSwitchRequestDto,
+ [2m5[0m |   MarketDto,
+   `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/lib/api.ts
+./src/components/modal/EnvironmentSwitchConfirmModal.tsx
+ ✓ Compiled in 674ms (2576 modules)
+ ✓ Compiled in 1232ms (2566 modules)
+ ✓ Compiled /markets in 426ms (1287 modules)
+ ✓ Compiled /strategy in 292ms (1297 modules)
+ GET /wallet 200 in 109ms
+ GET /wallet 200 in 57ms
+ GET /wallet 200 in 72ms
+ ○ Compiling /credentials ...
+ ✓ Compiled /credentials in 581ms (1295 modules)
+ ✓ Compiled in 970ms (1996 modules)
+ ✓ Compiled in 487ms (1996 modules)
+ ✓ Compiled in 397ms (1996 modules)
+ ✓ Compiled /orders in 136ms (714 modules)
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 511ms (1302 modules)
+ ✓ Compiled in 894ms (2591 modules)
+ ✓ Compiled in 420ms (2579 modules)
+ ✓ Compiled /wallet in 167ms (1295 modules)
+ ✓ Compiled /orders in 208ms (1302 modules)
+ GET /orders 200 in 386ms
+ ✓ Compiled in 824ms (2579 modules)
+ ✓ Compiled /orders in 173ms (1297 modules)
+ ✓ Compiled in 915ms (2586 modules)
+ ✓ Compiled in 655ms (2586 modules)
+ ✓ Compiled in 654ms (2574 modules)
+ ✓ Compiled in 748ms (2574 modules)
+ ✓ Compiled /wallet in 390ms (1291 modules)
+ ✓ Compiled /settings in 177ms (1292 modules)
+ ✓ Compiled in 586ms (2571 modules)
+ GET /settings 200 in 138ms
+ GET /wallet 200 in 43ms
+ ✓ Compiled in 714ms (2571 modules)
+ GET /settings 200 in 101ms
+ ✓ Compiled /strategy in 394ms (1292 modules)
+ ○ Compiling /markets ...
+ ✓ Compiled /markets in 1095ms (1302 modules)
+ ⨯ ./src/lib/market-catalog.ts
+Error: Failed to read source code from D:\InfoTrader\weather_trader\apps\web\src\lib\market-catalog.ts
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Import trace for requested module:
+./src/lib/market-catalog.ts
+./src/components/dashboard/ContractTable.tsx
+ ✓ Compiled in 414ms (2580 modules)
+ ✓ Compiled in 591ms (2580 modules)
+ ✓ Compiled in 322ms (2580 modules)
+ ✓ Compiled in 730ms (2580 modules)
+ GET /markets 200 in 131ms
+ ✓ Compiled /strategy in 472ms (1299 modules)
+ ✓ Compiled /credentials in 386ms (716 modules)
+ ✓ Compiled in 675ms (2007 modules)
+ ✓ Compiled in 654ms (2000 modules)
+ ✓ Compiled in 767ms (2000 modules)
+ ⨯ ./src/components/strategy/SessionStats.tsx
+Error: Failed to read source code from D:\InfoTrader\weather_trader\apps\web\src\components\strategy\SessionStats.tsx
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Import trace for requested module:
+./src/components/strategy/SessionStats.tsx
+./src/app/strategy/page.tsx
+ ⨯ ./src/components/strategy/SessionStats.tsx
+Error: Failed to read source code from D:\InfoTrader\weather_trader\apps\web\src\components\strategy\SessionStats.tsx
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Import trace for requested module:
+./src/components/strategy/SessionStats.tsx
+./src/app/strategy/page.tsx
+ ✓ Compiled in 693ms (2000 modules)
+ ✓ Compiled in 267ms (2000 modules)
+ GET /credentials 200 in 116ms
+ ✓ Compiled in 762ms (2000 modules)
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 615ms (1297 modules)
+ ✓ Compiled in 665ms (2583 modules)
+ ⨯ ./src/components/strategy/SessionStats.tsx
+Error: 
+  [31mx[0m Expected ',', got '杩愯'
+    ,-[[36;1;4mD:\InfoTrader\weather_trader\apps\web\src\components\strategy\SessionStats.tsx[0m:29:1]
+ [2m29[0m |   isLoading?: boolean;
+ [2m30[0m | }) {
+ [2m31[0m |   const stats = [
+ [2m32[0m |     ["杩愯鐘舵€?, runtime?.running ? "杩愯涓? : "宸插仠姝?, runtime?.running ? "text-primary" : "text-text-main"],
+    : [31;1m                                               ^^^^^^[0m
+ [2m33[0m |     ["瑙﹀彂淇″彿鏁?, String(runtime?.signals ?? 0), "text-white"],
+ [2m34[0m |     ["鑷姩浜ゆ槗绱 PnL", `${(runtime?.sessionPnl ?? 0) >= 0 ? "+" : ""}${(runtime?.sessionPnl ?? 0).toFixed(2)}`, (runtime?.sessionPnl ?? 0) >= 0 ? "text-primary" : "text-accent-error"],
+ [2m35[0m |     ["杩愯鏃堕暱", formatDuration(runtime?.startedAt ?? null, Boolean(runtime?.running), runtime?.stoppedAt ?? null), "text-white"],
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/strategy/SessionStats.tsx
+./src/app/strategy/page.tsx
+ ⨯ ./src/components/strategy/SessionStats.tsx
+Error: Failed to read source code from D:\InfoTrader\weather_trader\apps\web\src\components\strategy\SessionStats.tsx
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Import trace for requested module:
+./src/components/strategy/SessionStats.tsx
+./src/app/strategy/page.tsx
+ ⨯ ./src/components/strategy/SessionStats.tsx
+Error: Failed to read source code from D:\InfoTrader\weather_trader\apps\web\src\components\strategy\SessionStats.tsx
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Import trace for requested module:
+./src/components/strategy/SessionStats.tsx
+./src/app/strategy/page.tsx
+ ✓ Compiled in 815ms (2583 modules)
+ GET /strategy 200 in 115ms
+ ✓ Compiled in 683ms (2583 modules)
+ ⨯ ./src/components/settings/AuditTable.tsx
+Error: Failed to read source code from D:\InfoTrader\weather_trader\apps\web\src\components\settings\AuditTable.tsx
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Import trace for requested module:
+./src/components/settings/AuditTable.tsx
+ ⨯ ./src/components/settings/AuditTable.tsx
+Error: Failed to read source code from D:\InfoTrader\weather_trader\apps\web\src\components\settings\AuditTable.tsx
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Import trace for requested module:
+./src/components/settings/AuditTable.tsx
+./src/app/settings/page.tsx
+ ○ Compiling /_error ...
+ ⨯ ./src/components/settings/AuditTable.tsx
+Error: Failed to read source code from D:\InfoTrader\weather_trader\apps\web\src\components\settings\AuditTable.tsx
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Import trace for requested module:
+./src/components/settings/AuditTable.tsx
+./src/app/settings/page.tsx
+ GET /strategy 500 in 20ms
+ ✓ Compiled /_not-found in 1050ms (2812 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /strategy 200 in 256ms
+ ✓ Compiled (2797 modules)
+ ✓ Compiled in 357ms (2812 modules)
+ ✓ Compiled in 492ms (1476 modules)
+ ✓ Compiled in 207ms (1476 modules)
+ ✓ Compiled in 1125ms (2809 modules)
+ ✓ Compiled /wallet in 286ms (1338 modules)
+ ✓ Compiled in 807ms (2814 modules)
+ ⨯ ./src/components/settings/AuditTable.tsx
+Error: Failed to read source code from D:\InfoTrader\weather_trader\apps\web\src\components\settings\AuditTable.tsx
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Import trace for requested module:
+./src/components/settings/AuditTable.tsx
+ ⨯ ./src/components/settings/AuditTable.tsx
+Error: Failed to read source code from D:\InfoTrader\weather_trader\apps\web\src\components\settings\AuditTable.tsx
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Import trace for requested module:
+./src/components/settings/AuditTable.tsx
+ ✓ Compiled in 328ms (1476 modules)
+ ✓ Compiled in 173ms (1476 modules)
+ ✓ Compiled /settings in 272ms (1338 modules)
+ ✓ Compiled in 722ms (2804 modules)
+ ✓ Compiled /markets in 233ms (1338 modules)
+ ✓ Compiled /orders in 274ms (1345 modules)
+ ⨯ ./src/components/settings/AuditTable.tsx
+Error: Failed to read source code from D:\InfoTrader\weather_trader\apps\web\src\components\settings\AuditTable.tsx
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Import trace for requested module:
+./src/components/settings/AuditTable.tsx
+ ⨯ ./src/components/settings/AuditTable.tsx
+Error: Failed to read source code from D:\InfoTrader\weather_trader\apps\web\src\components\settings\AuditTable.tsx
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Import trace for requested module:
+./src/components/settings/AuditTable.tsx
+./src/app/settings/page.tsx
+ GET /credentials 500 in 8ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 559ms (2806 modules)
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET /credentials 200 in 226ms
+ ✓ Compiled (2791 modules)
+ GET /settings 200 in 43ms
+ ✓ Compiled in 636ms (2803 modules)
+ ✓ Compiled /strategy in 174ms (1338 modules)
+ ✓ Compiled in 617ms (2809 modules)
+ ✓ Compiled in 619ms (2809 modules)
+ ✓ Compiled in 227ms (1476 modules)
+ ✓ Compiled /credentials in 131ms (1338 modules)
+ ✓ Compiled in 222ms (1476 modules)
+ ○ Compiling /orders ...
+ ✓ Compiled /orders in 1138ms (2218 modules)
+ ✓ Compiled /dashboard in 132ms (1336 modules)
+ ✓ Compiled in 193ms (1470 modules)
+ ✓ Compiled in 400ms (2791 modules)
+ ○ Compiling /strategy ...
+ ✓ Compiled /strategy in 1145ms (2804 modules)
+ ⨯ ./src/components/strategy/RiskForm.tsx
+Error: Failed to read source code from D:\InfoTrader\weather_trader\apps\web\src\components\strategy\RiskForm.tsx
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Import trace for requested module:
+./src/components/strategy/RiskForm.tsx
+./src/app/strategy/page.tsx
+ ⨯ ./src/components/strategy/RiskForm.tsx
+Error: Failed to read source code from D:\InfoTrader\weather_trader\apps\web\src\components\strategy\RiskForm.tsx
+
+Caused by:
+    系统找不到指定的文件。 (os error 2)
+
+Import trace for requested module:
+./src/components/strategy/RiskForm.tsx
+./src/app/strategy/page.tsx
+ GET /dashboard 500 in 12ms
+ ✓ Compiled /_not-found in 720ms (2792 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /dashboard 200 in 109ms
+ GET /_next/static/webpack/9df0e81b0a0876b8.webpack.hot-update.json 404 in 624ms
+ GET /dashboard 200 in 46ms
+ ✓ Compiled in 735ms (2804 modules)
+ ✓ Compiled in 278ms (2804 modules)
+ ○ Compiling /settings ...
+ ✓ Compiled /settings in 684ms (1340 modules)
+ ✓ Compiled in 651ms (2806 modules)
+ ✓ Compiled /markets in 304ms (1340 modules)
+ ✓ Compiled in 670ms (2811 modules)
+ ✓ Compiled in 259ms (2811 modules)
+ ○ Compiling /wallet ...
+ ✓ Compiled /wallet in 572ms (1340 modules)
+ ⨯ TypeError: __webpack_modules__[moduleId] is not a function
+    at Object.__webpack_require__ [as require] (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:33:42)
+    at JSON.parse (<anonymous>)
+digest: "2666279683"
+TypeError: __webpack_modules__[moduleId] is not a function
+    at Object.__webpack_require__ [as require] (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:33:42)
+    at require (D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:39:19927)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:108280
+    at eo (D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:108465)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:110694
+    at Object._fromJSON (D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:111250)
+    at JSON.parse (<anonymous>)
+    at eu (D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:108959)
+    at en (D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:108027)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:115169
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:115186
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:115219
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:115236
+    at t (D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:115459)
+ ⨯ TypeError: __webpack_modules__[moduleId] is not a function
+    at Object.__webpack_require__ [as require] (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:33:42)
+    at require (D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:39:19927)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:108280
+    at eo (D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:108465)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:110694
+    at Object._fromJSON (D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:111250)
+    at JSON.parse (<anonymous>)
+    at eu (D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:108959)
+    at en (D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:108027)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:115169
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:115186
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:115219
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:115236
+    at t (D:\InfoTrader\weather_trader\node_modules\next\dist\compiled\next-server\app-page.runtime.dev.js:35:115459) {
+  page: '/wallet'
+}
+ ⨯ Error: Cannot find module './135.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\wallet\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\wallet\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /wallet 500 in 53ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 670ms (2812 modules)
+ GET /_next/static/chunks/fallback/webpack.js 404 in 823ms
+ GET /_next/static/chunks/fallback/main.js 404 in 812ms
+ GET /_next/static/chunks/fallback/react-refresh.js 404 in 812ms
+ GET /_next/static/chunks/fallback/pages/_error.js 404 in 314ms
+ GET /_next/static/chunks/fallback/pages/_app.js 404 in 315ms
+ ✓ Compiled / in 278ms (2806 modules)
+ GET / 307 in 420ms
+ ⨯ Error: Cannot find module './722.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\app\dashboard\page.js:1:1057788
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\app\dashboard\page.js:1:1057841)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36)
+    at async DevServer.findPageComponents (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1897:24)
+    at async DevServer.renderToResponseImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:817:17)
+    at async D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\InfoTrader\weather_trader\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/dashboard'
+}
+ ⨯ Error: Cannot find module './135.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /dashboard 500 in 37ms
+ GET / 307 in 68ms
+ ⨯ Error: Cannot find module './722.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\app\dashboard\page.js:1:1057788
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\app\dashboard\page.js:1:1057841)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36)
+    at async DevServer.findPageComponents (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1897:24)
+    at async DevServer.renderToResponseImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:817:17)
+    at async D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\InfoTrader\weather_trader\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/dashboard'
+}
+ ⨯ Error: Cannot find module './135.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /dashboard 500 in 12ms
+ GET /_next/static/chunks/fallback/webpack.js 404 in 52ms
+ GET /_next/static/chunks/fallback/main.js 404 in 46ms
+ GET /_next/static/chunks/fallback/react-refresh.js 404 in 44ms
+ GET /_next/static/chunks/fallback/pages/_app.js 404 in 26ms
+ GET /_next/static/chunks/fallback/pages/_error.js 404 in 26ms
+ ⨯ Error: Cannot find module './722.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\app\settings\page.js:1:16769
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\app\settings\page.js:1:16822)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36)
+    at async DevServer.findPageComponents (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1897:24)
+    at async DevServer.renderToResponseImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:817:17)
+    at async D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\InfoTrader\weather_trader\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/settings'
+}
+ ⨯ Error: Cannot find module './135.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /settings 500 in 35ms
+ ⨯ Error: Cannot find module './722.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\app\strategy\page.js:1:20537
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\app\strategy\page.js:1:20590)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36)
+    at async DevServer.findPageComponents (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1897:24)
+    at async DevServer.renderToResponseImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:817:17)
+    at async D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\InfoTrader\weather_trader\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/strategy'
+}
+ ⨯ Error: Cannot find module './722.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\app\dashboard\page.js:1:1057788
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\app\dashboard\page.js:1:1057841)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36)
+    at async DevServer.findPageComponents (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1897:24)
+    at async DevServer.renderToResponseImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:817:17)
+    at async D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\InfoTrader\weather_trader\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/dashboard'
+}
+ ⨯ Error: Cannot find module './135.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './135.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /strategy 500 in 57ms
+ GET /dashboard 500 in 56ms
+ GET /_next/static/chunks/fallback/main.js 404 in 80ms
+ GET /_next/static/chunks/fallback/react-refresh.js 404 in 82ms
+ GET /_next/static/chunks/fallback/pages/_app.js 404 in 78ms
+ GET /_next/static/chunks/fallback/webpack.js 404 in 91ms
+ GET /_next/static/chunks/fallback/pages/_error.js 404 in 88ms
+ ○ Compiling /orders ...
+ ✓ Compiled /orders in 797ms (2820 modules)
+ ⨯ Error: Cannot find module './722.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\markets\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\app\markets\page.js:1:19152
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\app\markets\page.js:1:19205)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36)
+    at async DevServer.findPageComponents (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1897:24)
+    at async DevServer.renderToResponseImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:817:17)
+    at async D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\InfoTrader\weather_trader\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\markets\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/markets'
+}
+ ⨯ Error: Cannot find module './135.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\markets\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\markets\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ ⨯ Error: Cannot find module './722.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\markets\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\app\orders\page.js:1:10085
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\app\orders\page.js:1:10138)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36)
+    at async DevServer.findPageComponents (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1897:24)
+    at async DevServer.renderToResponseImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:817:17)
+    at async D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\InfoTrader\weather_trader\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\markets\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/orders'
+}
+ GET /markets 500 in 947ms
+ ⨯ Error: Cannot find module './135.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\markets\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\markets\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /orders 500 in 966ms
+ GET /_next/static/chunks/fallback/main.js 404 in 892ms
+ GET /_next/static/chunks/fallback/webpack.js 404 in 895ms
+ GET /_next/static/chunks/fallback/react-refresh.js 404 in 892ms
+ GET /_next/static/chunks/fallback/webpack.js 404 in 895ms
+ GET /_next/static/chunks/fallback/main.js 404 in 892ms
+ GET /_next/static/chunks/fallback/react-refresh.js 404 in 892ms
+ GET /_next/static/chunks/fallback/pages/_app.js 404 in 891ms
+ GET /_next/static/chunks/fallback/pages/_error.js 404 in 890ms
+ GET /_next/static/chunks/fallback/pages/_app.js 404 in 892ms
+ GET /_next/static/chunks/fallback/pages/_error.js 404 in 891ms
+ GET /_next/static/chunks/fallback/webpack.js 404 in 59ms
+ GET /_next/static/chunks/fallback/pages/_app.js 404 in 55ms
+ GET /_next/static/chunks/fallback/react-refresh.js 404 in 58ms
+ GET /_next/static/chunks/fallback/main.js 404 in 57ms
+ GET /_next/static/chunks/fallback/pages/_error.js 404 in 56ms
+ GET /_next/static/chunks/fallback/webpack.js 404 in 44ms
+ GET /_next/static/chunks/fallback/react-refresh.js 404 in 39ms
+ GET /_next/static/chunks/fallback/main.js 404 in 38ms
+ GET /_next/static/chunks/fallback/pages/_app.js 404 in 33ms
+ GET /_next/static/chunks/fallback/pages/_error.js 404 in 33ms
+ ⨯ Error: Cannot find module './722.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\markets\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\app\settings\page.js:1:16769
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\app\settings\page.js:1:16822)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36)
+    at async DevServer.findPageComponents (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1897:24)
+    at async DevServer.renderToResponseImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:817:17)
+    at async D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\InfoTrader\weather_trader\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\markets\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/settings'
+}
+ ⨯ Error: Cannot find module './135.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\markets\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\markets\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /settings 500 in 15ms
+ GET /_next/static/chunks/fallback/webpack.js 404 in 40ms
+ GET /_next/static/chunks/fallback/react-refresh.js 404 in 38ms
+ GET /_next/static/chunks/fallback/main.js 404 in 37ms
+ GET /_next/static/chunks/fallback/pages/_app.js 404 in 35ms
+ GET /_next/static/chunks/fallback/pages/_error.js 404 in 33ms
+ ⨯ Error: Cannot find module './722.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\markets\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\app\dashboard\page.js:1:1057788
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\app\dashboard\page.js:1:1057841)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36)
+    at async DevServer.findPageComponents (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1897:24)
+    at async DevServer.renderToResponseImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:817:17)
+    at async D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\InfoTrader\weather_trader\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\markets\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/dashboard'
+}
+ ⨯ Error: Cannot find module './135.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\markets\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\markets\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /dashboard 500 in 26ms
+ GET /_next/static/chunks/fallback/webpack.js 404 in 45ms
+ GET /_next/static/chunks/fallback/react-refresh.js 404 in 45ms
+ GET /_next/static/chunks/fallback/main.js 404 in 47ms
+ GET /_next/static/chunks/fallback/pages/_app.js 404 in 46ms
+ GET /_next/static/chunks/fallback/pages/_error.js 404 in 50ms
+ ⨯ Error: Cannot find module './722.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\markets\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\app\strategy\page.js:1:20537
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\app\strategy\page.js:1:20590)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36)
+    at async DevServer.findPageComponents (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1897:24)
+    at async DevServer.renderToResponseImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:817:17)
+    at async D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\InfoTrader\weather_trader\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\markets\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/strategy'
+}
+ ⨯ Error: Cannot find module './135.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\markets\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\markets\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /strategy 500 in 18ms
+ ⨯ Error: Cannot find module './722.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\markets\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\app\orders\page.js:1:10085
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\app\orders\page.js:1:10138)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36)
+    at async DevServer.findPageComponents (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1897:24)
+    at async DevServer.renderToResponseImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:817:17)
+    at async D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\InfoTrader\weather_trader\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\markets\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/orders'
+}
+ ⨯ Error: Cannot find module './135.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\markets\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\markets\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /orders 500 in 25ms
+ GET /_next/static/chunks/fallback/main.js 404 in 41ms
+ GET /_next/static/chunks/fallback/webpack.js 404 in 47ms
+ GET /_next/static/chunks/fallback/react-refresh.js 404 in 42ms
+ GET /_next/static/chunks/fallback/pages/_app.js 404 in 43ms
+ GET /_next/static/chunks/fallback/pages/_error.js 404 in 42ms
+ GET /_next/static/chunks/fallback/webpack.js 404 in 36ms
+ GET /_next/static/chunks/fallback/react-refresh.js 404 in 36ms
+ GET /_next/static/chunks/fallback/main.js 404 in 36ms
+ GET /_next/static/chunks/fallback/pages/_error.js 404 in 34ms
+ GET /_next/static/chunks/fallback/pages/_app.js 404 in 35ms
+ ⨯ Error: Cannot find module './722.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\markets\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\app\markets\page.js:1:19152
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\app\markets\page.js:1:19205)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:84
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:98:26)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36)
+    at async DevServer.findPageComponents (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1897:24)
+    at async DevServer.renderToResponseImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:1949:32)
+    at async DevServer.pipeImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\base-server.js:817:17)
+    at async D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\InfoTrader\weather_trader\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\markets\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/markets'
+}
+ ⨯ Error: Cannot find module './135.js'
+Require stack:
+- D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js
+- D:\InfoTrader\weather_trader\apps\web\.next\server\app\markets\page.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\build\utils.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\router-server.js
+- D:\InfoTrader\weather_trader\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1421:15)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1059:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1064:22)
+    at Module._load (node:internal/modules/cjs/loader:1227:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at __webpack_require__.f.require (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:198:28)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (D:\InfoTrader\weather_trader\apps\web\.next\server\webpack-runtime.js:162:22)
+    at D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:335
+    at Object.<anonymous> (D:\InfoTrader\weather_trader\apps\web\.next\server\pages\_document.js:1:376)
+    at Module._compile (node:internal/modules/cjs/loader:1761:14)
+    at Object..js (node:internal/modules/cjs/loader:1893:10)
+    at Module.load (node:internal/modules/cjs/loader:1481:32)
+    at Module._load (node:internal/modules/cjs/loader:1300:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:245:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1504:12)
+    at mod.require (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\InfoTrader\weather_trader\node_modules\next\dist\server\require.js:109:84)
+    at D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:72:65
+    at async Promise.all (index 0)
+    at async loadComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\load-components.js:71:33)
+    at async DevServer.findPageComponentsImpl (D:\InfoTrader\weather_trader\node_modules\next\dist\server\next-server.js:709:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\webpack-runtime.js',
+    'D:\\InfoTrader\\weather_trader\\apps\\web\\.next\\server\\app\\markets\\page.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\InfoTrader\\weather_trader\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ]
+}
+ GET /markets 500 in 23ms
+ GET /_next/static/chunks/fallback/webpack.js 404 in 21ms
+ GET /_next/static/chunks/fallback/react-refresh.js 404 in 19ms
+ GET /_next/static/chunks/fallback/main.js 404 in 20ms
+ GET /_next/static/chunks/fallback/pages/_app.js 404 in 25ms
+ GET /_next/static/chunks/fallback/pages/_error.js 404 in 23ms
+ ✓ Compiled / in 257ms (1341 modules)
+ ✓ Compiled /_not-found in 421ms (2806 modules)
+ GET / 307 in 710ms
+ GET /dashboard 404 in 491ms
+ GET /dashboard 404 in 75ms
+[?25h

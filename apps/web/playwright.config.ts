@@ -4,7 +4,7 @@ export default defineConfig({
   testDir: "./tests",
   timeout: 30_000,
   use: {
-    baseURL: process.env.PLAYWRIGHT_BASE_URL ?? "http://localhost:3000",
+    baseURL: process.env.PLAYWRIGHT_BASE_URL ?? "http://localhost:3100",
     trace: "on-first-retry",
   },
   projects: [
@@ -14,10 +14,10 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: "npm run dev",
+    command: "npm run dev -- --port 3100",
     cwd: __dirname,
-    port: 3000,
-    reuseExistingServer: true,
+    port: 3100,
+    reuseExistingServer: false,
     timeout: 120_000,
   },
 });

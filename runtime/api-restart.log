@@ -1,0 +1,116 @@
+
+> weather-trader-pro-v3@3.0.0 dev:api
+> npm run dev -w @weather-trader/api
+
+
+> @weather-trader/api@3.0.0 predev
+> npm run prisma:generate || echo prisma_generate_skipped
+
+
+> @weather-trader/api@3.0.0 prisma:generate
+> prisma generate --schema prisma/schema.prisma
+
+Prisma schema loaded from prisma\schema.prisma
+
+✔ Generated Prisma Client (v6.19.2) to .\..\..\node_modules\@prisma\client in 95ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Interested in query caching in just a few lines of code? Try Accelerate today! https://pris.ly/tip-3-accelerate
+
+
+> @weather-trader/api@3.0.0 dev
+> ts-node-dev --respawn --transpile-only src/main.ts
+
+[INFO] 01:51:49 ts-node-dev ver. 2.0.0 (using ts-node ver. 10.9.2, typescript ver. 5.9.3)
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[ControlStoreService] [39m[32mControl store restored: strategies=1, orders=107[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCoreModule dependencies initialized[39m[38;5;3m +14ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[SystemService] [39m[32mSystem store restored: env=REAL, audits=77[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mMarketsModule dependencies initialized[39m[38;5;3m +31ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mBacktestModule dependencies initialized[39m[38;5;3m +0ms[39m
+[33m[Nest] 12296  - [39m2026/03/01 01:51:51 [33m   WARN[39m [38;5;3m[ExecutionApplicationService] [39m[33mREAL execution gateway endpoint not set, fallback to stub gateway[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mControlModule dependencies initialized[39m[38;5;3m +3ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSystemModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExecutionModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mStrategyModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mOrdersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[EventsGateway] [39m[32mWS gateway initialized[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSystemController {/system}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/system/state, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/system/environment/switch, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/system/profiles/:environment/wallet, PUT} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/system/wallet/real/plugin/challenge, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/system/wallet/real/plugin/confirm, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/system/wallet/real/private-key/bind, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/system/wallet/real/status, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/system/wallet/real/unbind, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/system/profiles/:environment/credential, PUT} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/system/credential, PUT} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/system/credential/polymarket/create-or-derive, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/system/credential/polymarket/import, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/system/security, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/system/security/trade-pin/code, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/system/security, PUT} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/system/audit, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mEnvController {/api/env}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/env/status, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mMarketsController {/markets}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/markets, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/markets/integration, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/markets/integration, PUT} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mControlDashboardController {/api/dashboard}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dashboard/summary, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dashboard/equity_curve, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dashboard/strategy_leaderboard, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dashboard/exposures, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dashboard/health, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/dashboard/top_signals, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mControlStrategyGovernanceController {/api/strategies}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/strategies, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/strategies/:id/approvals, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/strategies/:id/request_real, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/strategies/:id/approve_real, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/strategies/:id/reject_real, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mControlMarketScanController {/api/market_scan}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/market_scan, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mControlAnalyticsController {/api/analytics}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analytics/pnl_attribution, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/analytics/reconcile, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mOrdersController {/orders}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/orders, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/orders/wallet-snapshot, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/orders/execution-health, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/orders/open, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/orders/:orderId/events, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/orders/quote, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/orders/preview, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/orders, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/orders/:orderId/cancel, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mStrategyController {/strategy}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/strategy, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/strategy/runtime, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/strategy, PUT} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/strategy/start, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/strategy/stop, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mBacktestController {/backtest}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/backtest, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/backtest/weather-paper, POST} route[39m[38;5;3m +0ms[39m
+[33m[Nest] 12296  - [39m2026/03/01 01:51:51 [33m   WARN[39m [38;5;3m[PrismaService] [39m[33mPrisma connect skipped: Authentication failed against database server, the provided database credentials for `(not available)` are not valid.
+
+Please make sure to provide valid database credentials for the database server at the configured address.[39m
+[33m[Nest] 12296  - [39m2026/03/01 01:51:51 [33m   WARN[39m [38;5;3m[ExecutionApplicationService] [39m[33mExecution store postgres restore failed: 
+Invalid `this.prisma!.execOrder.findMany()` invocation in
+D:\InfoTrader\weather_trader\apps\api\src\modules\execution\execution-application.service.ts:1012:32
+
+  1009 private async restoreFromDatabase(): Promise<boolean> {
+  1010   try {
+  1011     const [orders, events, states] = await Promise.all([
+→ 1012       this.prisma!.execOrder.findMany(
+Authentication failed against database server, the provided database credentials for `(not available)` are not valid.
+
+Please make sure to provide valid database credentials for the database server at the configured address.[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[ExecutionApplicationService] [39m[32mExecution store restored from json: 137 orders[39m
+[32m[Nest] 12296  - [39m2026/03/01 01:51:51 [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +0ms[39m
+WeatherTrader API listening on http://localhost:3001

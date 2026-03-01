@@ -1,0 +1,2605 @@
+{
+  "snapshot": {
+    "mode": "PAPER",
+    "orders": [
+      {
+        "id": "ORD-PAPER-27",
+        "mode": "PAPER",
+        "marketId": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 1886.7925,
+        "limitPrice": 0.0795,
+        "status": "REJECTED",
+        "filledQuantity": 0,
+        "remainingQuantity": 1886.7925,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1715256003000,
+        "enterBookAtMs": 1715256003500,
+        "enteredBookAtMs": null,
+        "updatedAtMs": 1715256003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        },
+        "rejectReason": "market_closed"
+      },
+      {
+        "id": "ORD-PAPER-28",
+        "mode": "PAPER",
+        "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 882.3529,
+        "limitPrice": 0.17,
+        "status": "REJECTED",
+        "filledQuantity": 0,
+        "remainingQuantity": 882.3529,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1715256003000,
+        "enterBookAtMs": 1715256003500,
+        "enteredBookAtMs": null,
+        "updatedAtMs": 1715256003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        },
+        "rejectReason": "market_closed"
+      },
+      {
+        "id": "ORD-PAPER-29",
+        "mode": "PAPER",
+        "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+        "outcomeId": "YES",
+        "side": "SELL",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 184.0491,
+        "limitPrice": 0.815,
+        "status": "REJECTED",
+        "filledQuantity": 0,
+        "remainingQuantity": 184.0491,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1715256003000,
+        "enterBookAtMs": 1715256003500,
+        "enteredBookAtMs": null,
+        "updatedAtMs": 1715256003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        },
+        "rejectReason": "market_closed"
+      },
+      {
+        "id": "ORD-PAPER-25",
+        "mode": "PAPER",
+        "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 348.8372,
+        "limitPrice": 0.43,
+        "status": "REJECTED",
+        "filledQuantity": 0,
+        "remainingQuantity": 348.8372,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1715040002000,
+        "enterBookAtMs": 1715040002500,
+        "enteredBookAtMs": null,
+        "updatedAtMs": 1715040002000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        },
+        "rejectReason": "market_closed"
+      },
+      {
+        "id": "ORD-PAPER-26",
+        "mode": "PAPER",
+        "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+        "outcomeId": "YES",
+        "side": "SELL",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 468.75,
+        "limitPrice": 0.32,
+        "status": "REJECTED",
+        "filledQuantity": 0,
+        "remainingQuantity": 468.75,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1715040002000,
+        "enterBookAtMs": 1715040002500,
+        "enteredBookAtMs": null,
+        "updatedAtMs": 1715040002000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        },
+        "rejectReason": "market_closed"
+      },
+      {
+        "id": "ORD-PAPER-22",
+        "mode": "PAPER",
+        "marketId": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 2000,
+        "limitPrice": 0.075,
+        "status": "REJECTED",
+        "filledQuantity": 0,
+        "remainingQuantity": 2000,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1714824003000,
+        "enterBookAtMs": 1714824003500,
+        "enteredBookAtMs": null,
+        "updatedAtMs": 1714824003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        },
+        "rejectReason": "market_closed"
+      },
+      {
+        "id": "ORD-PAPER-23",
+        "mode": "PAPER",
+        "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+        "outcomeId": "YES",
+        "side": "SELL",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 196.0784,
+        "limitPrice": 0.765,
+        "status": "REJECTED",
+        "filledQuantity": 0,
+        "remainingQuantity": 196.0784,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1714824003000,
+        "enterBookAtMs": 1714824003500,
+        "enteredBookAtMs": null,
+        "updatedAtMs": 1714824003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        },
+        "rejectReason": "market_closed"
+      },
+      {
+        "id": "ORD-PAPER-24",
+        "mode": "PAPER",
+        "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 697.6744,
+        "limitPrice": 0.215,
+        "status": "REJECTED",
+        "filledQuantity": 0,
+        "remainingQuantity": 697.6744,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1714824003000,
+        "enterBookAtMs": 1714824003500,
+        "enteredBookAtMs": null,
+        "updatedAtMs": 1714824003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        },
+        "rejectReason": "market_closed"
+      },
+      {
+        "id": "ORD-PAPER-20",
+        "mode": "PAPER",
+        "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 220.5882,
+        "limitPrice": 0.68,
+        "status": "REJECTED",
+        "filledQuantity": 0,
+        "remainingQuantity": 220.5882,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1714608003000,
+        "enterBookAtMs": 1714608003500,
+        "enteredBookAtMs": null,
+        "updatedAtMs": 1714608003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        },
+        "rejectReason": "market_closed"
+      },
+      {
+        "id": "ORD-PAPER-21",
+        "mode": "PAPER",
+        "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+        "outcomeId": "YES",
+        "side": "SELL",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 517.2414,
+        "limitPrice": 0.29,
+        "status": "REJECTED",
+        "filledQuantity": 0,
+        "remainingQuantity": 517.2414,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1714608003000,
+        "enterBookAtMs": 1714608003500,
+        "enteredBookAtMs": null,
+        "updatedAtMs": 1714608003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        },
+        "rejectReason": "market_closed"
+      },
+      {
+        "id": "ORD-PAPER-17",
+        "mode": "PAPER",
+        "marketId": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 1500,
+        "limitPrice": 0.1,
+        "status": "CANCELED",
+        "filledQuantity": 0,
+        "remainingQuantity": 1500,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1714392003000,
+        "enterBookAtMs": 1714392003500,
+        "enteredBookAtMs": 1714608003000,
+        "updatedAtMs": 1714608003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        }
+      },
+      {
+        "id": "ORD-PAPER-18",
+        "mode": "PAPER",
+        "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+        "outcomeId": "YES",
+        "side": "SELL",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 202.7027,
+        "limitPrice": 0.74,
+        "status": "CANCELED",
+        "filledQuantity": 0,
+        "remainingQuantity": 202.7027,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1714392003000,
+        "enterBookAtMs": 1714392003500,
+        "enteredBookAtMs": 1714608003000,
+        "updatedAtMs": 1714608003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        }
+      },
+      {
+        "id": "ORD-PAPER-19",
+        "mode": "PAPER",
+        "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+        "outcomeId": "YES",
+        "side": "SELL",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 731.7073,
+        "limitPrice": 0.205,
+        "status": "REJECTED",
+        "filledQuantity": 0,
+        "remainingQuantity": 731.7073,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1714392003000,
+        "enterBookAtMs": 1714392003500,
+        "enteredBookAtMs": null,
+        "updatedAtMs": 1714392003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        },
+        "rejectReason": "insufficient_position"
+      },
+      {
+        "id": "ORD-PAPER-14",
+        "mode": "PAPER",
+        "marketId": "0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 2325.5814,
+        "limitPrice": 0.0645,
+        "status": "CANCELED",
+        "filledQuantity": 750,
+        "remainingQuantity": 1575.5814,
+        "averageFillPrice": 0.0633,
+        "totalFee": 0.0475,
+        "createdAtMs": 1714176003000,
+        "enterBookAtMs": 1714176003500,
+        "enteredBookAtMs": 1714392003000,
+        "updatedAtMs": 1714392003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        }
+      },
+      {
+        "id": "ORD-PAPER-15",
+        "mode": "PAPER",
+        "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+        "outcomeId": "YES",
+        "side": "SELL",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 312.5,
+        "limitPrice": 0.48,
+        "status": "FILLED",
+        "filledQuantity": 312.5,
+        "remainingQuantity": 0,
+        "averageFillPrice": 0.7342,
+        "totalFee": 0.2294,
+        "createdAtMs": 1714176003000,
+        "enterBookAtMs": 1714176003500,
+        "enteredBookAtMs": 1714392003000,
+        "updatedAtMs": 1714392003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        }
+      },
+      {
+        "id": "ORD-PAPER-16",
+        "mode": "PAPER",
+        "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 789.4737,
+        "limitPrice": 0.19,
+        "status": "CANCELED",
+        "filledQuantity": 0,
+        "remainingQuantity": 789.4737,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1714176003000,
+        "enterBookAtMs": 1714176003500,
+        "enteredBookAtMs": 1714392003000,
+        "updatedAtMs": 1714392003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        }
+      },
+      {
+        "id": "ORD-PAPER-11",
+        "mode": "PAPER",
+        "marketId": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 394.7368,
+        "limitPrice": 0.38,
+        "status": "CANCELED",
+        "filledQuantity": 0,
+        "remainingQuantity": 394.7368,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1713960003000,
+        "enterBookAtMs": 1713960003500,
+        "enteredBookAtMs": 1714176003000,
+        "updatedAtMs": 1714176003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        }
+      },
+      {
+        "id": "ORD-PAPER-12",
+        "mode": "PAPER",
+        "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+        "outcomeId": "YES",
+        "side": "SELL",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 379.7468,
+        "limitPrice": 0.395,
+        "status": "REJECTED",
+        "filledQuantity": 0,
+        "remainingQuantity": 379.7468,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1713960003000,
+        "enterBookAtMs": 1713960003500,
+        "enteredBookAtMs": null,
+        "updatedAtMs": 1713960003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        },
+        "rejectReason": "insufficient_position"
+      },
+      {
+        "id": "ORD-PAPER-13",
+        "mode": "PAPER",
+        "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+        "outcomeId": "YES",
+        "side": "SELL",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 612.2449,
+        "limitPrice": 0.245,
+        "status": "REJECTED",
+        "filledQuantity": 0,
+        "remainingQuantity": 612.2449,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1713960003000,
+        "enterBookAtMs": 1713960003500,
+        "enteredBookAtMs": null,
+        "updatedAtMs": 1713960003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        },
+        "rejectReason": "insufficient_position"
+      },
+      {
+        "id": "ORD-PAPER-8",
+        "mode": "PAPER",
+        "marketId": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+        "outcomeId": "YES",
+        "side": "SELL",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 428.5714,
+        "limitPrice": 0.35,
+        "status": "REJECTED",
+        "filledQuantity": 0,
+        "remainingQuantity": 428.5714,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1713744003000,
+        "enterBookAtMs": 1713744003500,
+        "enteredBookAtMs": null,
+        "updatedAtMs": 1713744003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        },
+        "rejectReason": "insufficient_position"
+      },
+      {
+        "id": "ORD-PAPER-9",
+        "mode": "PAPER",
+        "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+        "outcomeId": "YES",
+        "side": "SELL",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 410.9589,
+        "limitPrice": 0.365,
+        "status": "REJECTED",
+        "filledQuantity": 0,
+        "remainingQuantity": 410.9589,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1713744003000,
+        "enterBookAtMs": 1713744003500,
+        "enteredBookAtMs": null,
+        "updatedAtMs": 1713744003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        },
+        "rejectReason": "insufficient_position"
+      },
+      {
+        "id": "ORD-PAPER-10",
+        "mode": "PAPER",
+        "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 1000,
+        "limitPrice": 0.15,
+        "status": "CANCELED",
+        "filledQuantity": 0,
+        "remainingQuantity": 1000,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1713744003000,
+        "enterBookAtMs": 1713744003500,
+        "enteredBookAtMs": 1713960003000,
+        "updatedAtMs": 1713960003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        }
+      },
+      {
+        "id": "ORD-PAPER-5",
+        "mode": "PAPER",
+        "marketId": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 576.9231,
+        "limitPrice": 0.26,
+        "status": "CANCELED",
+        "filledQuantity": 0,
+        "remainingQuantity": 576.9231,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1713528003000,
+        "enterBookAtMs": 1713528003500,
+        "enteredBookAtMs": 1713744003000,
+        "updatedAtMs": 1713744003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        }
+      },
+      {
+        "id": "ORD-PAPER-6",
+        "mode": "PAPER",
+        "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 365.8537,
+        "limitPrice": 0.41,
+        "status": "FILLED",
+        "filledQuantity": 365.8537,
+        "remainingQuantity": 0,
+        "averageFillPrice": 0.3904,
+        "totalFee": 0.1428,
+        "createdAtMs": 1713528003000,
+        "enterBookAtMs": 1713528003500,
+        "enteredBookAtMs": 1713744003000,
+        "updatedAtMs": 1713744003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        }
+      },
+      {
+        "id": "ORD-PAPER-7",
+        "mode": "PAPER",
+        "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 500,
+        "limitPrice": 0.3,
+        "status": "FILLED",
+        "filledQuantity": 500,
+        "remainingQuantity": 0,
+        "averageFillPrice": 0.1552,
+        "totalFee": 0.0776,
+        "createdAtMs": 1713528003000,
+        "enterBookAtMs": 1713528003500,
+        "enteredBookAtMs": 1713744003000,
+        "updatedAtMs": 1713744003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        }
+      },
+      {
+        "id": "ORD-PAPER-1",
+        "mode": "PAPER",
+        "marketId": "0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 2727.2727,
+        "limitPrice": 0.055,
+        "status": "CANCELED",
+        "filledQuantity": 750,
+        "remainingQuantity": 1977.2727,
+        "averageFillPrice": 0.0603,
+        "totalFee": 0.0453,
+        "createdAtMs": 1713312003000,
+        "enterBookAtMs": 1713312003500,
+        "enteredBookAtMs": 1713528003000,
+        "updatedAtMs": 1713528003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        }
+      },
+      {
+        "id": "ORD-PAPER-2",
+        "mode": "PAPER",
+        "marketId": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+        "outcomeId": "YES",
+        "side": "SELL",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 666.6667,
+        "limitPrice": 0.225,
+        "status": "REJECTED",
+        "filledQuantity": 0,
+        "remainingQuantity": 666.6667,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1713312003000,
+        "enterBookAtMs": 1713312003500,
+        "enteredBookAtMs": null,
+        "updatedAtMs": 1713312003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        },
+        "rejectReason": "insufficient_position"
+      },
+      {
+        "id": "ORD-PAPER-3",
+        "mode": "PAPER",
+        "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+        "outcomeId": "YES",
+        "side": "SELL",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 250,
+        "limitPrice": 0.6,
+        "status": "REJECTED",
+        "filledQuantity": 0,
+        "remainingQuantity": 250,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1713312003000,
+        "enterBookAtMs": 1713312003500,
+        "enteredBookAtMs": null,
+        "updatedAtMs": 1713312003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        },
+        "rejectReason": "insufficient_position"
+      },
+      {
+        "id": "ORD-PAPER-4",
+        "mode": "PAPER",
+        "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+        "outcomeId": "YES",
+        "side": "SELL",
+        "type": "LIMIT",
+        "tif": "IOC",
+        "quantity": 428.5714,
+        "limitPrice": 0.35,
+        "status": "REJECTED",
+        "filledQuantity": 0,
+        "remainingQuantity": 428.5714,
+        "averageFillPrice": 0,
+        "totalFee": 0,
+        "createdAtMs": 1713312003000,
+        "enterBookAtMs": 1713312003500,
+        "enteredBookAtMs": null,
+        "updatedAtMs": 1713312003000,
+        "expiresAtMs": null,
+        "externalOrderId": null,
+        "strategyId": "edge-baseline",
+        "tags": {
+          "marketCloseTs": "1714564800000"
+        },
+        "rejectReason": "insufficient_position"
+      }
+    ],
+    "fills": [
+      {
+        "id": "ORD-PAPER-15-F7",
+        "orderId": "ORD-PAPER-15",
+        "mode": "PAPER",
+        "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+        "outcomeId": "YES",
+        "side": "SELL",
+        "price": 0.7342,
+        "quantity": 312.5,
+        "notional": 229.4375,
+        "fee": 0.2294,
+        "ts": 1714392003000,
+        "bookPrice": 0.74,
+        "spreadAdj": 0.005,
+        "impactAdj": 0.0008,
+        "latencyMs": 216000000,
+        "grossAmount": 229.4375,
+        "netAmount": 229.2081,
+        "feeBreakdown": {
+          "tradingFee": 0.2294,
+          "fixedFee": 0,
+          "networkCost": 0,
+          "totalFee": 0.2294
+        }
+      },
+      {
+        "id": "ORD-PAPER-14-F6",
+        "orderId": "ORD-PAPER-14",
+        "mode": "PAPER",
+        "marketId": "0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "price": 0.0637,
+        "quantity": 250,
+        "notional": 15.925,
+        "fee": 0.0159,
+        "ts": 1714392003000,
+        "bookPrice": 0.0586,
+        "spreadAdj": 0.005,
+        "impactAdj": 0.0001,
+        "latencyMs": 216000000,
+        "grossAmount": 15.925,
+        "netAmount": -15.9409,
+        "feeBreakdown": {
+          "tradingFee": 0.0159,
+          "fixedFee": 0,
+          "networkCost": 0,
+          "totalFee": 0.0159
+        }
+      },
+      {
+        "id": "ORD-PAPER-14-F5",
+        "orderId": "ORD-PAPER-14",
+        "mode": "PAPER",
+        "marketId": "0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "price": 0.0631,
+        "quantity": 500,
+        "notional": 31.55,
+        "fee": 0.0316,
+        "ts": 1714392003000,
+        "bookPrice": 0.058,
+        "spreadAdj": 0.005,
+        "impactAdj": 0.0001,
+        "latencyMs": 216000000,
+        "grossAmount": 31.55,
+        "netAmount": -31.5816,
+        "feeBreakdown": {
+          "tradingFee": 0.0316,
+          "fixedFee": 0,
+          "networkCost": 0,
+          "totalFee": 0.0316
+        }
+      },
+      {
+        "id": "ORD-PAPER-7-F4",
+        "orderId": "ORD-PAPER-7",
+        "mode": "PAPER",
+        "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "price": 0.1552,
+        "quantity": 500,
+        "notional": 77.6,
+        "fee": 0.0776,
+        "ts": 1713744003000,
+        "bookPrice": 0.15,
+        "spreadAdj": 0.005,
+        "impactAdj": 0.0002,
+        "latencyMs": 216000000,
+        "grossAmount": 77.6,
+        "netAmount": -77.6776,
+        "feeBreakdown": {
+          "tradingFee": 0.0776,
+          "fixedFee": 0,
+          "networkCost": 0,
+          "totalFee": 0.0776
+        }
+      },
+      {
+        "id": "ORD-PAPER-6-F3",
+        "orderId": "ORD-PAPER-6",
+        "mode": "PAPER",
+        "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "price": 0.3904,
+        "quantity": 365.8537,
+        "notional": 142.8293,
+        "fee": 0.1428,
+        "ts": 1713744003000,
+        "bookPrice": 0.385,
+        "spreadAdj": 0.005,
+        "impactAdj": 0.0004,
+        "latencyMs": 216000000,
+        "grossAmount": 142.8293,
+        "netAmount": -142.9721,
+        "feeBreakdown": {
+          "tradingFee": 0.1428,
+          "fixedFee": 0,
+          "networkCost": 0,
+          "totalFee": 0.1428
+        }
+      },
+      {
+        "id": "ORD-PAPER-1-F2",
+        "orderId": "ORD-PAPER-1",
+        "mode": "PAPER",
+        "marketId": "0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "price": 0.0606,
+        "quantity": 250,
+        "notional": 15.15,
+        "fee": 0.0152,
+        "ts": 1713528003000,
+        "bookPrice": 0.0556,
+        "spreadAdj": 0.005,
+        "impactAdj": 0.0001,
+        "latencyMs": 216000000,
+        "grossAmount": 15.15,
+        "netAmount": -15.1652,
+        "feeBreakdown": {
+          "tradingFee": 0.0152,
+          "fixedFee": 0,
+          "networkCost": 0,
+          "totalFee": 0.0152
+        }
+      },
+      {
+        "id": "ORD-PAPER-1-F1",
+        "orderId": "ORD-PAPER-1",
+        "mode": "PAPER",
+        "marketId": "0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867",
+        "outcomeId": "YES",
+        "side": "BUY",
+        "price": 0.0601,
+        "quantity": 500,
+        "notional": 30.05,
+        "fee": 0.0301,
+        "ts": 1713528003000,
+        "bookPrice": 0.055,
+        "spreadAdj": 0.005,
+        "impactAdj": 0.0001,
+        "latencyMs": 216000000,
+        "grossAmount": 30.05,
+        "netAmount": -30.0801,
+        "feeBreakdown": {
+          "tradingFee": 0.0301,
+          "fixedFee": 0,
+          "networkCost": 0,
+          "totalFee": 0.0301
+        }
+      }
+    ],
+    "settlements": [
+      {
+        "marketId": "0x07954fd1965dea6b78eaa5f6823d3546b8219a284fd89b27454b7f05f4098340",
+        "ts": 1717243201000,
+        "reason": "RESOLVED",
+        "winningOutcomeId": "NO",
+        "source": "polymarket_gamma_outcome_prices",
+        "cashDelta": 0,
+        "settledPnlDelta": 0
+      },
+      {
+        "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+        "ts": 1714564801000,
+        "reason": "RESOLVED",
+        "winningOutcomeId": "YES",
+        "source": "polymarket_gamma_outcome_prices",
+        "cashDelta": 500,
+        "settledPnlDelta": 422.4
+      },
+      {
+        "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+        "ts": 1714564801000,
+        "reason": "RESOLVED",
+        "winningOutcomeId": "NO",
+        "source": "polymarket_gamma_outcome_prices",
+        "cashDelta": 0,
+        "settledPnlDelta": -20.8293
+      },
+      {
+        "marketId": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+        "ts": 1714564801000,
+        "reason": "RESOLVED",
+        "winningOutcomeId": "NO",
+        "source": "polymarket_gamma_outcome_prices",
+        "cashDelta": 0,
+        "settledPnlDelta": 0
+      },
+      {
+        "marketId": "0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867",
+        "ts": 1714564801000,
+        "reason": "RESOLVED",
+        "winningOutcomeId": "NO",
+        "source": "polymarket_gamma_outcome_prices",
+        "cashDelta": 0,
+        "settledPnlDelta": -92.675
+      },
+      {
+        "marketId": "0xfa361d1eb8dcd671baee6f5ce7aaf0a7b85cc65d380e606b484579901ac93c83",
+        "ts": 1714564801000,
+        "reason": "RESOLVED",
+        "winningOutcomeId": "NO",
+        "source": "polymarket_gamma_outcome_prices",
+        "cashDelta": 0,
+        "settledPnlDelta": 0
+      }
+    ],
+    "ledger": {
+      "cash": 10415.7906,
+      "reservedCash": 0,
+      "realizedPnl": 107.4375,
+      "settledPnl": 308.8957,
+      "positions": {}
+    }
+  },
+  "forecastEval": [
+    {
+      "marketId": "0xfa361d1eb8dcd671baee6f5ce7aaf0a7b85cc65d380e606b484579901ac93c83",
+      "outcomeId": "YES",
+      "forecastTs": 1713312003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.041,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.0185
+    },
+    {
+      "marketId": "0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867",
+      "outcomeId": "YES",
+      "forecastTs": 1713312003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.077,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.045
+    },
+    {
+      "marketId": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+      "outcomeId": "YES",
+      "forecastTs": 1713312003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.06,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.235
+    },
+    {
+      "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+      "outcomeId": "YES",
+      "forecastTs": 1713312003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.22400000000000003,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.61
+    },
+    {
+      "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+      "outcomeId": "YES",
+      "forecastTs": 1713312003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.313,
+      "source": "official_clob_momentum_v1",
+      "observed": 1,
+      "marketImpliedProbability": 0.36
+    },
+    {
+      "marketId": "0xfa361d1eb8dcd671baee6f5ce7aaf0a7b85cc65d380e606b484579901ac93c83",
+      "outcomeId": "YES",
+      "forecastTs": 1713528003000,
+      "resolveTs": 1714564801000,
+      "probability": 0,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.014
+    },
+    {
+      "marketId": "0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867",
+      "outcomeId": "YES",
+      "forecastTs": 1713528003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.012999999999999998,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.045
+    },
+    {
+      "marketId": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+      "outcomeId": "YES",
+      "forecastTs": 1713528003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.26099999999999995,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.25
+    },
+    {
+      "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+      "outcomeId": "YES",
+      "forecastTs": 1713528003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.742,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.4
+    },
+    {
+      "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+      "outcomeId": "YES",
+      "forecastTs": 1713528003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.386,
+      "source": "official_clob_momentum_v1",
+      "observed": 1,
+      "marketImpliedProbability": 0.29
+    },
+    {
+      "marketId": "0xfa361d1eb8dcd671baee6f5ce7aaf0a7b85cc65d380e606b484579901ac93c83",
+      "outcomeId": "YES",
+      "forecastTs": 1713744003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.0122,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.014
+    },
+    {
+      "marketId": "0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867",
+      "outcomeId": "YES",
+      "forecastTs": 1713744003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.045,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.06
+    },
+    {
+      "marketId": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+      "outcomeId": "YES",
+      "forecastTs": 1713744003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.256,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.36
+    },
+    {
+      "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+      "outcomeId": "YES",
+      "forecastTs": 1713744003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.31600000000000006,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.375
+    },
+    {
+      "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+      "outcomeId": "YES",
+      "forecastTs": 1713744003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.26199999999999996,
+      "source": "official_clob_momentum_v1",
+      "observed": 1,
+      "marketImpliedProbability": 0.14
+    },
+    {
+      "marketId": "0xfa361d1eb8dcd671baee6f5ce7aaf0a7b85cc65d380e606b484579901ac93c83",
+      "outcomeId": "YES",
+      "forecastTs": 1713960003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.014,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.013
+    },
+    {
+      "marketId": "0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867",
+      "outcomeId": "YES",
+      "forecastTs": 1713960003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.066,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.065
+    },
+    {
+      "marketId": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+      "outcomeId": "YES",
+      "forecastTs": 1713960003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.40399999999999997,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.37
+    },
+    {
+      "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+      "outcomeId": "YES",
+      "forecastTs": 1713960003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.365,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.405
+    },
+    {
+      "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+      "outcomeId": "YES",
+      "forecastTs": 1713960003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.08000000000000002,
+      "source": "official_clob_momentum_v1",
+      "observed": 1,
+      "marketImpliedProbability": 0.255
+    },
+    {
+      "marketId": "0xfa361d1eb8dcd671baee6f5ce7aaf0a7b85cc65d380e606b484579901ac93c83",
+      "outcomeId": "YES",
+      "forecastTs": 1714176003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.012599999999999998,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.0115
+    },
+    {
+      "marketId": "0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867",
+      "outcomeId": "YES",
+      "forecastTs": 1714176003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.067,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.0545
+    },
+    {
+      "marketId": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+      "outcomeId": "YES",
+      "forecastTs": 1714176003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.374,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.375
+    },
+    {
+      "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+      "outcomeId": "YES",
+      "forecastTs": 1714176003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.41700000000000004,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.49
+    },
+    {
+      "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+      "outcomeId": "YES",
+      "forecastTs": 1714176003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.301,
+      "source": "official_clob_momentum_v1",
+      "observed": 1,
+      "marketImpliedProbability": 0.18
+    },
+    {
+      "marketId": "0xfa361d1eb8dcd671baee6f5ce7aaf0a7b85cc65d380e606b484579901ac93c83",
+      "outcomeId": "YES",
+      "forecastTs": 1714392003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.0109,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.0065
+    },
+    {
+      "marketId": "0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867",
+      "outcomeId": "YES",
+      "forecastTs": 1714392003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.0503,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.048
+    },
+    {
+      "marketId": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+      "outcomeId": "YES",
+      "forecastTs": 1714392003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.377,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.09
+    },
+    {
+      "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+      "outcomeId": "YES",
+      "forecastTs": 1714392003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.524,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.75
+    },
+    {
+      "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+      "outcomeId": "YES",
+      "forecastTs": 1714392003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.15,
+      "source": "official_clob_momentum_v1",
+      "observed": 1,
+      "marketImpliedProbability": 0.215
+    },
+    {
+      "marketId": "0xfa361d1eb8dcd671baee6f5ce7aaf0a7b85cc65d380e606b484579901ac93c83",
+      "outcomeId": "YES",
+      "forecastTs": 1714608003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.0045,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.006
+    },
+    {
+      "marketId": "0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867",
+      "outcomeId": "YES",
+      "forecastTs": 1714608003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.0454,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.043
+    },
+    {
+      "marketId": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+      "outcomeId": "YES",
+      "forecastTs": 1714608003000,
+      "resolveTs": 1714564801000,
+      "probability": 0,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.205
+    },
+    {
+      "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+      "outcomeId": "YES",
+      "forecastTs": 1714608003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.854,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.67
+    },
+    {
+      "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+      "outcomeId": "YES",
+      "forecastTs": 1714608003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.229,
+      "source": "official_clob_momentum_v1",
+      "observed": 1,
+      "marketImpliedProbability": 0.3
+    },
+    {
+      "marketId": "0xfa361d1eb8dcd671baee6f5ce7aaf0a7b85cc65d380e606b484579901ac93c83",
+      "outcomeId": "YES",
+      "forecastTs": 1714824003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.0058000000000000005,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.003
+    },
+    {
+      "marketId": "0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867",
+      "outcomeId": "YES",
+      "forecastTs": 1714824003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.040999999999999995,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.025
+    },
+    {
+      "marketId": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+      "outcomeId": "YES",
+      "forecastTs": 1714824003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.251,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.065
+    },
+    {
+      "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+      "outcomeId": "YES",
+      "forecastTs": 1714824003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.638,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.775
+    },
+    {
+      "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+      "outcomeId": "YES",
+      "forecastTs": 1714824003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.33399999999999996,
+      "source": "official_clob_momentum_v1",
+      "observed": 1,
+      "marketImpliedProbability": 0.205
+    },
+    {
+      "marketId": "0xfa361d1eb8dcd671baee6f5ce7aaf0a7b85cc65d380e606b484579901ac93c83",
+      "outcomeId": "YES",
+      "forecastTs": 1715040002000,
+      "resolveTs": 1714564801000,
+      "probability": 0.0018,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.0015
+    },
+    {
+      "marketId": "0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867",
+      "outcomeId": "YES",
+      "forecastTs": 1715040002000,
+      "resolveTs": 1714564801000,
+      "probability": 0.017800000000000003,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.0205
+    },
+    {
+      "marketId": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+      "outcomeId": "YES",
+      "forecastTs": 1715040002000,
+      "resolveTs": 1714564801000,
+      "probability": 0.009000000000000008,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.09
+    },
+    {
+      "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+      "outcomeId": "YES",
+      "forecastTs": 1715040002000,
+      "resolveTs": 1714564801000,
+      "probability": 0.8170000000000001,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.42
+    },
+    {
+      "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+      "outcomeId": "YES",
+      "forecastTs": 1715040002000,
+      "resolveTs": 1714564801000,
+      "probability": 0.16699999999999998,
+      "source": "official_clob_momentum_v1",
+      "observed": 1,
+      "marketImpliedProbability": 0.33
+    },
+    {
+      "marketId": "0xfa361d1eb8dcd671baee6f5ce7aaf0a7b85cc65d380e606b484579901ac93c83",
+      "outcomeId": "YES",
+      "forecastTs": 1715256003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.0009,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.0005
+    },
+    {
+      "marketId": "0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867",
+      "outcomeId": "YES",
+      "forecastTs": 1715256003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.0187,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.0055
+    },
+    {
+      "marketId": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+      "outcomeId": "YES",
+      "forecastTs": 1715256003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.09999999999999999,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.0695
+    },
+    {
+      "marketId": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+      "outcomeId": "YES",
+      "forecastTs": 1715256003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.27799999999999997,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.16
+    },
+    {
+      "marketId": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+      "outcomeId": "YES",
+      "forecastTs": 1715256003000,
+      "resolveTs": 1714564801000,
+      "probability": 0.38,
+      "source": "official_clob_momentum_v1",
+      "observed": 1,
+      "marketImpliedProbability": 0.825
+    },
+    {
+      "marketId": "0x07954fd1965dea6b78eaa5f6823d3546b8219a284fd89b27454b7f05f4098340",
+      "outcomeId": "YES",
+      "forecastTs": 1715904003000,
+      "resolveTs": 1717243201000,
+      "probability": 0.006200000000000001,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.006
+    },
+    {
+      "marketId": "0x07954fd1965dea6b78eaa5f6823d3546b8219a284fd89b27454b7f05f4098340",
+      "outcomeId": "YES",
+      "forecastTs": 1716120003000,
+      "resolveTs": 1717243201000,
+      "probability": 0.006,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.004
+    },
+    {
+      "marketId": "0x07954fd1965dea6b78eaa5f6823d3546b8219a284fd89b27454b7f05f4098340",
+      "outcomeId": "YES",
+      "forecastTs": 1716336003000,
+      "resolveTs": 1717243201000,
+      "probability": 0.0032,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.0045
+    },
+    {
+      "marketId": "0x07954fd1965dea6b78eaa5f6823d3546b8219a284fd89b27454b7f05f4098340",
+      "outcomeId": "YES",
+      "forecastTs": 1716552004000,
+      "resolveTs": 1717243201000,
+      "probability": 0.004699999999999999,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.01
+    },
+    {
+      "marketId": "0x07954fd1965dea6b78eaa5f6823d3546b8219a284fd89b27454b7f05f4098340",
+      "outcomeId": "YES",
+      "forecastTs": 1716768003000,
+      "resolveTs": 1717243201000,
+      "probability": 0.0122,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.008
+    },
+    {
+      "marketId": "0x07954fd1965dea6b78eaa5f6823d3546b8219a284fd89b27454b7f05f4098340",
+      "outcomeId": "YES",
+      "forecastTs": 1716984003000,
+      "resolveTs": 1717243201000,
+      "probability": 0.0072,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.008
+    },
+    {
+      "marketId": "0x07954fd1965dea6b78eaa5f6823d3546b8219a284fd89b27454b7f05f4098340",
+      "outcomeId": "YES",
+      "forecastTs": 1717200003000,
+      "resolveTs": 1717243201000,
+      "probability": 0.008,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.006
+    },
+    {
+      "marketId": "0x07954fd1965dea6b78eaa5f6823d3546b8219a284fd89b27454b7f05f4098340",
+      "outcomeId": "YES",
+      "forecastTs": 1717416004000,
+      "resolveTs": 1717243201000,
+      "probability": 0.0052,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.0055
+    },
+    {
+      "marketId": "0x07954fd1965dea6b78eaa5f6823d3546b8219a284fd89b27454b7f05f4098340",
+      "outcomeId": "YES",
+      "forecastTs": 1717632003000,
+      "resolveTs": 1717243201000,
+      "probability": 0.005299999999999999,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.004
+    },
+    {
+      "marketId": "0x07954fd1965dea6b78eaa5f6823d3546b8219a284fd89b27454b7f05f4098340",
+      "outcomeId": "YES",
+      "forecastTs": 1717848002000,
+      "resolveTs": 1717243201000,
+      "probability": 0.0034000000000000002,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.0105
+    },
+    {
+      "marketId": "0x07954fd1965dea6b78eaa5f6823d3546b8219a284fd89b27454b7f05f4098340",
+      "outcomeId": "YES",
+      "forecastTs": 1718064002000,
+      "resolveTs": 1717243201000,
+      "probability": 0.0131,
+      "source": "official_clob_momentum_v1",
+      "observed": 0,
+      "marketImpliedProbability": 0.0065
+    }
+  ],
+  "auditJsonl": "{\"eventId\":\"EV-PAPER-1\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1713312003000,\"orderId\":\"ORD-PAPER-1\",\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":2727.2727,\"enterBookAtMs\":1713312003500}}\n{\"eventId\":\"EV-PAPER-2\",\"mode\":\"PAPER\",\"type\":\"OrderAccepted\",\"ts\":1713312003000,\"orderId\":\"ORD-PAPER-1\",\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\"}\n{\"eventId\":\"EV-PAPER-3\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1713312003000,\"orderId\":\"ORD-PAPER-2\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":666.6667,\"enterBookAtMs\":1713312003500}}\n{\"eventId\":\"EV-PAPER-4\",\"mode\":\"PAPER\",\"type\":\"OrderRejected\",\"ts\":1713312003000,\"orderId\":\"ORD-PAPER-2\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"stateAfter\":\"REJECTED\",\"reason\":\"insufficient_position\"}\n{\"eventId\":\"EV-PAPER-5\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1713312003000,\"orderId\":\"ORD-PAPER-3\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":250,\"enterBookAtMs\":1713312003500}}\n{\"eventId\":\"EV-PAPER-6\",\"mode\":\"PAPER\",\"type\":\"OrderRejected\",\"ts\":1713312003000,\"orderId\":\"ORD-PAPER-3\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"stateAfter\":\"REJECTED\",\"reason\":\"insufficient_position\"}\n{\"eventId\":\"EV-PAPER-7\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1713312003000,\"orderId\":\"ORD-PAPER-4\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":428.5714,\"enterBookAtMs\":1713312003500}}\n{\"eventId\":\"EV-PAPER-8\",\"mode\":\"PAPER\",\"type\":\"OrderRejected\",\"ts\":1713312003000,\"orderId\":\"ORD-PAPER-4\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"stateAfter\":\"REJECTED\",\"reason\":\"insufficient_position\"}\n{\"eventId\":\"EV-PAPER-9\",\"mode\":\"PAPER\",\"type\":\"OrderEnteredBook\",\"ts\":1713528003000,\"orderId\":\"ORD-PAPER-1\",\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\",\"payload\":{\"enterDelayMs\":216000000}}\n{\"eventId\":\"EV-PAPER-10\",\"mode\":\"PAPER\",\"type\":\"OrderPartiallyFilled\",\"ts\":1713528003000,\"orderId\":\"ORD-PAPER-1\",\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"outcomeId\":\"YES\",\"stateAfter\":\"PARTIALLY_FILLED\",\"fill\":{\"id\":\"ORD-PAPER-1-F1\",\"orderId\":\"ORD-PAPER-1\",\"mode\":\"PAPER\",\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"outcomeId\":\"YES\",\"side\":\"BUY\",\"price\":0.0601,\"quantity\":500,\"notional\":30.05,\"fee\":0.0301,\"ts\":1713528003000,\"bookPrice\":0.055,\"spreadAdj\":0.005,\"impactAdj\":0.0001,\"latencyMs\":216000000,\"grossAmount\":30.05,\"netAmount\":-30.0801,\"feeBreakdown\":{\"tradingFee\":0.0301,\"fixedFee\":0,\"networkCost\":0,\"totalFee\":0.0301}},\"payload\":{\"pricing\":{\"bookPrice\":0.055,\"spreadAdj\":0.005,\"impactAdj\":0.0001,\"finalPrice\":0.0601},\"fees\":{\"tradingFee\":0.0301,\"fixedFee\":0,\"networkCost\":0,\"totalFee\":0.0301}}}\n{\"eventId\":\"EV-PAPER-11\",\"mode\":\"PAPER\",\"type\":\"OrderPartiallyFilled\",\"ts\":1713528003000,\"orderId\":\"ORD-PAPER-1\",\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"outcomeId\":\"YES\",\"stateAfter\":\"PARTIALLY_FILLED\",\"fill\":{\"id\":\"ORD-PAPER-1-F2\",\"orderId\":\"ORD-PAPER-1\",\"mode\":\"PAPER\",\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"outcomeId\":\"YES\",\"side\":\"BUY\",\"price\":0.0606,\"quantity\":250,\"notional\":15.15,\"fee\":0.0152,\"ts\":1713528003000,\"bookPrice\":0.0556,\"spreadAdj\":0.005,\"impactAdj\":0.0001,\"latencyMs\":216000000,\"grossAmount\":15.15,\"netAmount\":-15.1652,\"feeBreakdown\":{\"tradingFee\":0.0152,\"fixedFee\":0,\"networkCost\":0,\"totalFee\":0.0152}},\"payload\":{\"pricing\":{\"bookPrice\":0.0556,\"spreadAdj\":0.005,\"impactAdj\":0.0001,\"finalPrice\":0.0606},\"fees\":{\"tradingFee\":0.0152,\"fixedFee\":0,\"networkCost\":0,\"totalFee\":0.0152}}}\n{\"eventId\":\"EV-PAPER-12\",\"mode\":\"PAPER\",\"type\":\"OrderCanceled\",\"ts\":1713528003000,\"orderId\":\"ORD-PAPER-1\",\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"outcomeId\":\"YES\",\"stateAfter\":\"CANCELED\",\"reason\":\"ioc_partial_then_cancel\"}\n{\"eventId\":\"EV-PAPER-13\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1713528003000,\"orderId\":\"ORD-PAPER-5\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":576.9231,\"enterBookAtMs\":1713528003500}}\n{\"eventId\":\"EV-PAPER-14\",\"mode\":\"PAPER\",\"type\":\"OrderAccepted\",\"ts\":1713528003000,\"orderId\":\"ORD-PAPER-5\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\"}\n{\"eventId\":\"EV-PAPER-15\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1713528003000,\"orderId\":\"ORD-PAPER-6\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":365.8537,\"enterBookAtMs\":1713528003500}}\n{\"eventId\":\"EV-PAPER-16\",\"mode\":\"PAPER\",\"type\":\"OrderAccepted\",\"ts\":1713528003000,\"orderId\":\"ORD-PAPER-6\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\"}\n{\"eventId\":\"EV-PAPER-17\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1713528003000,\"orderId\":\"ORD-PAPER-7\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":500,\"enterBookAtMs\":1713528003500}}\n{\"eventId\":\"EV-PAPER-18\",\"mode\":\"PAPER\",\"type\":\"OrderAccepted\",\"ts\":1713528003000,\"orderId\":\"ORD-PAPER-7\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\"}\n{\"eventId\":\"EV-PAPER-19\",\"mode\":\"PAPER\",\"type\":\"OrderEnteredBook\",\"ts\":1713744003000,\"orderId\":\"ORD-PAPER-5\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\",\"payload\":{\"enterDelayMs\":216000000}}\n{\"eventId\":\"EV-PAPER-20\",\"mode\":\"PAPER\",\"type\":\"OrderEnteredBook\",\"ts\":1713744003000,\"orderId\":\"ORD-PAPER-6\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\",\"payload\":{\"enterDelayMs\":216000000}}\n{\"eventId\":\"EV-PAPER-21\",\"mode\":\"PAPER\",\"type\":\"OrderEnteredBook\",\"ts\":1713744003000,\"orderId\":\"ORD-PAPER-7\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\",\"payload\":{\"enterDelayMs\":216000000}}\n{\"eventId\":\"EV-PAPER-22\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1713744003000,\"orderId\":\"ORD-PAPER-8\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":428.5714,\"enterBookAtMs\":1713744003500}}\n{\"eventId\":\"EV-PAPER-23\",\"mode\":\"PAPER\",\"type\":\"OrderRejected\",\"ts\":1713744003000,\"orderId\":\"ORD-PAPER-8\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"stateAfter\":\"REJECTED\",\"reason\":\"insufficient_position\"}\n{\"eventId\":\"EV-PAPER-24\",\"mode\":\"PAPER\",\"type\":\"OrderCanceled\",\"ts\":1713744003000,\"orderId\":\"ORD-PAPER-5\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"stateAfter\":\"CANCELED\",\"reason\":\"ioc_unfilled\"}\n{\"eventId\":\"EV-PAPER-25\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1713744003000,\"orderId\":\"ORD-PAPER-9\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":410.9589,\"enterBookAtMs\":1713744003500}}\n{\"eventId\":\"EV-PAPER-26\",\"mode\":\"PAPER\",\"type\":\"OrderRejected\",\"ts\":1713744003000,\"orderId\":\"ORD-PAPER-9\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"stateAfter\":\"REJECTED\",\"reason\":\"insufficient_position\"}\n{\"eventId\":\"EV-PAPER-27\",\"mode\":\"PAPER\",\"type\":\"OrderPartiallyFilled\",\"ts\":1713744003000,\"orderId\":\"ORD-PAPER-6\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"stateAfter\":\"PARTIALLY_FILLED\",\"fill\":{\"id\":\"ORD-PAPER-6-F3\",\"orderId\":\"ORD-PAPER-6\",\"mode\":\"PAPER\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"side\":\"BUY\",\"price\":0.3904,\"quantity\":365.8537,\"notional\":142.8293,\"fee\":0.1428,\"ts\":1713744003000,\"bookPrice\":0.385,\"spreadAdj\":0.005,\"impactAdj\":0.0004,\"latencyMs\":216000000,\"grossAmount\":142.8293,\"netAmount\":-142.9721,\"feeBreakdown\":{\"tradingFee\":0.1428,\"fixedFee\":0,\"networkCost\":0,\"totalFee\":0.1428}},\"payload\":{\"pricing\":{\"bookPrice\":0.385,\"spreadAdj\":0.005,\"impactAdj\":0.0004,\"finalPrice\":0.3904},\"fees\":{\"tradingFee\":0.1428,\"fixedFee\":0,\"networkCost\":0,\"totalFee\":0.1428}}}\n{\"eventId\":\"EV-PAPER-28\",\"mode\":\"PAPER\",\"type\":\"OrderFilled\",\"ts\":1713744003000,\"orderId\":\"ORD-PAPER-6\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"stateAfter\":\"FILLED\",\"fill\":{\"id\":\"ORD-PAPER-6-F3\",\"orderId\":\"ORD-PAPER-6\",\"mode\":\"PAPER\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"side\":\"BUY\",\"price\":0.3904,\"quantity\":365.8537,\"notional\":142.8293,\"fee\":0.1428,\"ts\":1713744003000,\"bookPrice\":0.385,\"spreadAdj\":0.005,\"impactAdj\":0.0004,\"latencyMs\":216000000,\"grossAmount\":142.8293,\"netAmount\":-142.9721,\"feeBreakdown\":{\"tradingFee\":0.1428,\"fixedFee\":0,\"networkCost\":0,\"totalFee\":0.1428}}}\n{\"eventId\":\"EV-PAPER-29\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1713744003000,\"orderId\":\"ORD-PAPER-10\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":1000,\"enterBookAtMs\":1713744003500}}\n{\"eventId\":\"EV-PAPER-30\",\"mode\":\"PAPER\",\"type\":\"OrderAccepted\",\"ts\":1713744003000,\"orderId\":\"ORD-PAPER-10\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\"}\n{\"eventId\":\"EV-PAPER-31\",\"mode\":\"PAPER\",\"type\":\"OrderPartiallyFilled\",\"ts\":1713744003000,\"orderId\":\"ORD-PAPER-7\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"stateAfter\":\"PARTIALLY_FILLED\",\"fill\":{\"id\":\"ORD-PAPER-7-F4\",\"orderId\":\"ORD-PAPER-7\",\"mode\":\"PAPER\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"side\":\"BUY\",\"price\":0.1552,\"quantity\":500,\"notional\":77.6,\"fee\":0.0776,\"ts\":1713744003000,\"bookPrice\":0.15,\"spreadAdj\":0.005,\"impactAdj\":0.0002,\"latencyMs\":216000000,\"grossAmount\":77.6,\"netAmount\":-77.6776,\"feeBreakdown\":{\"tradingFee\":0.0776,\"fixedFee\":0,\"networkCost\":0,\"totalFee\":0.0776}},\"payload\":{\"pricing\":{\"bookPrice\":0.15,\"spreadAdj\":0.005,\"impactAdj\":0.0002,\"finalPrice\":0.1552},\"fees\":{\"tradingFee\":0.0776,\"fixedFee\":0,\"networkCost\":0,\"totalFee\":0.0776}}}\n{\"eventId\":\"EV-PAPER-32\",\"mode\":\"PAPER\",\"type\":\"OrderFilled\",\"ts\":1713744003000,\"orderId\":\"ORD-PAPER-7\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"stateAfter\":\"FILLED\",\"fill\":{\"id\":\"ORD-PAPER-7-F4\",\"orderId\":\"ORD-PAPER-7\",\"mode\":\"PAPER\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"side\":\"BUY\",\"price\":0.1552,\"quantity\":500,\"notional\":77.6,\"fee\":0.0776,\"ts\":1713744003000,\"bookPrice\":0.15,\"spreadAdj\":0.005,\"impactAdj\":0.0002,\"latencyMs\":216000000,\"grossAmount\":77.6,\"netAmount\":-77.6776,\"feeBreakdown\":{\"tradingFee\":0.0776,\"fixedFee\":0,\"networkCost\":0,\"totalFee\":0.0776}}}\n{\"eventId\":\"EV-PAPER-33\",\"mode\":\"PAPER\",\"type\":\"OrderEnteredBook\",\"ts\":1713960003000,\"orderId\":\"ORD-PAPER-10\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\",\"payload\":{\"enterDelayMs\":216000000}}\n{\"eventId\":\"EV-PAPER-34\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1713960003000,\"orderId\":\"ORD-PAPER-11\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":394.7368,\"enterBookAtMs\":1713960003500}}\n{\"eventId\":\"EV-PAPER-35\",\"mode\":\"PAPER\",\"type\":\"OrderAccepted\",\"ts\":1713960003000,\"orderId\":\"ORD-PAPER-11\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\"}\n{\"eventId\":\"EV-PAPER-36\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1713960003000,\"orderId\":\"ORD-PAPER-12\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":379.7468,\"enterBookAtMs\":1713960003500}}\n{\"eventId\":\"EV-PAPER-37\",\"mode\":\"PAPER\",\"type\":\"OrderRejected\",\"ts\":1713960003000,\"orderId\":\"ORD-PAPER-12\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"stateAfter\":\"REJECTED\",\"reason\":\"insufficient_position\"}\n{\"eventId\":\"EV-PAPER-38\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1713960003000,\"orderId\":\"ORD-PAPER-13\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":612.2449,\"enterBookAtMs\":1713960003500}}\n{\"eventId\":\"EV-PAPER-39\",\"mode\":\"PAPER\",\"type\":\"OrderRejected\",\"ts\":1713960003000,\"orderId\":\"ORD-PAPER-13\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"stateAfter\":\"REJECTED\",\"reason\":\"insufficient_position\"}\n{\"eventId\":\"EV-PAPER-40\",\"mode\":\"PAPER\",\"type\":\"OrderCanceled\",\"ts\":1713960003000,\"orderId\":\"ORD-PAPER-10\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"stateAfter\":\"CANCELED\",\"reason\":\"ioc_unfilled\"}\n{\"eventId\":\"EV-PAPER-41\",\"mode\":\"PAPER\",\"type\":\"OrderEnteredBook\",\"ts\":1714176003000,\"orderId\":\"ORD-PAPER-11\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\",\"payload\":{\"enterDelayMs\":216000000}}\n{\"eventId\":\"EV-PAPER-42\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1714176003000,\"orderId\":\"ORD-PAPER-14\",\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":2325.5814,\"enterBookAtMs\":1714176003500}}\n{\"eventId\":\"EV-PAPER-43\",\"mode\":\"PAPER\",\"type\":\"OrderAccepted\",\"ts\":1714176003000,\"orderId\":\"ORD-PAPER-14\",\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\"}\n{\"eventId\":\"EV-PAPER-44\",\"mode\":\"PAPER\",\"type\":\"OrderCanceled\",\"ts\":1714176003000,\"orderId\":\"ORD-PAPER-11\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"stateAfter\":\"CANCELED\",\"reason\":\"ioc_unfilled\"}\n{\"eventId\":\"EV-PAPER-45\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1714176003000,\"orderId\":\"ORD-PAPER-15\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":312.5,\"enterBookAtMs\":1714176003500}}\n{\"eventId\":\"EV-PAPER-46\",\"mode\":\"PAPER\",\"type\":\"OrderAccepted\",\"ts\":1714176003000,\"orderId\":\"ORD-PAPER-15\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\"}\n{\"eventId\":\"EV-PAPER-47\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1714176003000,\"orderId\":\"ORD-PAPER-16\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":789.4737,\"enterBookAtMs\":1714176003500}}\n{\"eventId\":\"EV-PAPER-48\",\"mode\":\"PAPER\",\"type\":\"OrderAccepted\",\"ts\":1714176003000,\"orderId\":\"ORD-PAPER-16\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\"}\n{\"eventId\":\"EV-PAPER-49\",\"mode\":\"PAPER\",\"type\":\"OrderEnteredBook\",\"ts\":1714392003000,\"orderId\":\"ORD-PAPER-14\",\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\",\"payload\":{\"enterDelayMs\":216000000}}\n{\"eventId\":\"EV-PAPER-50\",\"mode\":\"PAPER\",\"type\":\"OrderEnteredBook\",\"ts\":1714392003000,\"orderId\":\"ORD-PAPER-15\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\",\"payload\":{\"enterDelayMs\":216000000}}\n{\"eventId\":\"EV-PAPER-51\",\"mode\":\"PAPER\",\"type\":\"OrderEnteredBook\",\"ts\":1714392003000,\"orderId\":\"ORD-PAPER-16\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\",\"payload\":{\"enterDelayMs\":216000000}}\n{\"eventId\":\"EV-PAPER-52\",\"mode\":\"PAPER\",\"type\":\"OrderPartiallyFilled\",\"ts\":1714392003000,\"orderId\":\"ORD-PAPER-14\",\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"outcomeId\":\"YES\",\"stateAfter\":\"PARTIALLY_FILLED\",\"fill\":{\"id\":\"ORD-PAPER-14-F5\",\"orderId\":\"ORD-PAPER-14\",\"mode\":\"PAPER\",\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"outcomeId\":\"YES\",\"side\":\"BUY\",\"price\":0.0631,\"quantity\":500,\"notional\":31.55,\"fee\":0.0316,\"ts\":1714392003000,\"bookPrice\":0.058,\"spreadAdj\":0.005,\"impactAdj\":0.0001,\"latencyMs\":216000000,\"grossAmount\":31.55,\"netAmount\":-31.5816,\"feeBreakdown\":{\"tradingFee\":0.0316,\"fixedFee\":0,\"networkCost\":0,\"totalFee\":0.0316}},\"payload\":{\"pricing\":{\"bookPrice\":0.058,\"spreadAdj\":0.005,\"impactAdj\":0.0001,\"finalPrice\":0.0631},\"fees\":{\"tradingFee\":0.0316,\"fixedFee\":0,\"networkCost\":0,\"totalFee\":0.0316}}}\n{\"eventId\":\"EV-PAPER-53\",\"mode\":\"PAPER\",\"type\":\"OrderPartiallyFilled\",\"ts\":1714392003000,\"orderId\":\"ORD-PAPER-14\",\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"outcomeId\":\"YES\",\"stateAfter\":\"PARTIALLY_FILLED\",\"fill\":{\"id\":\"ORD-PAPER-14-F6\",\"orderId\":\"ORD-PAPER-14\",\"mode\":\"PAPER\",\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"outcomeId\":\"YES\",\"side\":\"BUY\",\"price\":0.0637,\"quantity\":250,\"notional\":15.925,\"fee\":0.0159,\"ts\":1714392003000,\"bookPrice\":0.0586,\"spreadAdj\":0.005,\"impactAdj\":0.0001,\"latencyMs\":216000000,\"grossAmount\":15.925,\"netAmount\":-15.9409,\"feeBreakdown\":{\"tradingFee\":0.0159,\"fixedFee\":0,\"networkCost\":0,\"totalFee\":0.0159}},\"payload\":{\"pricing\":{\"bookPrice\":0.0586,\"spreadAdj\":0.005,\"impactAdj\":0.0001,\"finalPrice\":0.0637},\"fees\":{\"tradingFee\":0.0159,\"fixedFee\":0,\"networkCost\":0,\"totalFee\":0.0159}}}\n{\"eventId\":\"EV-PAPER-54\",\"mode\":\"PAPER\",\"type\":\"OrderCanceled\",\"ts\":1714392003000,\"orderId\":\"ORD-PAPER-14\",\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"outcomeId\":\"YES\",\"stateAfter\":\"CANCELED\",\"reason\":\"ioc_partial_then_cancel\"}\n{\"eventId\":\"EV-PAPER-55\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1714392003000,\"orderId\":\"ORD-PAPER-17\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":1500,\"enterBookAtMs\":1714392003500}}\n{\"eventId\":\"EV-PAPER-56\",\"mode\":\"PAPER\",\"type\":\"OrderAccepted\",\"ts\":1714392003000,\"orderId\":\"ORD-PAPER-17\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\"}\n{\"eventId\":\"EV-PAPER-57\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1714392003000,\"orderId\":\"ORD-PAPER-18\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":202.7027,\"enterBookAtMs\":1714392003500}}\n{\"eventId\":\"EV-PAPER-58\",\"mode\":\"PAPER\",\"type\":\"OrderAccepted\",\"ts\":1714392003000,\"orderId\":\"ORD-PAPER-18\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\"}\n{\"eventId\":\"EV-PAPER-59\",\"mode\":\"PAPER\",\"type\":\"OrderPartiallyFilled\",\"ts\":1714392003000,\"orderId\":\"ORD-PAPER-15\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"stateAfter\":\"PARTIALLY_FILLED\",\"fill\":{\"id\":\"ORD-PAPER-15-F7\",\"orderId\":\"ORD-PAPER-15\",\"mode\":\"PAPER\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"side\":\"SELL\",\"price\":0.7342,\"quantity\":312.5,\"notional\":229.4375,\"fee\":0.2294,\"ts\":1714392003000,\"bookPrice\":0.74,\"spreadAdj\":0.005,\"impactAdj\":0.0008,\"latencyMs\":216000000,\"grossAmount\":229.4375,\"netAmount\":229.2081,\"feeBreakdown\":{\"tradingFee\":0.2294,\"fixedFee\":0,\"networkCost\":0,\"totalFee\":0.2294}},\"payload\":{\"pricing\":{\"bookPrice\":0.74,\"spreadAdj\":0.005,\"impactAdj\":0.0008,\"finalPrice\":0.7342},\"fees\":{\"tradingFee\":0.2294,\"fixedFee\":0,\"networkCost\":0,\"totalFee\":0.2294}}}\n{\"eventId\":\"EV-PAPER-60\",\"mode\":\"PAPER\",\"type\":\"OrderFilled\",\"ts\":1714392003000,\"orderId\":\"ORD-PAPER-15\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"stateAfter\":\"FILLED\",\"fill\":{\"id\":\"ORD-PAPER-15-F7\",\"orderId\":\"ORD-PAPER-15\",\"mode\":\"PAPER\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"side\":\"SELL\",\"price\":0.7342,\"quantity\":312.5,\"notional\":229.4375,\"fee\":0.2294,\"ts\":1714392003000,\"bookPrice\":0.74,\"spreadAdj\":0.005,\"impactAdj\":0.0008,\"latencyMs\":216000000,\"grossAmount\":229.4375,\"netAmount\":229.2081,\"feeBreakdown\":{\"tradingFee\":0.2294,\"fixedFee\":0,\"networkCost\":0,\"totalFee\":0.2294}}}\n{\"eventId\":\"EV-PAPER-61\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1714392003000,\"orderId\":\"ORD-PAPER-19\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":731.7073,\"enterBookAtMs\":1714392003500}}\n{\"eventId\":\"EV-PAPER-62\",\"mode\":\"PAPER\",\"type\":\"OrderRejected\",\"ts\":1714392003000,\"orderId\":\"ORD-PAPER-19\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"stateAfter\":\"REJECTED\",\"reason\":\"insufficient_position\"}\n{\"eventId\":\"EV-PAPER-63\",\"mode\":\"PAPER\",\"type\":\"OrderCanceled\",\"ts\":1714392003000,\"orderId\":\"ORD-PAPER-16\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"stateAfter\":\"CANCELED\",\"reason\":\"ioc_unfilled\"}\n{\"eventId\":\"EV-PAPER-64\",\"mode\":\"PAPER\",\"type\":\"OrderEnteredBook\",\"ts\":1714608003000,\"orderId\":\"ORD-PAPER-17\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\",\"payload\":{\"enterDelayMs\":216000000}}\n{\"eventId\":\"EV-PAPER-65\",\"mode\":\"PAPER\",\"type\":\"OrderEnteredBook\",\"ts\":1714608003000,\"orderId\":\"ORD-PAPER-18\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"stateAfter\":\"ACCEPTED\",\"payload\":{\"enterDelayMs\":216000000}}\n{\"eventId\":\"EV-PAPER-66\",\"mode\":\"PAPER\",\"type\":\"OrderCanceled\",\"ts\":1714608003000,\"orderId\":\"ORD-PAPER-17\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"stateAfter\":\"CANCELED\",\"reason\":\"ioc_unfilled\"}\n{\"eventId\":\"EV-PAPER-67\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1714608003000,\"orderId\":\"ORD-PAPER-20\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":220.5882,\"enterBookAtMs\":1714608003500}}\n{\"eventId\":\"EV-PAPER-68\",\"mode\":\"PAPER\",\"type\":\"OrderRejected\",\"ts\":1714608003000,\"orderId\":\"ORD-PAPER-20\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"stateAfter\":\"REJECTED\",\"reason\":\"market_closed\"}\n{\"eventId\":\"EV-PAPER-69\",\"mode\":\"PAPER\",\"type\":\"OrderCanceled\",\"ts\":1714608003000,\"orderId\":\"ORD-PAPER-18\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"stateAfter\":\"CANCELED\",\"reason\":\"ioc_unfilled\"}\n{\"eventId\":\"EV-PAPER-70\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1714608003000,\"orderId\":\"ORD-PAPER-21\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":517.2414,\"enterBookAtMs\":1714608003500}}\n{\"eventId\":\"EV-PAPER-71\",\"mode\":\"PAPER\",\"type\":\"OrderRejected\",\"ts\":1714608003000,\"orderId\":\"ORD-PAPER-21\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"stateAfter\":\"REJECTED\",\"reason\":\"market_closed\"}\n{\"eventId\":\"EV-PAPER-72\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1714824003000,\"orderId\":\"ORD-PAPER-22\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":2000,\"enterBookAtMs\":1714824003500}}\n{\"eventId\":\"EV-PAPER-73\",\"mode\":\"PAPER\",\"type\":\"OrderRejected\",\"ts\":1714824003000,\"orderId\":\"ORD-PAPER-22\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"stateAfter\":\"REJECTED\",\"reason\":\"market_closed\"}\n{\"eventId\":\"EV-PAPER-74\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1714824003000,\"orderId\":\"ORD-PAPER-23\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":196.0784,\"enterBookAtMs\":1714824003500}}\n{\"eventId\":\"EV-PAPER-75\",\"mode\":\"PAPER\",\"type\":\"OrderRejected\",\"ts\":1714824003000,\"orderId\":\"ORD-PAPER-23\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"stateAfter\":\"REJECTED\",\"reason\":\"market_closed\"}\n{\"eventId\":\"EV-PAPER-76\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1714824003000,\"orderId\":\"ORD-PAPER-24\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":697.6744,\"enterBookAtMs\":1714824003500}}\n{\"eventId\":\"EV-PAPER-77\",\"mode\":\"PAPER\",\"type\":\"OrderRejected\",\"ts\":1714824003000,\"orderId\":\"ORD-PAPER-24\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"stateAfter\":\"REJECTED\",\"reason\":\"market_closed\"}\n{\"eventId\":\"EV-PAPER-78\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1715040002000,\"orderId\":\"ORD-PAPER-25\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":348.8372,\"enterBookAtMs\":1715040002500}}\n{\"eventId\":\"EV-PAPER-79\",\"mode\":\"PAPER\",\"type\":\"OrderRejected\",\"ts\":1715040002000,\"orderId\":\"ORD-PAPER-25\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"stateAfter\":\"REJECTED\",\"reason\":\"market_closed\"}\n{\"eventId\":\"EV-PAPER-80\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1715040002000,\"orderId\":\"ORD-PAPER-26\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":468.75,\"enterBookAtMs\":1715040002500}}\n{\"eventId\":\"EV-PAPER-81\",\"mode\":\"PAPER\",\"type\":\"OrderRejected\",\"ts\":1715040002000,\"orderId\":\"ORD-PAPER-26\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"stateAfter\":\"REJECTED\",\"reason\":\"market_closed\"}\n{\"eventId\":\"EV-PAPER-82\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1715256003000,\"orderId\":\"ORD-PAPER-27\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":1886.7925,\"enterBookAtMs\":1715256003500}}\n{\"eventId\":\"EV-PAPER-83\",\"mode\":\"PAPER\",\"type\":\"OrderRejected\",\"ts\":1715256003000,\"orderId\":\"ORD-PAPER-27\",\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"outcomeId\":\"YES\",\"stateAfter\":\"REJECTED\",\"reason\":\"market_closed\"}\n{\"eventId\":\"EV-PAPER-84\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1715256003000,\"orderId\":\"ORD-PAPER-28\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":882.3529,\"enterBookAtMs\":1715256003500}}\n{\"eventId\":\"EV-PAPER-85\",\"mode\":\"PAPER\",\"type\":\"OrderRejected\",\"ts\":1715256003000,\"orderId\":\"ORD-PAPER-28\",\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"outcomeId\":\"YES\",\"stateAfter\":\"REJECTED\",\"reason\":\"market_closed\"}\n{\"eventId\":\"EV-PAPER-86\",\"mode\":\"PAPER\",\"type\":\"OrderCreated\",\"ts\":1715256003000,\"orderId\":\"ORD-PAPER-29\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"payload\":{\"tif\":\"IOC\",\"qty\":184.0491,\"enterBookAtMs\":1715256003500}}\n{\"eventId\":\"EV-PAPER-87\",\"mode\":\"PAPER\",\"type\":\"OrderRejected\",\"ts\":1715256003000,\"orderId\":\"ORD-PAPER-29\",\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"outcomeId\":\"YES\",\"stateAfter\":\"REJECTED\",\"reason\":\"market_closed\"}\n{\"eventId\":\"EV-PAPER-88\",\"mode\":\"PAPER\",\"type\":\"MarketResolved\",\"ts\":1714564801000,\"marketId\":\"0xfa361d1eb8dcd671baee6f5ce7aaf0a7b85cc65d380e606b484579901ac93c83\",\"payload\":{\"reason\":\"RESOLVED\",\"winningOutcomeId\":\"NO\",\"source\":\"polymarket_gamma_outcome_prices\"}}\n{\"eventId\":\"EV-PAPER-89\",\"mode\":\"PAPER\",\"type\":\"PositionSettled\",\"ts\":1714564801000,\"marketId\":\"0xfa361d1eb8dcd671baee6f5ce7aaf0a7b85cc65d380e606b484579901ac93c83\",\"settlement\":{\"marketId\":\"0xfa361d1eb8dcd671baee6f5ce7aaf0a7b85cc65d380e606b484579901ac93c83\",\"ts\":1714564801000,\"reason\":\"RESOLVED\",\"winningOutcomeId\":\"NO\",\"source\":\"polymarket_gamma_outcome_prices\",\"cashDelta\":0,\"settledPnlDelta\":0}}\n{\"eventId\":\"EV-PAPER-90\",\"mode\":\"PAPER\",\"type\":\"SettlementApplied\",\"ts\":1714564801000,\"marketId\":\"0xfa361d1eb8dcd671baee6f5ce7aaf0a7b85cc65d380e606b484579901ac93c83\",\"settlement\":{\"marketId\":\"0xfa361d1eb8dcd671baee6f5ce7aaf0a7b85cc65d380e606b484579901ac93c83\",\"ts\":1714564801000,\"reason\":\"RESOLVED\",\"winningOutcomeId\":\"NO\",\"source\":\"polymarket_gamma_outcome_prices\",\"cashDelta\":0,\"settledPnlDelta\":0}}\n{\"eventId\":\"EV-PAPER-91\",\"mode\":\"PAPER\",\"type\":\"MarketResolved\",\"ts\":1714564801000,\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"payload\":{\"reason\":\"RESOLVED\",\"winningOutcomeId\":\"NO\",\"source\":\"polymarket_gamma_outcome_prices\"}}\n{\"eventId\":\"EV-PAPER-92\",\"mode\":\"PAPER\",\"type\":\"PositionSettled\",\"ts\":1714564801000,\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"settlement\":{\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"ts\":1714564801000,\"reason\":\"RESOLVED\",\"winningOutcomeId\":\"NO\",\"source\":\"polymarket_gamma_outcome_prices\",\"cashDelta\":0,\"settledPnlDelta\":-92.675}}\n{\"eventId\":\"EV-PAPER-93\",\"mode\":\"PAPER\",\"type\":\"SettlementApplied\",\"ts\":1714564801000,\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"settlement\":{\"marketId\":\"0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867\",\"ts\":1714564801000,\"reason\":\"RESOLVED\",\"winningOutcomeId\":\"NO\",\"source\":\"polymarket_gamma_outcome_prices\",\"cashDelta\":0,\"settledPnlDelta\":-92.675}}\n{\"eventId\":\"EV-PAPER-94\",\"mode\":\"PAPER\",\"type\":\"MarketResolved\",\"ts\":1714564801000,\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"payload\":{\"reason\":\"RESOLVED\",\"winningOutcomeId\":\"NO\",\"source\":\"polymarket_gamma_outcome_prices\"}}\n{\"eventId\":\"EV-PAPER-95\",\"mode\":\"PAPER\",\"type\":\"PositionSettled\",\"ts\":1714564801000,\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"settlement\":{\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"ts\":1714564801000,\"reason\":\"RESOLVED\",\"winningOutcomeId\":\"NO\",\"source\":\"polymarket_gamma_outcome_prices\",\"cashDelta\":0,\"settledPnlDelta\":0}}\n{\"eventId\":\"EV-PAPER-96\",\"mode\":\"PAPER\",\"type\":\"SettlementApplied\",\"ts\":1714564801000,\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"settlement\":{\"marketId\":\"0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c\",\"ts\":1714564801000,\"reason\":\"RESOLVED\",\"winningOutcomeId\":\"NO\",\"source\":\"polymarket_gamma_outcome_prices\",\"cashDelta\":0,\"settledPnlDelta\":0}}\n{\"eventId\":\"EV-PAPER-97\",\"mode\":\"PAPER\",\"type\":\"MarketResolved\",\"ts\":1714564801000,\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"payload\":{\"reason\":\"RESOLVED\",\"winningOutcomeId\":\"NO\",\"source\":\"polymarket_gamma_outcome_prices\"}}\n{\"eventId\":\"EV-PAPER-98\",\"mode\":\"PAPER\",\"type\":\"PositionSettled\",\"ts\":1714564801000,\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"settlement\":{\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"ts\":1714564801000,\"reason\":\"RESOLVED\",\"winningOutcomeId\":\"NO\",\"source\":\"polymarket_gamma_outcome_prices\",\"cashDelta\":0,\"settledPnlDelta\":-20.8293}}\n{\"eventId\":\"EV-PAPER-99\",\"mode\":\"PAPER\",\"type\":\"SettlementApplied\",\"ts\":1714564801000,\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"settlement\":{\"marketId\":\"0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a\",\"ts\":1714564801000,\"reason\":\"RESOLVED\",\"winningOutcomeId\":\"NO\",\"source\":\"polymarket_gamma_outcome_prices\",\"cashDelta\":0,\"settledPnlDelta\":-20.8293}}\n{\"eventId\":\"EV-PAPER-100\",\"mode\":\"PAPER\",\"type\":\"MarketResolved\",\"ts\":1714564801000,\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"payload\":{\"reason\":\"RESOLVED\",\"winningOutcomeId\":\"YES\",\"source\":\"polymarket_gamma_outcome_prices\"}}\n{\"eventId\":\"EV-PAPER-101\",\"mode\":\"PAPER\",\"type\":\"PositionSettled\",\"ts\":1714564801000,\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"settlement\":{\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"ts\":1714564801000,\"reason\":\"RESOLVED\",\"winningOutcomeId\":\"YES\",\"source\":\"polymarket_gamma_outcome_prices\",\"cashDelta\":500,\"settledPnlDelta\":422.4}}\n{\"eventId\":\"EV-PAPER-102\",\"mode\":\"PAPER\",\"type\":\"SettlementApplied\",\"ts\":1714564801000,\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"settlement\":{\"marketId\":\"0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c\",\"ts\":1714564801000,\"reason\":\"RESOLVED\",\"winningOutcomeId\":\"YES\",\"source\":\"polymarket_gamma_outcome_prices\",\"cashDelta\":500,\"settledPnlDelta\":422.4}}\n{\"eventId\":\"EV-PAPER-103\",\"mode\":\"PAPER\",\"type\":\"MarketResolved\",\"ts\":1717243201000,\"marketId\":\"0x07954fd1965dea6b78eaa5f6823d3546b8219a284fd89b27454b7f05f4098340\",\"payload\":{\"reason\":\"RESOLVED\",\"winningOutcomeId\":\"NO\",\"source\":\"polymarket_gamma_outcome_prices\"}}\n{\"eventId\":\"EV-PAPER-104\",\"mode\":\"PAPER\",\"type\":\"PositionSettled\",\"ts\":1717243201000,\"marketId\":\"0x07954fd1965dea6b78eaa5f6823d3546b8219a284fd89b27454b7f05f4098340\",\"settlement\":{\"marketId\":\"0x07954fd1965dea6b78eaa5f6823d3546b8219a284fd89b27454b7f05f4098340\",\"ts\":1717243201000,\"reason\":\"RESOLVED\",\"winningOutcomeId\":\"NO\",\"source\":\"polymarket_gamma_outcome_prices\",\"cashDelta\":0,\"settledPnlDelta\":0}}\n{\"eventId\":\"EV-PAPER-105\",\"mode\":\"PAPER\",\"type\":\"SettlementApplied\",\"ts\":1717243201000,\"marketId\":\"0x07954fd1965dea6b78eaa5f6823d3546b8219a284fd89b27454b7f05f4098340\",\"settlement\":{\"marketId\":\"0x07954fd1965dea6b78eaa5f6823d3546b8219a284fd89b27454b7f05f4098340\",\"ts\":1717243201000,\"reason\":\"RESOLVED\",\"winningOutcomeId\":\"NO\",\"source\":\"polymarket_gamma_outcome_prices\",\"cashDelta\":0,\"settledPnlDelta\":0}}",
+  "report": {
+    "generatedAt": "2026-02-28T13:48:48.995Z",
+    "summary": {
+      "mode": "PAPER",
+      "totalOrders": 29,
+      "totalFills": 7,
+      "totalSettlements": 6
+    },
+    "tradingMetrics": {
+      "totalReturn": 4.157906,
+      "maxDrawdownPct": 4.8004,
+      "sharpe": -0.066112,
+      "sortino": -0.036648,
+      "winRatePct": 16.6667,
+      "profitFactor": 3.721445,
+      "expectancy": 51.482617,
+      "turnover": 542.5418,
+      "avgHoldingMinutes": 3600,
+      "feeRatioPct": 0.100011
+    },
+    "forecastMetrics": {
+      "brierScore": 0.154316,
+      "logLoss": 0.430309,
+      "sharpness": 0.175356,
+      "calibration": [
+        {
+          "binStart": 0,
+          "binEnd": 0.1,
+          "count": 36,
+          "avgPredicted": 0.0241,
+          "observedFrequency": 0.0278
+        },
+        {
+          "binStart": 0.1,
+          "binEnd": 0.2,
+          "count": 2,
+          "avgPredicted": 0.1585,
+          "observedFrequency": 1
+        },
+        {
+          "binStart": 0.2,
+          "binEnd": 0.3,
+          "count": 7,
+          "avgPredicted": 0.2516,
+          "observedFrequency": 0.2857
+        },
+        {
+          "binStart": 0.3,
+          "binEnd": 0.4,
+          "count": 9,
+          "avgPredicted": 0.3496,
+          "observedFrequency": 0.5556
+        },
+        {
+          "binStart": 0.4,
+          "binEnd": 0.5,
+          "count": 2,
+          "avgPredicted": 0.4105,
+          "observedFrequency": 0
+        },
+        {
+          "binStart": 0.5,
+          "binEnd": 0.6,
+          "count": 1,
+          "avgPredicted": 0.524,
+          "observedFrequency": 0
+        },
+        {
+          "binStart": 0.6,
+          "binEnd": 0.7,
+          "count": 1,
+          "avgPredicted": 0.638,
+          "observedFrequency": 0
+        },
+        {
+          "binStart": 0.7,
+          "binEnd": 0.8,
+          "count": 1,
+          "avgPredicted": 0.742,
+          "observedFrequency": 0
+        },
+        {
+          "binStart": 0.8,
+          "binEnd": 0.9,
+          "count": 2,
+          "avgPredicted": 0.8355,
+          "observedFrequency": 0
+        },
+        {
+          "binStart": 0.9,
+          "binEnd": 1,
+          "count": 0,
+          "avgPredicted": 0,
+          "observedFrequency": 0
+        }
+      ],
+      "horizonBreakdown": [
+        {
+          "bucket": "T-7+",
+          "brier": 0.117975,
+          "count": 19
+        },
+        {
+          "bucket": "T-3~7",
+          "brier": 0.177687,
+          "count": 11
+        },
+        {
+          "bucket": "T-1~3",
+          "brier": 0.190318,
+          "count": 6
+        },
+        {
+          "bucket": "T-0~1",
+          "brier": 0.163011,
+          "count": 25
+        }
+      ]
+    },
+    "robustness": {
+      "feeStress": [
+        {
+          "feeMultiplier": 1,
+          "projectedReturn": 4.157906
+        },
+        {
+          "feeMultiplier": 1.5,
+          "projectedReturn": 4.155193
+        },
+        {
+          "feeMultiplier": 2,
+          "projectedReturn": 4.15248
+        }
+      ],
+      "slippageStress": [
+        {
+          "extraSlippageBps": 0,
+          "projectedReturn": 4.157906
+        },
+        {
+          "extraSlippageBps": 5,
+          "projectedReturn": 4.155193
+        },
+        {
+          "extraSlippageBps": 10,
+          "projectedReturn": 4.152481
+        },
+        {
+          "extraSlippageBps": 20,
+          "projectedReturn": 4.147055
+        }
+      ],
+      "reconciliation": {
+        "ledgerSettledPnl": 308.8957,
+        "settlementsSum": 308.8957,
+        "diff": 0
+      }
+    },
+    "decomposition": {
+      "byMarket": [
+        {
+          "key": "0x07954fd1965dea6b78eaa5f6823d3546b8219a284fd89b27454b7f05f4098340",
+          "pnl": 0,
+          "trades": 1
+        },
+        {
+          "key": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+          "pnl": 422.4,
+          "trades": 1
+        },
+        {
+          "key": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+          "pnl": -20.8293,
+          "trades": 1
+        },
+        {
+          "key": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+          "pnl": 0,
+          "trades": 1
+        },
+        {
+          "key": "0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867",
+          "pnl": -92.675,
+          "trades": 1
+        },
+        {
+          "key": "0xfa361d1eb8dcd671baee6f5ce7aaf0a7b85cc65d380e606b484579901ac93c83",
+          "pnl": 0,
+          "trades": 1
+        }
+      ],
+      "byCity": [
+        {
+          "key": "0x07954fd1965dea6b78eaa5f6823d3546b8219a284fd89b27454b7f05f4098340",
+          "pnl": 0,
+          "trades": 1
+        },
+        {
+          "key": "0x808fc2450113e86e89787be4bcd033ad198c656fe4d18bd7f48a4443f72acd8c",
+          "pnl": 422.4,
+          "trades": 1
+        },
+        {
+          "key": "0x4871e138b2ce626ff72ef12009ffa5dea965252b40135db45a74e0142661240a",
+          "pnl": -20.8293,
+          "trades": 1
+        },
+        {
+          "key": "0x7fe1c5da1d0b1adac75a6b185a8ac59849ce20bfd2019ed7d45ef65a08a64c5c",
+          "pnl": 0,
+          "trades": 1
+        },
+        {
+          "key": "0x0b566f7c936578ed6bccdeacf85919ae01d6e4186081a53b895dd70d95522867",
+          "pnl": -92.675,
+          "trades": 1
+        },
+        {
+          "key": "0xfa361d1eb8dcd671baee6f5ce7aaf0a7b85cc65d380e606b484579901ac93c83",
+          "pnl": 0,
+          "trades": 1
+        }
+      ],
+      "byDate": [
+        {
+          "key": "UNKNOWN",
+          "pnl": 308.8957,
+          "trades": 6
+        }
+      ]
+    },
+    "charts": {
+      "equityCurve": [
+        {
+          "ts": 1712880003000,
+          "equity": 10000
+        },
+        {
+          "ts": 1712880003000,
+          "equity": 10000
+        },
+        {
+          "ts": 1712880003000,
+          "equity": 10000
+        },
+        {
+          "ts": 1712880003000,
+          "equity": 10000
+        },
+        {
+          "ts": 1712880003000,
+          "equity": 10000
+        },
+        {
+          "ts": 1712880003000,
+          "equity": 10000
+        },
+        {
+          "ts": 1713096002000,
+          "equity": 10000
+        },
+        {
+          "ts": 1713096002000,
+          "equity": 10000
+        },
+        {
+          "ts": 1713096002000,
+          "equity": 10000
+        },
+        {
+          "ts": 1713096002000,
+          "equity": 10000
+        },
+        {
+          "ts": 1713096002000,
+          "equity": 10000
+        },
+        {
+          "ts": 1713312003000,
+          "equity": 10000
+        },
+        {
+          "ts": 1713312003000,
+          "equity": 10000
+        },
+        {
+          "ts": 1713312003000,
+          "equity": 10000
+        },
+        {
+          "ts": 1713312003000,
+          "equity": 10000
+        },
+        {
+          "ts": 1713312003000,
+          "equity": 10000
+        },
+        {
+          "ts": 1713528003000,
+          "equity": 10000
+        },
+        {
+          "ts": 1713528003000,
+          "equity": 9954.7547
+        },
+        {
+          "ts": 1713528003000,
+          "equity": 9954.7547
+        },
+        {
+          "ts": 1713528003000,
+          "equity": 9954.7547
+        },
+        {
+          "ts": 1713528003000,
+          "equity": 9954.7547
+        },
+        {
+          "ts": 1713744003000,
+          "equity": 9954.7547
+        },
+        {
+          "ts": 1713744003000,
+          "equity": 9954.7547
+        },
+        {
+          "ts": 1713744003000,
+          "equity": 9954.7547
+        },
+        {
+          "ts": 1713744003000,
+          "equity": 9811.7826
+        },
+        {
+          "ts": 1713744003000,
+          "equity": 9734.105
+        },
+        {
+          "ts": 1713960003000,
+          "equity": 9734.105
+        },
+        {
+          "ts": 1713960003000,
+          "equity": 9734.105
+        },
+        {
+          "ts": 1713960003000,
+          "equity": 9734.105
+        },
+        {
+          "ts": 1713960003000,
+          "equity": 9734.105
+        },
+        {
+          "ts": 1713960003000,
+          "equity": 9734.105
+        },
+        {
+          "ts": 1714176003000,
+          "equity": 9734.105
+        },
+        {
+          "ts": 1714176003000,
+          "equity": 9734.105
+        },
+        {
+          "ts": 1714176003000,
+          "equity": 9734.105
+        },
+        {
+          "ts": 1714176003000,
+          "equity": 9734.105
+        },
+        {
+          "ts": 1714176003000,
+          "equity": 9734.105
+        },
+        {
+          "ts": 1714392003000,
+          "equity": 9734.105
+        },
+        {
+          "ts": 1714392003000,
+          "equity": 9686.5825
+        },
+        {
+          "ts": 1714392003000,
+          "equity": 9686.5825
+        },
+        {
+          "ts": 1714392003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1714392003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1714564801000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1714564801000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1714564801000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1714564801000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1714564801000,
+          "equity": 10415.7906
+        },
+        {
+          "ts": 1714608003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1714608003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1714608003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1714608003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1714608003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1714824003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1714824003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1714824003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1714824003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1714824003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1715040002000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1715040002000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1715040002000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1715040002000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1715040002000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1715256003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1715256003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1715256003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1715256003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1715256003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1715472003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1715688003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1715904003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1716120003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1716336003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1716552004000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1716768003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1716984003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1717200003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1717243201000,
+          "equity": 10415.7906
+        },
+        {
+          "ts": 1717416004000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1717632003000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1717848002000,
+          "equity": 9915.7906
+        },
+        {
+          "ts": 1718064002000,
+          "equity": 9915.7906
+        }
+      ],
+      "drawdownCurve": [
+        {
+          "ts": 1712880003000,
+          "drawdownPct": 0
+        },
+        {
+          "ts": 1712880003000,
+          "drawdownPct": 0
+        },
+        {
+          "ts": 1712880003000,
+          "drawdownPct": 0
+        },
+        {
+          "ts": 1712880003000,
+          "drawdownPct": 0
+        },
+        {
+          "ts": 1712880003000,
+          "drawdownPct": 0
+        },
+        {
+          "ts": 1712880003000,
+          "drawdownPct": 0
+        },
+        {
+          "ts": 1713096002000,
+          "drawdownPct": 0
+        },
+        {
+          "ts": 1713096002000,
+          "drawdownPct": 0
+        },
+        {
+          "ts": 1713096002000,
+          "drawdownPct": 0
+        },
+        {
+          "ts": 1713096002000,
+          "drawdownPct": 0
+        },
+        {
+          "ts": 1713096002000,
+          "drawdownPct": 0
+        },
+        {
+          "ts": 1713312003000,
+          "drawdownPct": 0
+        },
+        {
+          "ts": 1713312003000,
+          "drawdownPct": 0
+        },
+        {
+          "ts": 1713312003000,
+          "drawdownPct": 0
+        },
+        {
+          "ts": 1713312003000,
+          "drawdownPct": 0
+        },
+        {
+          "ts": 1713312003000,
+          "drawdownPct": 0
+        },
+        {
+          "ts": 1713528003000,
+          "drawdownPct": 0
+        },
+        {
+          "ts": 1713528003000,
+          "drawdownPct": 0.4525
+        },
+        {
+          "ts": 1713528003000,
+          "drawdownPct": 0.4525
+        },
+        {
+          "ts": 1713528003000,
+          "drawdownPct": 0.4525
+        },
+        {
+          "ts": 1713528003000,
+          "drawdownPct": 0.4525
+        },
+        {
+          "ts": 1713744003000,
+          "drawdownPct": 0.4525
+        },
+        {
+          "ts": 1713744003000,
+          "drawdownPct": 0.4525
+        },
+        {
+          "ts": 1713744003000,
+          "drawdownPct": 0.4525
+        },
+        {
+          "ts": 1713744003000,
+          "drawdownPct": 1.8822
+        },
+        {
+          "ts": 1713744003000,
+          "drawdownPct": 2.659
+        },
+        {
+          "ts": 1713960003000,
+          "drawdownPct": 2.659
+        },
+        {
+          "ts": 1713960003000,
+          "drawdownPct": 2.659
+        },
+        {
+          "ts": 1713960003000,
+          "drawdownPct": 2.659
+        },
+        {
+          "ts": 1713960003000,
+          "drawdownPct": 2.659
+        },
+        {
+          "ts": 1713960003000,
+          "drawdownPct": 2.659
+        },
+        {
+          "ts": 1714176003000,
+          "drawdownPct": 2.659
+        },
+        {
+          "ts": 1714176003000,
+          "drawdownPct": 2.659
+        },
+        {
+          "ts": 1714176003000,
+          "drawdownPct": 2.659
+        },
+        {
+          "ts": 1714176003000,
+          "drawdownPct": 2.659
+        },
+        {
+          "ts": 1714176003000,
+          "drawdownPct": 2.659
+        },
+        {
+          "ts": 1714392003000,
+          "drawdownPct": 2.659
+        },
+        {
+          "ts": 1714392003000,
+          "drawdownPct": 3.1342
+        },
+        {
+          "ts": 1714392003000,
+          "drawdownPct": 3.1342
+        },
+        {
+          "ts": 1714392003000,
+          "drawdownPct": 0.8421
+        },
+        {
+          "ts": 1714392003000,
+          "drawdownPct": 0.8421
+        },
+        {
+          "ts": 1714564801000,
+          "drawdownPct": 0.8421
+        },
+        {
+          "ts": 1714564801000,
+          "drawdownPct": 0.8421
+        },
+        {
+          "ts": 1714564801000,
+          "drawdownPct": 0.8421
+        },
+        {
+          "ts": 1714564801000,
+          "drawdownPct": 0.8421
+        },
+        {
+          "ts": 1714564801000,
+          "drawdownPct": 0
+        },
+        {
+          "ts": 1714608003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1714608003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1714608003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1714608003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1714608003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1714824003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1714824003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1714824003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1714824003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1714824003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1715040002000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1715040002000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1715040002000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1715040002000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1715040002000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1715256003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1715256003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1715256003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1715256003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1715256003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1715472003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1715688003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1715904003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1716120003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1716336003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1716552004000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1716768003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1716984003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1717200003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1717243201000,
+          "drawdownPct": 0
+        },
+        {
+          "ts": 1717416004000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1717632003000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1717848002000,
+          "drawdownPct": 4.8004
+        },
+        {
+          "ts": 1718064002000,
+          "drawdownPct": 4.8004
+        }
+      ],
+      "calibration": [
+        {
+          "binStart": 0,
+          "binEnd": 0.1,
+          "count": 36,
+          "avgPredicted": 0.0241,
+          "observedFrequency": 0.0278
+        },
+        {
+          "binStart": 0.1,
+          "binEnd": 0.2,
+          "count": 2,
+          "avgPredicted": 0.1585,
+          "observedFrequency": 1
+        },
+        {
+          "binStart": 0.2,
+          "binEnd": 0.3,
+          "count": 7,
+          "avgPredicted": 0.2516,
+          "observedFrequency": 0.2857
+        },
+        {
+          "binStart": 0.3,
+          "binEnd": 0.4,
+          "count": 9,
+          "avgPredicted": 0.3496,
+          "observedFrequency": 0.5556
+        },
+        {
+          "binStart": 0.4,
+          "binEnd": 0.5,
+          "count": 2,
+          "avgPredicted": 0.4105,
+          "observedFrequency": 0
+        },
+        {
+          "binStart": 0.5,
+          "binEnd": 0.6,
+          "count": 1,
+          "avgPredicted": 0.524,
+          "observedFrequency": 0
+        },
+        {
+          "binStart": 0.6,
+          "binEnd": 0.7,
+          "count": 1,
+          "avgPredicted": 0.638,
+          "observedFrequency": 0
+        },
+        {
+          "binStart": 0.7,
+          "binEnd": 0.8,
+          "count": 1,
+          "avgPredicted": 0.742,
+          "observedFrequency": 0
+        },
+        {
+          "binStart": 0.8,
+          "binEnd": 0.9,
+          "count": 2,
+          "avgPredicted": 0.8355,
+          "observedFrequency": 0
+        },
+        {
+          "binStart": 0.9,
+          "binEnd": 1,
+          "count": 0,
+          "avgPredicted": 0,
+          "observedFrequency": 0
+        }
+      ]
+    }
+  },
+  "sourceMeta": {
+    "eventsFetched": 12,
+    "marketsUsed": 6,
+    "quotePoints": 73,
+    "forecastPoints": 61,
+    "settlements": 6
+  },
+  "executionConfig": {
+    "latencyMs": 500,
+    "maxFillRatioPerTick": 0.2,
+    "spreadSlippageK": 0.25,
+    "impactBps": 10,
+    "tradingFeeRate": 0.001
+  },
+  "realEligibility": {
+    "eligibleForReal": true,
+    "checks": {
+      "positiveReturn": true,
+      "drawdownOk": true,
+      "brierOk": true,
+      "minTrades": true
+    }
+  }
+}

@@ -1,0 +1,739 @@
+{
+  "version": 2,
+  "environment": "PAPER",
+  "profiles": {
+    "REAL": {
+      "executionLabel": "REAL EXECUTION",
+      "purpose": "生产环境，使用真实钱包和真实资产交易，目标是稳定盈利。",
+      "riskHint": "真实环境会产生链上费用与真实盈亏，请确认风控阈值与凭据权限。",
+      "wallet": {
+        "label": "Real Wallet",
+        "address": "0x5bdcac4d50dc569430464157f7a835cafdd92050",
+        "balance": 5432.1,
+        "unit": "USDC",
+        "connected": true,
+        "isSimulated": false,
+        "bindingMethod": "PLUGIN_SIGNATURE",
+        "boundAt": "2026-02-28T17:42:10.581Z"
+      },
+      "credential": {
+        "provider": "POLYMARKET",
+        "host": "https://clob.polymarket.com",
+        "chainId": 137,
+        "signatureType": 1,
+        "funder": "0xe6ec299deb19c85d2923c44675d46d6a04a3d1fb",
+        "walletAddress": "0xe6ec299deb19c85d2923c44675d46d6a04a3d1fb",
+        "apiKey": "019c9ac4-5209-7392-b7a0-0272dd422086",
+        "keyName": "019c9ac4-5209-7392-b7a0-0272dd422086",
+        "healthy": true,
+        "lastHeartbeat": "刚刚",
+        "scope": "clob:l2",
+        "lastDerivedAt": "2026-02-28T17:31:41.404Z",
+        "encryptedStored": true,
+        "secretMasked": "vcj***X8=",
+        "passphraseMasked": "e80***673"
+      }
+    },
+    "PAPER": {
+      "executionLabel": "PAPER SIMULATION",
+      "purpose": "模拟环境，使用模拟钱包和模拟资产验证策略效果。",
+      "riskHint": "不会产生真实资产损失，适合回测验证和策略调参。",
+      "wallet": {
+        "label": "Paper Wallet",
+        "address": "0xe6ec299deb19c85d2923c44675d46d6a04a3d1fb",
+        "balance": 999999.8047,
+        "unit": "V-USDC",
+        "connected": true,
+        "isSimulated": true,
+        "bindingMethod": "SIMULATED",
+        "boundAt": null
+      },
+      "credential": {
+        "provider": "POLYMARKET",
+        "host": "https://clob.polymarket.com",
+        "chainId": 137,
+        "signatureType": 1,
+        "funder": "0xe6ec299deb19c85d2923c44675d46d6a04a3d1fb",
+        "walletAddress": "0xe6ec299deb19c85d2923c44675d46d6a04a3d1fb",
+        "apiKey": "019c9ac4-5209-7392-b7a0-0272dd422086",
+        "keyName": "019c9ac4-5209-7392-b7a0-0272dd422086",
+        "healthy": true,
+        "lastHeartbeat": "刚刚",
+        "scope": "clob:l2",
+        "lastDerivedAt": "2026-02-28T17:31:41.404Z",
+        "encryptedStored": true,
+        "secretMasked": "vcj***X8=",
+        "passphraseMasked": "e80***673"
+      }
+    }
+  },
+  "security": {
+    "mfaEnabled": true,
+    "tradePinSet": true,
+    "updatedAt": "2026-02-28T16:00:48.500Z"
+  },
+  "tradePin": "123456",
+  "auditSeq": 83,
+  "auditLogs": [
+    {
+      "id": "A-82",
+      "ts": "2026-02-28T17:55:02.379Z",
+      "action": "ENV_SWITCH",
+      "status": "SUCCESS",
+      "detail": "REAL -> PAPER",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-81",
+      "ts": "2026-02-28T17:54:46.843Z",
+      "action": "ENV_SWITCH",
+      "status": "SUCCESS",
+      "detail": "PAPER -> REAL",
+      "environment": "REAL"
+    },
+    {
+      "id": "A-80",
+      "ts": "2026-02-28T17:54:46.840Z",
+      "action": "ENV_SWITCH_WARN",
+      "status": "SUCCESS",
+      "detail": "switch with warnings: no_real_approved_strategy",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-79",
+      "ts": "2026-02-28T17:54:39.944Z",
+      "action": "ENV_SWITCH",
+      "status": "SUCCESS",
+      "detail": "REAL -> PAPER",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-78",
+      "ts": "2026-02-28T17:51:51.485Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "REAL"
+    },
+    {
+      "id": "A-77",
+      "ts": "2026-02-28T17:47:05.955Z",
+      "action": "ENV_SWITCH",
+      "status": "FAILED",
+      "detail": "wallet_not_connected",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-76",
+      "ts": "2026-02-28T17:47:04.162Z",
+      "action": "ENV_SWITCH",
+      "status": "FAILED",
+      "detail": "wallet_not_connected",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-75",
+      "ts": "2026-02-28T17:47:00.412Z",
+      "action": "ENV_SWITCH",
+      "status": "FAILED",
+      "detail": "wallet_not_connected",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-74",
+      "ts": "2026-02-28T17:46:40.782Z",
+      "action": "ENV_SWITCH",
+      "status": "SUCCESS",
+      "detail": "REAL -> PAPER (wallet_unbind)",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-73",
+      "ts": "2026-02-28T17:46:40.780Z",
+      "action": "WALLET_UNBIND",
+      "status": "SUCCESS",
+      "detail": "real wallet unbound (ui_check)",
+      "environment": "REAL"
+    },
+    {
+      "id": "A-72",
+      "ts": "2026-02-28T17:44:58.653Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "REAL"
+    },
+    {
+      "id": "A-71",
+      "ts": "2026-02-28T17:44:47.030Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "REAL"
+    },
+    {
+      "id": "A-70",
+      "ts": "2026-02-28T17:42:10.581Z",
+      "action": "WALLET_BIND_PLUGIN",
+      "status": "SUCCESS",
+      "detail": "real wallet bound via plugin signature",
+      "environment": "REAL"
+    },
+    {
+      "id": "A-69",
+      "ts": "2026-02-28T17:42:08.834Z",
+      "action": "WALLET_BIND_CHALLENGE",
+      "status": "SUCCESS",
+      "detail": "challenge issued for 0x5bdcac4d50dc569430464157f7a835cafdd92050",
+      "environment": "REAL"
+    },
+    {
+      "id": "A-68",
+      "ts": "2026-02-28T17:41:46.954Z",
+      "action": "WALLET_BIND_PLUGIN",
+      "status": "SUCCESS",
+      "detail": "real wallet bound via plugin signature",
+      "environment": "REAL"
+    },
+    {
+      "id": "A-67",
+      "ts": "2026-02-28T17:41:44.151Z",
+      "action": "WALLET_BIND_CHALLENGE",
+      "status": "SUCCESS",
+      "detail": "challenge issued for 0x5bdcac4d50dc569430464157f7a835cafdd92050",
+      "environment": "REAL"
+    },
+    {
+      "id": "A-66",
+      "ts": "2026-02-28T17:39:55.112Z",
+      "action": "ENV_SWITCH",
+      "status": "SUCCESS",
+      "detail": "PAPER -> REAL",
+      "environment": "REAL"
+    },
+    {
+      "id": "A-65",
+      "ts": "2026-02-28T17:39:55.109Z",
+      "action": "ENV_SWITCH_WARN",
+      "status": "SUCCESS",
+      "detail": "switch with warnings: no_real_approved_strategy",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-64",
+      "ts": "2026-02-28T17:36:42.900Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-63",
+      "ts": "2026-02-28T17:34:05.204Z",
+      "action": "ORDER_REJECTED",
+      "status": "FAILED",
+      "detail": "max_position_per_outcome_exceeded",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-62",
+      "ts": "2026-02-28T17:34:04.923Z",
+      "action": "ORDER_REJECTED",
+      "status": "FAILED",
+      "detail": "max_position_per_outcome_exceeded",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-61",
+      "ts": "2026-02-28T17:34:04.211Z",
+      "action": "ORDER_REJECTED",
+      "status": "FAILED",
+      "detail": "max_position_per_outcome_exceeded",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-60",
+      "ts": "2026-02-28T17:34:01.907Z",
+      "action": "ORDER_REJECTED",
+      "status": "FAILED",
+      "detail": "max_position_per_outcome_exceeded",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-59",
+      "ts": "2026-02-28T17:33:58.611Z",
+      "action": "ORDER_REJECTED",
+      "status": "FAILED",
+      "detail": "max_position_per_outcome_exceeded",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-58",
+      "ts": "2026-02-28T17:33:56.082Z",
+      "action": "ORDER_CREATED",
+      "status": "SUCCESS",
+      "detail": "ODM6LOJXN00C buy 0x43b96b3da11d6dd2f7fef729d68c933512fbd5a604d15a8745c99184f8950492 50@0.0013",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-57",
+      "ts": "2026-02-28T17:33:56.081Z",
+      "action": "WALLET_PATCH",
+      "status": "SUCCESS",
+      "detail": "order ODM6LOJXN00C settled",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-56",
+      "ts": "2026-02-28T17:33:55.860Z",
+      "action": "ORDER_CREATED",
+      "status": "SUCCESS",
+      "detail": "ODM6LOJRF00B buy 0x43b96b3da11d6dd2f7fef729d68c933512fbd5a604d15a8745c99184f8950492 50@0.0013",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-55",
+      "ts": "2026-02-28T17:33:55.860Z",
+      "action": "WALLET_PATCH",
+      "status": "SUCCESS",
+      "detail": "order ODM6LOJRF00B settled",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-54",
+      "ts": "2026-02-28T17:33:54.733Z",
+      "action": "ORDER_CREATED",
+      "status": "SUCCESS",
+      "detail": "ODM6LOIW300A buy 0x43b96b3da11d6dd2f7fef729d68c933512fbd5a604d15a8745c99184f8950492 50@0.0013",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-53",
+      "ts": "2026-02-28T17:33:54.733Z",
+      "action": "WALLET_PATCH",
+      "status": "SUCCESS",
+      "detail": "order ODM6LOIW300A settled",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-52",
+      "ts": "2026-02-28T17:32:27.482Z",
+      "action": "ORDER_REJECTED",
+      "status": "FAILED",
+      "detail": "max_position_per_outcome_exceeded",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-51",
+      "ts": "2026-02-28T17:32:22.478Z",
+      "action": "ORDER_REJECTED",
+      "status": "FAILED",
+      "detail": "max_position_per_outcome_exceeded",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-50",
+      "ts": "2026-02-28T17:32:17.464Z",
+      "action": "ORDER_REJECTED",
+      "status": "FAILED",
+      "detail": "max_position_per_outcome_exceeded",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-49",
+      "ts": "2026-02-28T17:32:12.453Z",
+      "action": "ORDER_REJECTED",
+      "status": "FAILED",
+      "detail": "max_position_per_outcome_exceeded",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-48",
+      "ts": "2026-02-28T17:32:07.451Z",
+      "action": "ORDER_REJECTED",
+      "status": "FAILED",
+      "detail": "max_position_per_outcome_exceeded",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-47",
+      "ts": "2026-02-28T17:32:02.436Z",
+      "action": "ORDER_REJECTED",
+      "status": "FAILED",
+      "detail": "max_position_per_outcome_exceeded",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-46",
+      "ts": "2026-02-28T17:31:57.436Z",
+      "action": "ORDER_REJECTED",
+      "status": "FAILED",
+      "detail": "max_position_per_outcome_exceeded",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-45",
+      "ts": "2026-02-28T17:31:52.420Z",
+      "action": "ORDER_REJECTED",
+      "status": "FAILED",
+      "detail": "max_position_per_outcome_exceeded",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-44",
+      "ts": "2026-02-28T17:31:47.411Z",
+      "action": "ORDER_REJECTED",
+      "status": "FAILED",
+      "detail": "max_position_per_outcome_exceeded",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-43",
+      "ts": "2026-02-28T17:31:41.404Z",
+      "action": "CREDENTIAL_IMPORT",
+      "status": "SUCCESS",
+      "detail": "polymarket key imported for 0xe6ec299deb19c85d2923c44675d46d6a04a3d1fb",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-42",
+      "ts": "2026-02-28T17:31:10.732Z",
+      "action": "WALLET_UPDATE",
+      "status": "SUCCESS",
+      "detail": "wallet updated for PAPER",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-41",
+      "ts": "2026-02-28T17:31:02.094Z",
+      "action": "WALLET_UPDATE",
+      "status": "SUCCESS",
+      "detail": "wallet updated for PAPER",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-40",
+      "ts": "2026-02-28T17:30:53.041Z",
+      "action": "WALLET_UPDATE",
+      "status": "SUCCESS",
+      "detail": "wallet updated for PAPER",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-39",
+      "ts": "2026-02-28T17:27:51.982Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-38",
+      "ts": "2026-02-28T17:27:38.968Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-37",
+      "ts": "2026-02-28T17:27:26.841Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-36",
+      "ts": "2026-02-28T17:24:56.024Z",
+      "action": "ORDER_CANCELED",
+      "status": "SUCCESS",
+      "detail": "ODM6KFC2Q001 ui_manual_cancel",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-35",
+      "ts": "2026-02-28T17:24:56.022Z",
+      "action": "WALLET_PATCH",
+      "status": "SUCCESS",
+      "detail": "order ODM6KFC2Q001 canceled",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-34",
+      "ts": "2026-02-28T17:21:28.583Z",
+      "action": "WALLET_UPDATE",
+      "status": "SUCCESS",
+      "detail": "wallet updated for PAPER",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-33",
+      "ts": "2026-02-28T17:21:26.015Z",
+      "action": "WALLET_UPDATE",
+      "status": "SUCCESS",
+      "detail": "wallet updated for PAPER",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-32",
+      "ts": "2026-02-28T17:18:27.097Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-31",
+      "ts": "2026-02-28T17:07:38.987Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-30",
+      "ts": "2026-02-28T17:06:21.620Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-29",
+      "ts": "2026-02-28T17:06:21.607Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-28",
+      "ts": "2026-02-28T16:59:14.162Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-27",
+      "ts": "2026-02-28T16:59:14.159Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-26",
+      "ts": "2026-02-28T16:51:58.244Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-25",
+      "ts": "2026-02-28T16:51:58.239Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-24",
+      "ts": "2026-02-28T16:51:50.885Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-23",
+      "ts": "2026-02-28T16:51:50.882Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-22",
+      "ts": "2026-02-28T16:51:45.678Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-21",
+      "ts": "2026-02-28T16:51:45.668Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-20",
+      "ts": "2026-02-28T16:51:30.462Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-19",
+      "ts": "2026-02-28T16:51:00.624Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-18",
+      "ts": "2026-02-28T16:51:00.613Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-17",
+      "ts": "2026-02-28T16:47:44.922Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-16",
+      "ts": "2026-02-28T16:44:00.810Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-15",
+      "ts": "2026-02-28T16:44:00.804Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-14",
+      "ts": "2026-02-28T16:42:56.185Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-13",
+      "ts": "2026-02-28T16:42:56.179Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-12",
+      "ts": "2026-02-28T16:42:40.009Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-11",
+      "ts": "2026-02-28T16:42:39.986Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-10",
+      "ts": "2026-02-28T16:42:18.177Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-9",
+      "ts": "2026-02-28T16:41:57.354Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-8",
+      "ts": "2026-02-28T16:41:57.344Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-7",
+      "ts": "2026-02-28T16:41:44.818Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-6",
+      "ts": "2026-02-28T16:41:03.467Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-5",
+      "ts": "2026-02-28T16:41:03.452Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-4",
+      "ts": "2026-02-28T16:40:56.298Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-3",
+      "ts": "2026-02-28T16:40:56.296Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-2",
+      "ts": "2026-02-28T16:40:22.502Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    },
+    {
+      "id": "A-1",
+      "ts": "2026-02-28T16:00:48.501Z",
+      "action": "SYSTEM_BOOT",
+      "status": "SUCCESS",
+      "detail": "system initialized",
+      "environment": "PAPER"
+    }
+  ],
+  "credentialVault": {
+    "encryptedSecret": "gha8n+TrVz7RueuyH9twk+6KS9SKUjkP2vEBnrkdvPAZutx6kQIh25Z0xIEU49BOzpG84LfrFWJhh+FbyxDHXLkfDo+0ldMY",
+    "encryptedPassphrase": "xyADaxvQ9Iv/PibDySUXblQblU6fr7mIuHHeIIijUF0erViiGT0oTIlN20gyZMgykvNm5mTOeuu/bEXgA36HlLNa3s1gFAp7H0ZI64VasbXSQs6RkO7sSy95ftk="
+  }
+}

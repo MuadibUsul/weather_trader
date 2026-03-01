@@ -1,0 +1,6 @@
+{
+  "exchangeUrl": "https://gamma-api.polymarket.com/events",
+  "tagSlug": "weather",
+  "limit": 60,
+  "timeoutMs": 8000
+}

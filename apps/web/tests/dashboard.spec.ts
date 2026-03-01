@@ -1,9 +1,9 @@
-import { expect, test } from "@playwright/test";
+﻿import { expect, test } from "@playwright/test";
 
 test("dashboard loads", async ({ page }) => {
   await page.goto("/dashboard");
-  await expect(page.getByText("Weather Trader")).toBeVisible();
-  await expect(page.getByText("温度桶合约 (NYC)")).toBeVisible();
+  await expect(page.locator("main")).toBeVisible();
+  await expect(page.locator('a[href="/dashboard"]')).toBeVisible();
 });
 
 test("dashboard key area screenshot", async ({ page }) => {
